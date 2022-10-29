@@ -1,0 +1,88 @@
+################################################################################
+# Filename: divisor.ioc
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# Note: if we do not provide the IO location constraint for our module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 6
+)
+(iopin
+    (left
+	(pin name="reCLK"	 layer=5 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="reData"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="globalReset"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[0]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[1]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[2]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[3]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[4]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[5]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[6]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[7]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[8]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[9]"	 layer=5 width=0.300 depth=0.1400 )
+    )
+	(bottom
+	(pin name="REF16Bits[10]"	 layer=5 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="REF16Bits[11]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[12]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[13]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[14]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF16Bits[15]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF6Bit[0]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF6Bit[1]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF6Bit[2]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF6Bit[3]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF6Bit[4]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF6Bit[5]"	 layer=5 width=0.300 depth=0.1400 )
+	)
+	(top
+	(pin name="Bdata[0]"	 layer=5 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="Bdata[1]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[2]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[3]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[4]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[5]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[6]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[7]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[8]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[9]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[10]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Bdata[11]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[0]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[1]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[2]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[3]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[4]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[5]"	 layer=5 width=0.300 depth=0.1400 )
+	)
+    (right
+	(pin name="dataOut"	 layer=6 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="Gdata[6]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[7]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[8]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[9]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[10]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Gdata[11]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[0]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[1]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[2]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[3]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[4]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[5]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[6]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[7]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[8]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[9]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[10]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="Rdata[11]"	 layer=5 width=0.300 depth=0.1400 )
+    )
+)

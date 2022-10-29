@@ -1,0 +1,16 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5
+Date:        Wed Apr 13 10:19:42 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'manchester_dec', cell 'C106' does not drive any nets. (LINT-1)
+Warning: In design 'manchester_dec', cell 'B_3' does not drive any nets. (LINT-1)
+1

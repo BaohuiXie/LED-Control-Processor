@@ -1,0 +1,59 @@
+02:30:18    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 26428 -toolin /tmp/vcs_20220428183014_26427_bxieaf..stdin -toolout /tmp/vcs_20220428183014_26427_bxieaf..stdout  
+02:30:18    17 -->                                                                 [tcl] set ucliGUI::state
+02:30:18    18 -->                                                                     [tcl] gui_update_simulator_buttons
+02:30:19    19 -->                                                                         [tcl] set ucliGUI::state
+02:30:19    20 -->                                                                             [tcl] ucliCore::getToolPID
+02:30:19    21 -->                                                                                 [tcl] synopsys::env hasTB
+02:30:19    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+02:30:19    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+02:30:19    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+02:30:19    25 --> ...  [tcl] synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout_sim/inter.vpd -locking
+02:30:19    26 --> ...      [tcl] synopsys::dump -autoflush on -fid VPD0
+02:30:19    27 --> ...          [tcl] set ::dve_fid VPD0
+02:30:19    28 --> ...              [tcl] synUtils::setDVEInitPhase 0
+02:30:19    29 --> ...                  [tcl] ucliCore::getToolPID
+02:30:19    30 --> ...                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnptuFZOM
+02:30:19    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "Q-2020.03-SP1-1_Full64" -sync_file /tmp/vcs_dve_rpc.bxieaf.26428}
+02:30:20    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bxieaf.26428}
+02:30:20    33 --> ...                                  [tcl] dveMisc::vbusExpand encoder_tb
+02:30:20    34 --> ...                                      [tcl] config endofsim noexit
+02:30:20    35 --> ...                                          [tcl] config onfail enable all
+02:30:20    36 --> ...                                              [tcl] config syscaddplainmembers
+02:30:20    37 --> ...                                                  [tcl] config syscaddsourcenames
+02:30:20    38 --> ...                                                      [tcl] config syscaddstructtypes
+02:30:20    39 --> ...                                                          [tcl] synopsys::listing -disable
+02:31:13    40 --> ...                                                              [tcl] dveMisc::vbusExpand encoder_tb.uut2.IDLEdetection1.ed1
+02:31:15    41 --> ...                                                                  [tcl] dveMisc::vbusExpand encoder_tb.uut2.IDLEdetection1.dff2
+02:31:26    42 --> ...                                                                      [tcl] dveMisc::vbusExpand encoder_tb.uut2.IDLEdetection1.comp1
+02:31:29    43 --> ...                                                                          [tcl] dveMisc::vbusExpand encoder_tb.uut2.IDLEdetection1.c1
+02:31:39    44 --> ...                                                                              [tcl] dveMisc::vbusExpand encoder_tb.uut2.IDLEdetection1
+02:31:45    45 --> ...                                                                                  [tcl] synopsys::dump -add {encoder_tb.uut2.IDLEdetection1} -scope "." -depth 1 -fid VPD0
+02:31:48    46 --> ...                                                                                      [tcl] synopsys::run
+02:31:48    47 --> ...                                                                                          [tcl] set ucliGUI::state
+02:31:48    48 --> ...                                                                                              [tcl] gui_update_simulator_buttons
+02:31:48    49 --> ...                                                                                                  [tcl] set ucliGUI::state
+02:31:48    50 --> ...  [tcl] set ucliGUI::state
+02:31:48    51 --> ...      [tcl] set ucliGUI::state
+02:31:48    52 --> ...          [tcl] catch {senv activeDomain} dveMisc::result 
+02:31:48    53 --> ...              [tcl] set dveMisc::result
+02:31:48    54 --> ...                  [tcl] gui_update_simulator_buttons
+02:33:26    55 --> ...                      [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/dve/schematic.tcl
+02:33:26    56 --> ...                          [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/schematic/base.tcl
+02:33:26    57 --> ...                              [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/schematic/enable.tcl
+02:33:26    58 --> ...                                  [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/schematic/netlist.tcl
+02:33:26    59 --> ...                                      [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/schematic/method.tcl
+02:33:26    60 --> ...                                          [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+02:33:26    61 --> ...                                              [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+02:33:26    62 --> ...                                                  [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+02:33:26    63 --> ...                                                      [tcl] tcl_source /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/gui/dve/auxx/gui/dve/driversloads.tcl
+02:35:33    64 --> ...                                                          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+02:35:33    65 --> ...                                                              [tcl] synopsys::finish
+02:35:33    66 --> ...                                                                  [tcl] set ucliGUI::state
+02:35:33    67 --> ...                                                                      [tcl] gui_update_simulator_buttons
+02:35:33    68 --> ...                                                                          [tcl] set ucliGUI::state
+02:35:33    69 --> ...                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+02:35:33    70 --> ...                                                                                  [tcl] set dveMisc::result
+02:35:33    71 --> ...                                                                                      [tcl] gui_update_simulator_buttons
+02:35:33    72 --> ...                                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+02:35:33    73 --> ...                                                                                              [tcl] set dveMisc::result
+02:35:33    74 --> ...                                                                                                  [tcl] ucli_exit

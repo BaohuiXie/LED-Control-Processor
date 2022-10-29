@@ -1,0 +1,277 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : decoder
+Version: P-2019.03-SP5
+Date   : Fri May  6 13:28:28 2022
+****************************************
+
+Operating Conditions: typical   Library: GSCLib.db
+Wire Load Model Mode: top
+
+  Startpoint: REF[1] (input port clocked by osc)
+  Endpoint: balancedCLK
+            (output port clocked by osc)
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock osc (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.00       0.00 f
+  REF[1] (in)                                             0.10      0.00       0.00 f
+  REF[1] (net)                                  2                   0.00       0.00 f
+  bb1/REF[1] (balanceBlock)                                         0.00       0.00 f
+  bb1/REF[1] (net)                                                  0.00       0.00 f
+  bb1/comparator2/REF[1] (Comparator4Bit)                           0.00       0.00 f
+  bb1/comparator2/REF[1] (net)                                      0.00       0.00 f
+  bb1/comparator2/U11/Y (XOR2X1)                          0.08      0.10       0.10 f
+  bb1/comparator2/n10 (net)                     2                   0.00       0.10 f
+  bb1/comparator2/U10/Y (NOR2X1)                          0.06      0.05       0.15 r
+  bb1/comparator2/n9 (net)                      1                   0.00       0.15 r
+  bb1/comparator2/U9/Y (AOI22X1)                          0.09      0.05       0.20 f
+  bb1/comparator2/n8 (net)                      1                   0.00       0.20 f
+  bb1/comparator2/U4/Y (INVX1)                            0.04      0.04       0.25 r
+  bb1/comparator2/n2 (net)                      1                   0.00       0.25 r
+  bb1/comparator2/U8/Y (AOI22X1)                          0.08      0.08       0.33 f
+  bb1/comparator2/n6 (net)                      1                   0.00       0.33 f
+  bb1/comparator2/U7/Y (NOR2X1)                           0.05      0.05       0.38 r
+  bb1/comparator2/n5 (net)                      1                   0.00       0.38 r
+  bb1/comparator2/U6/Y (AOI21X1)                          0.06      0.03       0.41 f
+  bb1/comparator2/n3 (net)                      1                   0.00       0.41 f
+  bb1/comparator2/U5/Y (INVX1)                            0.03      0.03       0.45 r
+  bb1/comparator2/Vout (net)                    1                   0.00       0.45 r
+  bb1/comparator2/Vout (Comparator4Bit)                             0.00       0.45 r
+  bb1/compOut (net)                                                 0.00       0.45 r
+  bb1/modifiedDFF1/R (modifiedDFF)                                  0.00       0.45 r
+  bb1/modifiedDFF1/R (net)                                          0.00       0.45 r
+  bb1/modifiedDFF1/U4/Y (NOR2X1)                          0.04      0.04       0.48 f
+  bb1/modifiedDFF1/n3 (net)                     1                   0.00       0.48 f
+  bb1/modifiedDFF1/U5/Y (BUFX3)                           0.59      0.57       1.05 f
+  bb1/modifiedDFF1/Q (net)                      1                   0.00       1.05 f
+  bb1/modifiedDFF1/Q (modifiedDFF)                                  0.00       1.05 f
+  bb1/balanceCLK (net)                                              0.00       1.05 f
+  bb1/balanceCLK (balanceBlock)                                     0.00       1.05 f
+  balancedCLK (net)                                                 0.00       1.05 f
+  balancedCLK (out)                                       0.59      0.00       1.05 f
+  data arrival time                                                            1.05
+
+  clock osc (rise edge)                                           100.00     100.00
+  clock network delay (ideal)                                       0.00     100.00
+  output external delay                                           -50.00      50.00
+  data required time                                                          50.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          50.00
+  data arrival time                                                           -1.05
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 48.95
+
+
+  Startpoint: REF[1] (input port clocked by osc)
+  Endpoint: db1/counter1/count_reg_0_
+            (rising edge-triggered flip-flop clocked by osc)
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock osc (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.00       0.00 f
+  REF[1] (in)                                             0.10      0.00       0.00 f
+  REF[1] (net)                                  2                   0.00       0.00 f
+  db1/REF[1] (delayBlock)                                           0.00       0.00 f
+  db1/REF[1] (net)                                                  0.00       0.00 f
+  db1/comp1/REF[1] (Comparator4BitInverted)                         0.00       0.00 f
+  db1/comp1/REF[1] (net)                                            0.00       0.00 f
+  db1/comp1/U12/Y (XOR2X1)                                0.06      0.08       0.08 f
+  db1/comp1/n11 (net)                           1                   0.00       0.08 f
+  db1/comp1/U6/Y (INVX1)                                  0.05      0.05       0.13 r
+  db1/comp1/n4 (net)                            2                   0.00       0.13 r
+  db1/comp1/U11/Y (OAI21X1)                               0.07      0.06       0.19 f
+  db1/comp1/n10 (net)                           1                   0.00       0.19 f
+  db1/comp1/U10/Y (OAI21X1)                               0.07      0.03       0.22 r
+  db1/comp1/n9 (net)                            1                   0.00       0.22 r
+  db1/comp1/U9/Y (AOI22X1)                                0.08      0.05       0.27 f
+  db1/comp1/n6 (net)                            1                   0.00       0.27 f
+  db1/comp1/U8/Y (OAI22X1)                                0.02      0.13       0.40 r
+  db1/comp1/Vout (net)                          1                   0.00       0.40 r
+  db1/comp1/Vout (Comparator4BitInverted)                           0.00       0.40 r
+  db1/compOut (net)                                                 0.00       0.40 r
+  db1/U1/Y (OR2X1)                                        0.06      0.08       0.48 r
+  db1/EN (net)                                  3                   0.00       0.48 r
+  db1/counter1/EN (Counter)                                         0.00       0.48 r
+  db1/counter1/EN (net)                                             0.00       0.48 r
+  db1/counter1/U14/Y (INVX1)                              0.07      0.07       0.55 f
+  db1/counter1/n10 (net)                        3                   0.00       0.55 f
+  db1/counter1/U24/Y (NOR3X1)                             0.09      0.08       0.62 r
+  db1/counter1/N25 (net)                        1                   0.00       0.62 r
+  db1/counter1/count_reg_0_/D (DFFSRX1)                   0.09      0.00       0.62 r
+  data arrival time                                                            0.62
+
+  clock osc (rise edge)                                           100.00     100.00
+  clock network delay (ideal)                                       0.00     100.00
+  db1/counter1/count_reg_0_/CK (DFFSRX1)                            0.00     100.00 r
+  library setup time                                               -0.16      99.84
+  data required time                                                          99.84
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          99.84
+  data arrival time                                                           -0.62
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 99.21
+
+
+  Startpoint: bb1/counter2/count_reg_1_
+              (rising edge-triggered flip-flop clocked by osc)
+  Endpoint: balancedCLK
+            (output port clocked by osc)
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock osc (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  bb1/counter2/count_reg_1_/CK (SDFFSRX1)                 0.00      0.00       0.00 r
+  bb1/counter2/count_reg_1_/Q (SDFFSRX1)                  0.12      0.35       0.35 r
+  bb1/counter2/count[1] (net)                   5                   0.00       0.35 r
+  bb1/counter2/count[1] (Counter4b)                                 0.00       0.35 r
+  bb1/countOut[1] (net)                                             0.00       0.35 r
+  bb1/comparator2/A[1] (Comparator4Bit)                             0.00       0.35 r
+  bb1/comparator2/A[1] (net)                                        0.00       0.35 r
+  bb1/comparator2/U11/Y (XOR2X1)                          0.08      0.11       0.46 f
+  bb1/comparator2/n10 (net)                     2                   0.00       0.46 f
+  bb1/comparator2/U10/Y (NOR2X1)                          0.06      0.05       0.51 r
+  bb1/comparator2/n9 (net)                      1                   0.00       0.51 r
+  bb1/comparator2/U9/Y (AOI22X1)                          0.09      0.05       0.56 f
+  bb1/comparator2/n8 (net)                      1                   0.00       0.56 f
+  bb1/comparator2/U4/Y (INVX1)                            0.04      0.04       0.60 r
+  bb1/comparator2/n2 (net)                      1                   0.00       0.60 r
+  bb1/comparator2/U8/Y (AOI22X1)                          0.08      0.08       0.69 f
+  bb1/comparator2/n6 (net)                      1                   0.00       0.69 f
+  bb1/comparator2/U7/Y (NOR2X1)                           0.05      0.05       0.74 r
+  bb1/comparator2/n5 (net)                      1                   0.00       0.74 r
+  bb1/comparator2/U6/Y (AOI21X1)                          0.06      0.03       0.77 f
+  bb1/comparator2/n3 (net)                      1                   0.00       0.77 f
+  bb1/comparator2/U5/Y (INVX1)                            0.03      0.03       0.80 r
+  bb1/comparator2/Vout (net)                    1                   0.00       0.80 r
+  bb1/comparator2/Vout (Comparator4Bit)                             0.00       0.80 r
+  bb1/compOut (net)                                                 0.00       0.80 r
+  bb1/modifiedDFF1/R (modifiedDFF)                                  0.00       0.80 r
+  bb1/modifiedDFF1/R (net)                                          0.00       0.80 r
+  bb1/modifiedDFF1/U4/Y (NOR2X1)                          0.04      0.04       0.84 f
+  bb1/modifiedDFF1/n3 (net)                     1                   0.00       0.84 f
+  bb1/modifiedDFF1/U5/Y (BUFX3)                           0.59      0.57       1.41 f
+  bb1/modifiedDFF1/Q (net)                      1                   0.00       1.41 f
+  bb1/modifiedDFF1/Q (modifiedDFF)                                  0.00       1.41 f
+  bb1/balanceCLK (net)                                              0.00       1.41 f
+  bb1/balanceCLK (balanceBlock)                                     0.00       1.41 f
+  balancedCLK (net)                                                 0.00       1.41 f
+  balancedCLK (out)                                       0.59      0.00       1.41 f
+  data arrival time                                                            1.41
+
+  clock osc (rise edge)                                           100.00     100.00
+  clock network delay (ideal)                                       0.00     100.00
+  output external delay                                           -50.00      50.00
+  data required time                                                          50.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          50.00
+  data arrival time                                                           -1.41
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 48.59
+
+
+  Startpoint: db1/counter1/count_reg_1_
+              (rising edge-triggered flip-flop clocked by osc)
+  Endpoint: db1/counter1/count_reg_0_
+            (rising edge-triggered flip-flop clocked by osc)
+  Path Group: osc
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock osc (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  db1/counter1/count_reg_1_/CK (DFFSRX1)                  0.00      0.00       0.00 r
+  db1/counter1/count_reg_1_/Q (DFFSRX1)                   0.11      0.16       0.16 f
+  db1/counter1/count[1] (net)                   5                   0.00       0.16 f
+  db1/counter1/count[1] (Counter)                                   0.00       0.16 f
+  db1/counterOut[1] (net)                                           0.00       0.16 f
+  db1/comp1/A[1] (Comparator4BitInverted)                           0.00       0.16 f
+  db1/comp1/A[1] (net)                                              0.00       0.16 f
+  db1/comp1/U12/Y (XOR2X1)                                0.06      0.09       0.25 f
+  db1/comp1/n11 (net)                           1                   0.00       0.25 f
+  db1/comp1/U6/Y (INVX1)                                  0.05      0.05       0.30 r
+  db1/comp1/n4 (net)                            2                   0.00       0.30 r
+  db1/comp1/U11/Y (OAI21X1)                               0.07      0.06       0.35 f
+  db1/comp1/n10 (net)                           1                   0.00       0.35 f
+  db1/comp1/U10/Y (OAI21X1)                               0.07      0.03       0.38 r
+  db1/comp1/n9 (net)                            1                   0.00       0.38 r
+  db1/comp1/U9/Y (AOI22X1)                                0.08      0.05       0.44 f
+  db1/comp1/n6 (net)                            1                   0.00       0.44 f
+  db1/comp1/U8/Y (OAI22X1)                                0.02      0.13       0.56 r
+  db1/comp1/Vout (net)                          1                   0.00       0.56 r
+  db1/comp1/Vout (Comparator4BitInverted)                           0.00       0.56 r
+  db1/compOut (net)                                                 0.00       0.56 r
+  db1/U1/Y (OR2X1)                                        0.06      0.08       0.64 r
+  db1/EN (net)                                  3                   0.00       0.64 r
+  db1/counter1/EN (Counter)                                         0.00       0.64 r
+  db1/counter1/EN (net)                                             0.00       0.64 r
+  db1/counter1/U14/Y (INVX1)                              0.07      0.07       0.71 f
+  db1/counter1/n10 (net)                        3                   0.00       0.71 f
+  db1/counter1/U24/Y (NOR3X1)                             0.09      0.08       0.79 r
+  db1/counter1/N25 (net)                        1                   0.00       0.79 r
+  db1/counter1/count_reg_0_/D (DFFSRX1)                   0.09      0.00       0.79 r
+  data arrival time                                                            0.79
+
+  clock osc (rise edge)                                           100.00     100.00
+  clock network delay (ideal)                                       0.00     100.00
+  db1/counter1/count_reg_0_/CK (DFFSRX1)                            0.00     100.00 r
+  library setup time                                               -0.16      99.84
+  data required time                                                          99.84
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          99.84
+  data arrival time                                                           -0.79
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 99.05
+
+
+1

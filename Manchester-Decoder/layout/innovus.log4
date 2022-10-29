@@ -1,0 +1,220 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	
+Date:		Sat May  7 00:55:40 2022
+Host:		EEX055 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (7cores*14cpus*Common KVM processor 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal1 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal2 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal3 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal4 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal5 GENERATE.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal6 GENERATE.
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.65min, fe_real=1.07min, fe_mem=785.6M) ***
+*** Netlist is unique.
+Loading preference file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/layout/decoder.enc.dat/gui.pref.tcl ...
+Loading place ...
+**WARN: (IMPSYT-709):	Innovus use the Multi-Mode/Multi-Corner (MMMC) architecture exclusively for 
+configuration and control of some software features. The current configuration is
+obsoleted, please migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run restoreDesign with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+
+
+ERROR : The MMMC configuration specified is incomplete  - a set_analysis_view command
+       was not found in the configuration. The software requires at least 1 setup
+       and 1 hold analysis view to be defined.  You should remedy this problem and
+       restart the software.
+
+<CMD> setDrawView place
+<CMD> streamOut results/decoder.routed.gds -mapFile ../lib/streamIn.map -libName decoder -units 2000 -mode ALL
+Parse flat map file...
+**WARN: (IMPOGDS-391):	Line 1: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 2: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 3: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 4: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 5: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 6: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 7: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 8: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 9: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 10: Object Type 'drawing' specified with layer 'Metal1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-391):	Line 15: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 16: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 17: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 18: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 19: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 20: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 21: Object Type 'drawing' specified with layer 'Via1' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 22: Object Type 'drawing' specified with layer 'Metal2' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 23: Object Type 'drawing' specified with layer 'Metal2' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (IMPOGDS-391):	Line 24: Object Type 'drawing' specified with layer 'Metal2' is not legal. The map file maybe being a DFII/Virtuoso map file. For a list of legal object types refer to the map file syntax in the User Guide.
+Type 'man IMPOGDS-391' for more detail.
+**WARN: (EMS-27):	Message (IMPOGDS-391) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (IMPOGDS-392):	Unknown layer text 
+Type 'man IMPOGDS-392' for more detail.
+**WARN: (EMS-27):	Message (IMPOGDS-392) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for via structure generation total number 0
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    121                             COMP
+    122                          DIEAREA
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            162
+
+Ports/Pins                             0
+
+Nets                                   0
+
+    Via Instances                      0
+
+Special Nets                           0
+
+    Via Instances                      0
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> defOut -floorplan -netlist -routing results/decoder.def
+Writing DEF file 'results/decoder.def', current time is Sat May  7 00:58:12 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'results/decoder.def' is written, current time is Sat May  7 00:58:12 2022 ...
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> saveNetlist results/decoder.routed.v
+Writing Netlist "results/decoder.routed.v" ...
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sat May  7 00:58:37 2022
+  Total CPU time:     0:01:37
+  Total real time:    0:02:59
+  Peak memory (main): 824.15MB
+
+
+*** Memory Usage v#1 (Current mem = 1065.801M, initial mem = 268.238M) ***
+*** Message Summary: 129 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:28, real=0:02:57, mem=1065.8M) ---

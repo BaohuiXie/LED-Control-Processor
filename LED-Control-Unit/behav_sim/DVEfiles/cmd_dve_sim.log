@@ -1,0 +1,2 @@
+ucliGUI::start /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_7Update/behav_sim/simv -ucligui 
+set ucliGUI::state

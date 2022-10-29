@@ -1,0 +1,16 @@
+    Hinst Name             Module Name             Inst Count           Total Area
+-------------------------------------------------------------------------------
+digitalControlBlock                                       201            21353.112
+ GCLKblock                 GatedCLKBlock                   35             2744.280
+  GCLKblock/comparator1    Comparator6Bit                   9              501.811
+  GCLKblock/counter1       Counter6Bit                     22             1996.790
+  GCLKblock/dff1           DFF_digitalControlBlock          3              214.315
+ SRblock                   shiftAndRegBlock               166            18608.832
+  SRblock/Preg12BitB       parallelShiftReg12Bit_0         27             2697.235
+  SRblock/Preg12BitG       parallelShiftReg12Bit_2         27             2697.235
+  SRblock/Preg12BitR       parallelShiftReg12Bit_1         27             2697.235
+  SRblock/comparator16Bit1 Comparator16Bit                 21             1312.027
+  SRblock/reg13BitB        shiftReg13Bit_0                 14             2127.470
+  SRblock/reg13BitG        shiftReg13Bit_2                 14             2127.470
+  SRblock/reg13BitR        shiftReg13Bit_1                 14             2127.470
+  SRblock/reg16Bit1        shiftReg16Bit                   20             2718.144

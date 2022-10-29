@@ -1,0 +1,46 @@
+04:27:49    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 21513 -toolin /tmp/vcs_20220503202744_21511_bxieaf..stdin -toolout /tmp/vcs_20220503202744_21511_bxieaf..stdout  
+04:27:49    17 -->                                                                 [tcl] set ucliGUI::state
+04:27:49    18 -->                                                                     [tcl] gui_update_simulator_buttons
+04:27:51    19 -->                                                                         [tcl] set ucliGUI::state
+04:27:51    20 -->                                                                             [tcl] ucliCore::getToolPID
+04:27:51    21 -->                                                                                 [tcl] synopsys::env hasTB
+04:27:51    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+04:27:51    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+04:27:51    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+04:27:51    25 --> ...  [tcl] synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_7Update/layout_sim/inter.vpd -locking
+04:27:51    26 --> ...      [tcl] synopsys::dump -autoflush on -fid VPD0
+04:27:51    27 --> ...          [tcl] set ::dve_fid VPD0
+04:27:51    28 --> ...              [tcl] synUtils::setDVEInitPhase 0
+04:27:51    29 --> ...                  [tcl] ucliCore::getToolPID
+04:27:51    30 --> ...                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpAmycAf
+04:27:51    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "Q-2020.03-SP1-1_Full64" -sync_file /tmp/vcs_dve_rpc.bxieaf.21513}
+04:27:51    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bxieaf.21513}
+04:27:52    33 --> ...                                  [tcl] dveMisc::vbusExpand LEDControl_tb
+04:27:52    34 --> ...                                      [tcl] config endofsim noexit
+04:27:52    35 --> ...                                          [tcl] config onfail enable all
+04:27:52    36 --> ...                                              [tcl] config syscaddplainmembers
+04:27:52    37 --> ...                                                  [tcl] config syscaddsourcenames
+04:27:52    38 --> ...                                                      [tcl] config syscaddstructtypes
+04:27:52    39 --> ...                                                          [tcl] synopsys::listing -disable
+04:27:57    40 --> ...                                                              [tcl] synopsys::dump -add {LEDControl_tb} -scope "." -depth 1 -fid VPD0
+04:27:59    41 --> ...                                                                  [tcl] synopsys::run
+04:27:59    42 --> ...                                                                      [tcl] set ucliGUI::state
+04:27:59    43 --> ...                                                                          [tcl] gui_update_simulator_buttons
+04:27:59    44 --> ...                                                                              [tcl] set ucliGUI::state
+04:27:59    45 --> ...                                                                                  [tcl] gui_update_simulator_buttons
+04:27:59    46 --> ...                                                                                      [tcl] set ucliGUI::state
+04:27:59    47 --> ...                                                                                          [tcl] set ucliGUI::state
+04:27:59    48 --> ...                                                                                              [tcl] catch {senv activeDomain} dveMisc::result 
+04:27:59    49 --> ...                                                                                                  [tcl] set dveMisc::result
+04:27:59    50 --> ...  [tcl] gui_update_simulator_buttons
+04:28:23    51 --> ...      [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+04:28:23    52 --> ...          [tcl] synopsys::finish
+04:28:23    53 --> ...              [tcl] set ucliGUI::state
+04:28:23    54 --> ...                  [tcl] gui_update_simulator_buttons
+04:28:23    55 --> ...                      [tcl] set ucliGUI::state
+04:28:23    56 --> ...                          [tcl] catch {senv activeDomain} dveMisc::result 
+04:28:23    57 --> ...                              [tcl] set dveMisc::result
+04:28:23    58 --> ...                                  [tcl] gui_update_simulator_buttons
+04:28:23    59 --> ...                                      [tcl] catch {senv activeDomain} dveMisc::result 
+04:28:23    60 --> ...                                          [tcl] set dveMisc::result
+04:28:23    61 --> ...                                              [tcl] ucli_exit

@@ -1,0 +1,74 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 1700
+gui_set_state_value -category Layout -key child_console_size_y -value 270
+gui_set_state_value -category Layout -key child_data_size_x -value 105
+gui_set_state_value -category Layout -key child_data_size_y -value 508
+gui_set_state_value -category Layout -key child_driver_size_x -value 1424
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 306
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 10
+gui_set_state_value -category Layout -key child_hier_size_x -value 211
+gui_set_state_value -category Layout -key child_hier_size_y -value 508
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1387
+gui_set_state_value -category Layout -key child_schematic_size_y -value 503
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1387
+gui_set_state_value -category Layout -key child_source_size_y -value 503
+gui_set_state_value -category Layout -key child_watch_size_x -value 1706
+gui_set_state_value -category Layout -key child_watch_size_y -value 211
+gui_set_state_value -category Layout -key child_wave_colname -value 235
+gui_set_state_value -category Layout -key child_wave_colvalue -value 235
+gui_set_state_value -category Layout -key child_wave_docknewline -value false
+gui_set_state_value -category Layout -key child_wave_left -value 475
+gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_wave_right -value 1157
+gui_set_state_value -category Layout -key child_wave_size_x -value 1711
+gui_set_state_value -category Layout -key child_wave_size_y -value 568
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 31
+gui_set_state_value -category Layout -key main_size_x -value 1708
+gui_set_state_value -category Layout -key main_size_y -value 908
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1642
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 753
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 48
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 71
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1685
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 928
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customCmdCombo} -value_type string -value {{source ./run_delayBlock} {source ./run} ./run {source ./run_digitalControlBlock} {source ./run_encoder}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customDirCombo} -value_type string -value {./ / /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/bk_adder/behav_sim/}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/syn_sim /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/digitalFilter/syn_sim /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/digitalFilter/behav_sim /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/FIR_FILTER/behav_sim}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/syn_sim/simv /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/digitalFilter/behav_sim/simv /afs/ee.ust.hk/staff/ee/bxieaf/eesm5020/FIR_FILTER/behav_sim/simv /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/behav_sim/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { decoder_tb } -insertionbar
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 39567 47595
+gui_close_window -window TopLevel.2

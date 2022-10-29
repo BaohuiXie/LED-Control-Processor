@@ -1,0 +1,147 @@
+[05/07 00:36:24      0s] 
+[05/07 00:36:24      0s] Cadence Innovus(TM) Implementation System.
+[05/07 00:36:24      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/07 00:36:24      0s] 
+[05/07 00:36:24      0s] Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+[05/07 00:36:24      0s] Options:	
+[05/07 00:36:24      0s] Date:		Sat May  7 00:36:24 2022
+[05/07 00:36:24      0s] Host:		EEX055 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (7cores*14cpus*Common KVM processor 16384KB)
+[05/07 00:36:24      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/07 00:36:24      0s] 
+[05/07 00:36:24      0s] License:
+[05/07 00:36:24      1s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/07 00:36:24      1s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/07 00:37:03     27s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[05/07 00:37:06     29s] @(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/07 00:37:06     29s] @(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[05/07 00:37:06     29s] @(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/07 00:37:06     29s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[05/07 00:37:06     29s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[05/07 00:37:06     29s] @(#)CDS: CPE v20.10-p006
+[05/07 00:37:06     29s] @(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/07 00:37:06     29s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[05/07 00:37:06     29s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[05/07 00:37:06     29s] @(#)CDS: RCDB 11.15.0
+[05/07 00:37:06     29s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[05/07 00:37:06     29s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_6798_EEX055_bxieaf_iXkpVE.
+
+[05/07 00:37:06     29s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[05/07 00:37:10     32s] 
+[05/07 00:37:10     32s] **INFO:  MMMC transition support version v31-84 
+[05/07 00:37:10     32s] 
+[05/07 00:37:10     32s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/07 00:37:10     32s] <CMD> suppressMessage ENCEXT-2799
+[05/07 00:37:10     32s] <CMD> win
+[05/07 00:38:10     58s] <CMD> encMessage warning 0
+[05/07 00:38:10     58s] Suppress "**WARN ..." messages.
+[05/07 00:38:10     58s] <CMD> encMessage debug 0
+[05/07 00:38:10     58s] <CMD> encMessage info 0
+[05/07 00:38:11     59s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal1 GENERATE.
+[05/07 00:38:11     59s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal2 GENERATE.
+[05/07 00:38:11     59s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal3 GENERATE.
+[05/07 00:38:11     59s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal4 GENERATE.
+[05/07 00:38:11     59s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal5 GENERATE.
+[05/07 00:38:11     59s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal6 GENERATE.
+[05/07 00:38:11     59s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=1.00min, fe_real=1.78min, fe_mem=786.6M) ***
+[05/07 00:38:12     59s] *** Netlist is unique.
+[05/07 00:38:13     60s] Loading preference file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/layout/decoder.enc.dat/gui.pref.tcl ...
+[05/07 00:38:16     60s] Loading place ...
+[05/07 00:38:20     61s] **WARN: (IMPSYT-709):	Innovus use the Multi-Mode/Multi-Corner (MMMC) architecture exclusively for 
+[05/07 00:38:20     61s] configuration and control of some software features. The current configuration is
+[05/07 00:38:20     61s] obsoleted, please migrate your design to an MMMC style configuration. You can refer to
+[05/07 00:38:20     61s] the What's New document for this release for additional information on the
+[05/07 00:38:20     61s] 11.1 migration to MMMC. In addition, you can run restoreDesign with the
+[05/07 00:38:20     61s] -showEolWarnings option to identify specific command and configuration
+[05/07 00:38:20     61s] options that will no longer be supported.
+[05/07 00:38:20     62s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+[05/07 00:38:20     62s] timing_enable_default_delay_arc
+[05/07 00:38:20     62s] 
+[05/07 00:38:20     62s] 
+[05/07 00:38:20     62s] ERROR : The MMMC configuration specified is incomplete  - a set_analysis_view command
+[05/07 00:38:20     62s]        was not found in the configuration. The software requires at least 1 setup
+[05/07 00:38:20     62s]        and 1 hold analysis view to be defined.  You should remedy this problem and
+[05/07 00:38:20     62s]        restart the software.
+[05/07 00:38:20     62s] 
+[05/07 00:38:23     63s] <CMD> setDrawView place
+[05/07 00:38:32     67s] <CMD> verifyConnectivity -type all -error 1000 -warning 50
+[05/07 00:38:32     67s] VERIFY_CONNECTIVITY use new engine.
+[05/07 00:38:32     67s] 
+[05/07 00:38:32     67s] ******** Start: VERIFY CONNECTIVITY ********
+[05/07 00:38:32     67s] Start Time: Sat May  7 00:38:32 2022
+[05/07 00:38:32     67s] 
+[05/07 00:38:32     67s] Design Name: decoder
+[05/07 00:38:32     67s] Database Units: 2000
+[05/07 00:38:32     67s] Design Boundary: (0.0000, 0.0000) (114.1800, 80.5200)
+[05/07 00:38:32     67s] Error Limit = 1000; Warning Limit = 50
+[05/07 00:38:32     67s] Check all nets
+[05/07 00:38:32     67s] 
+[05/07 00:38:32     67s] Begin Summary 
+[05/07 00:38:32     67s]   Found no problems or warnings.
+[05/07 00:38:32     67s] End Summary
+[05/07 00:38:32     67s] 
+[05/07 00:38:32     67s] End Time: Sat May  7 00:38:32 2022
+[05/07 00:38:32     67s] Time Elapsed: 0:00:00.0
+[05/07 00:38:32     67s] 
+[05/07 00:38:32     67s] ******** End: VERIFY CONNECTIVITY ********
+[05/07 00:38:32     67s]   Verification Complete : 0 Viols.  0 Wrngs.
+[05/07 00:38:32     67s]   (CPU Time: 0:00:00.0  MEM: 0.000M)
+[05/07 00:38:32     67s] 
+[05/07 00:38:42     70s] <CMD> getMultiCpuUsage -localCpu
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -quiet -area
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -quiet -layer_range
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -check_only -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[05/07 00:38:42     71s] <CMD> get_verify_drc_mode -limit -quiet
+[05/07 00:38:44     71s] <CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report decoder.drc.rpt -limit 1000
+[05/07 00:38:44     71s] <CMD> verify_drc
+[05/07 00:38:44     71s] #-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+[05/07 00:38:44     71s] #-report decoder.drc.rpt                 # string, default="", user setting
+[05/07 00:38:44     71s]  *** Starting Verify DRC (MEM: 1056.8) ***
+[05/07 00:38:44     71s] 
+[05/07 00:38:44     71s] #create default rule from bind_ndr_rule rule=0x7f8126a10ed0 0x7f8128964ff0
+[05/07 00:38:44     71s] #setting min_area (0.200000) for layer Metal2 using TOPOFSTACK via Via23_stack_north
+[05/07 00:38:44     71s] #setting min_area (0.200000) for layer Metal3 using TOPOFSTACK via Via34_stack_east
+[05/07 00:38:44     71s] #setting min_area (0.200000) for layer Metal4 using TOPOFSTACK via Via45_stack_north
+[05/07 00:38:44     71s] #setting min_area (0.200000) for layer Metal5 using TOPOFSTACK via Via56_stack_east
+[05/07 00:38:44     71s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0, del_dirty_area=0 cell=0 placement=0 pin_access=1
+[05/07 00:38:44     71s]   VERIFY DRC ...... Starting Verification
+[05/07 00:38:44     71s]   VERIFY DRC ...... Initializing
+[05/07 00:38:44     71s]   VERIFY DRC ...... Deleting Existing Violations
+[05/07 00:38:44     71s]   VERIFY DRC ...... Creating Sub-Areas
+[05/07 00:38:44     71s]   VERIFY DRC ...... Using new threading
+[05/07 00:38:44     71s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 114.180 80.520} 1 of 1
+[05/07 00:38:44     72s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[05/07 00:38:44     72s] 
+[05/07 00:38:44     72s]   Verification Complete : 0 Viols.
+[05/07 00:38:44     72s] 
+[05/07 00:38:44     72s]  *** End Verify DRC (CPU: 0:00:00.1  ELAPSED TIME: 0.00  MEM: 1.0M) ***
+[05/07 00:38:44     72s] 
+[05/07 00:38:44     72s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[05/07 00:39:04     80s] <CMD> saveNetlist results/decoder.routed.v
+[05/07 00:39:04     80s] Writing Netlist "results/decoder.routed.v" ...
+[05/07 00:48:15    336s] <CMD> setLayerPreference timingMap -isVisible 1
+[05/07 00:49:16    362s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sat May  7 00:49:16 2022
+  Total CPU time:     0:06:11
+  Total real time:    0:13:07
+  Peak memory (main): 832.41MB
+
+[05/07 00:49:16    362s] 
+[05/07 00:49:16    362s] *** Memory Usage v#1 (Current mem = 1082.000M, initial mem = 268.238M) ***
+[05/07 00:49:16    362s] 
+[05/07 00:49:16    362s] *** Summary of all messages that are not suppressed in this session:
+[05/07 00:49:16    362s] Severity  ID               Count  Summary                                  
+[05/07 00:49:16    362s] WARNING   IMPSYT-709           1  Innovus use the Multi-Mode/Multi-Corner ...
+[05/07 00:49:16    362s] WARNING   IMPPP-557            6  A single-layer VIARULE GENERATE for turn...
+[05/07 00:49:16    362s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[05/07 00:49:16    362s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/07 00:49:16    362s] *** Message Summary: 9 warning(s), 0 error(s)
+[05/07 00:49:16    362s] 
+[05/07 00:49:16    362s] --- Ending "Innovus" (totcpu=0:06:03, real=0:12:52, mem=1082.0M) ---

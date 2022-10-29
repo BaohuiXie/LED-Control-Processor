@@ -1,0 +1,3 @@
+18:20:10    266 --> ...                                                                  [tcl] ucliGUI::start /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_7Update/behav_sim/simv -ucligui 
+18:20:10    267 --> ...                                                                      [tcl] set ucliGUI::state
+18:20:10    268 --> ...                                                                          [tcl] gui_update_simulator_buttons

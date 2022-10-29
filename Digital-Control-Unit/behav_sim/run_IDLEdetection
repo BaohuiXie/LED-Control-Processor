@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/IDLEdetection.v ../tb/IDLEdetection_tb.v +v2k -debug_all -top IDLEdetection_tb \
+  -timescale=1ns/1ps

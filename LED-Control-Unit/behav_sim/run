@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/LEDControl.v ../tb/LEDControl_tb.v +v2k -debug_all -top LEDControl_tb \
+  -timescale=1ns/1ps

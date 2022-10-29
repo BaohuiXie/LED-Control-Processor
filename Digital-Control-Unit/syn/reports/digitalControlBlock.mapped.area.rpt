@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : digitalControlBlock
+Version: P-2019.03-SP5
+Date   : Thu Apr 28 22:30:59 2022
+****************************************
+
+Library(s) Used:
+
+    GSCLib.db (File: /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db)
+
+Number of ports:                          335
+Number of nets:                           605
+Number of cells:                          313
+Number of combinational cells:            103
+Number of sequential cells:                98
+Number of macros/black boxes:               0
+Number of buf/inv:                         57
+Number of references:                       2
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+1

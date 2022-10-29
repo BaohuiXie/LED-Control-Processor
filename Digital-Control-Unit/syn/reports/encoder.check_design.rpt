@@ -1,0 +1,16 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5
+Date:        Fri Apr 29 02:43:56 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'DIV8CLK', cell 'C60' does not drive any nets. (LINT-1)
+Warning: In design 'Counter4Bit', cell 'C55' does not drive any nets. (LINT-1)
+1

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+vcs -full64 ../rtl/decoder.v ../tb/decoder_tb.v +v2k -debug_all -top decoder_tb \
+  -timescale=1ns/1ps

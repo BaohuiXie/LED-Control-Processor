@@ -1,0 +1,11 @@
+#!/bin/sh
+
+################################################################################
+# Specify the filepath of the verilog library file of standard cell
+################################################################################
+#VERILOG_LIB=/afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/verilog/GSCLib_3.0.v
+
+#SDF_LOCATION="../syn/results/LEDControl.mapped.sdf"
+
+vcs -full64 ../syn/results/LEDControl.mapped.v ../tb/LEDControl_tb.v +v2k -debug_all -top LEDControl_tb \
+  -timescale=1ns/1ps +neg_tchk +warn=noTFIPC -v /afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/verilog/GSCLib_3.0.v +define+SDF_FILE=\"../syn/results/LEDControl.mapped.sdf\"

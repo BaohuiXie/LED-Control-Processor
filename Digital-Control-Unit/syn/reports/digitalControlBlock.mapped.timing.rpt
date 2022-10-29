@@ -1,0 +1,149 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : digitalControlBlock
+Version: P-2019.03-SP5
+Date   : Thu Apr 28 22:30:59 2022
+****************************************
+
+Operating Conditions: typical   Library: GSCLib.db
+Wire Load Model Mode: top
+
+  Startpoint: reData (input port clocked by reCLK)
+  Endpoint: SRblock/reg13BitB/current_reg_12_
+            (rising edge-triggered flip-flop clocked by reCLK)
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock reCLK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              1.00       1.00 r
+  reData (in)                                             0.10      0.00       1.00 r
+  reData (net)                                  1                   0.00       1.00 r
+  SRblock/reData (shiftAndRegBlock)                                 0.00       1.00 r
+  SRblock/reData (net)                                              0.00       1.00 r
+  SRblock/reg13BitB/in (shiftReg13Bit_0)                            0.00       1.00 r
+  SRblock/reg13BitB/in (net)                                        0.00       1.00 r
+  SRblock/reg13BitB/current_reg_12_/D (DFFSRX1)           0.10      0.00       1.00 r
+  data arrival time                                                            1.00
+
+  clock reCLK (rise edge)                                          10.00      10.00
+  clock network delay (ideal)                                       0.00      10.00
+  SRblock/reg13BitB/current_reg_12_/CK (DFFSRX1)                    0.00      10.00 r
+  library setup time                                               -0.17       9.83
+  data required time                                                           9.83
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           9.83
+  data arrival time                                                           -1.00
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  8.83
+
+
+  Startpoint: SRblock/reg16Bit1/current_reg_0_
+              (rising edge-triggered flip-flop clocked by reCLK)
+  Endpoint: dataOut (output port clocked by reCLK)
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock reCLK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  SRblock/reg16Bit1/current_reg_0_/CK (DFFSRX1)           0.00      0.00       0.00 r
+  SRblock/reg16Bit1/current_reg_0_/Q (DFFSRX1)            0.03      0.08       0.08 f
+  SRblock/reg16Bit1/n21 (net)                   1                   0.00       0.08 f
+  SRblock/reg16Bit1/U18/Y (INVX1)                         0.12      0.09       0.17 r
+  SRblock/reg16Bit1/n16 (net)                   1                   0.00       0.17 r
+  SRblock/reg16Bit1/U20/Y (INVX8)                         0.25      0.29       0.46 f
+  SRblock/reg16Bit1/out (net)                   2                   0.00       0.46 f
+  SRblock/reg16Bit1/out (shiftReg16Bit)                             0.00       0.46 f
+  SRblock/dataOut (net)                                             0.00       0.46 f
+  SRblock/dataOut (shiftAndRegBlock)                                0.00       0.46 f
+  dataOut (net)                                                     0.00       0.46 f
+  dataOut (out)                                           0.25      0.00       0.46 f
+  data arrival time                                                            0.46
+
+  clock reCLK (rise edge)                                          10.00      10.00
+  clock network delay (ideal)                                       0.00      10.00
+  output external delay                                            -1.00       9.00
+  data required time                                                           9.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           9.00
+  data arrival time                                                           -0.46
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  8.54
+
+
+  Startpoint: GCLKblock/counter1/count_reg_1_
+              (rising edge-triggered flip-flop clocked by reCLK)
+  Endpoint: GCLKblock/counter1/count_reg_5_
+            (rising edge-triggered flip-flop clocked by reCLK)
+  Path Group: reCLK
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock reCLK (rise edge)                                           0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  GCLKblock/counter1/count_reg_1_/CK (DFFSRX1)            0.00      0.00       0.00 r
+  GCLKblock/counter1/count_reg_1_/Q (DFFSRX1)             0.08      0.13       0.13 f
+  GCLKblock/counter1/count[1] (net)             3                   0.00       0.13 f
+  GCLKblock/counter1/add_94_U1_1_1/CO (ADDHX1)            0.04      0.10       0.24 f    mo 
+  GCLKblock/counter1/add_94_carry[2] (net)      1                   0.00       0.24 f
+  GCLKblock/counter1/add_94_U1_1_2/CO (ADDHX1)            0.04      0.07       0.31 f    mo 
+  GCLKblock/counter1/add_94_carry[3] (net)      1                   0.00       0.31 f
+  GCLKblock/counter1/add_94_U1_1_3/CO (ADDHX1)            0.04      0.07       0.38 f    mo 
+  GCLKblock/counter1/add_94_carry[4] (net)      1                   0.00       0.38 f
+  GCLKblock/counter1/add_94_U1_1_4/CO (ADDHX1)            0.04      0.07       0.46 f    mo 
+  GCLKblock/counter1/add_94_carry[5] (net)      1                   0.00       0.46 f
+  GCLKblock/counter1/U20/Y (XOR2X1)                       0.05      0.06       0.52 r
+  GCLKblock/counter1/N11 (net)                  1                   0.00       0.52 r
+  GCLKblock/counter1/U3/Y (OR2X1)                         0.05      0.07       0.59 r
+  GCLKblock/counter1/n8 (net)                   1                   0.00       0.59 r
+  GCLKblock/counter1/count_reg_5_/D (DFFSRX1)             0.05      0.00       0.59 r
+  data arrival time                                                            0.59
+
+  clock reCLK (rise edge)                                          10.00      10.00
+  clock network delay (ideal)                                       0.00      10.00
+  GCLKblock/counter1/count_reg_5_/CK (DFFSRX1)                      0.00      10.00 r
+  library setup time                                               -0.15       9.85
+  data required time                                                           9.85
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           9.85
+  data arrival time                                                           -0.59
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  9.26
+
+
+1

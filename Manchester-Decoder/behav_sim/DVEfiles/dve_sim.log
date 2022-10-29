@@ -1,0 +1,187 @@
+02:48:44    90 --> ...                                                              [tcl] ucliGUI::start /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim/simv -ucligui 
+02:48:44    91 --> ...                                                                  [tcl] set ucliGUI::state
+02:48:44    92 --> ...                                                                      [tcl] gui_update_simulator_buttons
+02:48:46    93 --> ...                                                                          [tcl] set ucliGUI::state
+02:48:46    94 --> ...                                                                              [tcl] ucliCore::getToolPID
+02:48:46    95 --> ...                                                                                  [tcl] synopsys::env hasTB
+02:48:46    96 --> ...                                                                                      [tcl] trigger_hier_stack_context_switch 0
+02:48:46    97 --> ...                                                                                          [tcl] synUtils::setDVEInitPhase 1
+02:48:46    98 --> ...                                                                                              [tcl] gui_get_env SIMSETUP::SIMVPD
+02:48:46    99 --> ...                                                                                                  [tcl] synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim/inter.vpd -locking
+02:48:46    100 --> ...  [tcl] synopsys::dump -autoflush on -fid VPD1
+02:48:46    101 --> ...      [tcl] set ::dve_fid VPD1
+02:48:46    102 --> ...          [tcl] synUtils::setDVEInitPhase 0
+02:48:46    103 --> ...              [tcl] ucliCore::getToolPID
+02:48:46    104 --> ...                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp5T8WtI
+02:48:46    105 --> ...                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "Q-2020.03-SP1-1_Full64" -sync_file /tmp/vcs_dve_rpc.bxieaf.4760}
+02:48:46    106 --> ...                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bxieaf.4760}
+02:48:46    107 --> ...                              [tcl] config endofsim noexit
+02:48:46    108 --> ...                                  [tcl] config onfail enable all
+02:48:46    109 --> ...                                      [tcl] config syscaddplainmembers
+02:48:46    110 --> ...                                          [tcl] config syscaddsourcenames
+02:48:46    111 --> ...                                              [tcl] config syscaddstructtypes
+02:48:46    112 --> ...                                                  [tcl] synopsys::listing -disable
+02:48:46    113 --> ...                                                      [tcl] # Begin_DVE_Session_Save_Info
+02:48:46    114 --> ...                                                          [tcl] # DVE restart session
+02:48:46    115 --> ...                                                              [tcl] # Saved on Wed May 4 02:48:37 2022
+02:48:46    116 --> ...                                                                  [tcl] # Designs open: 1
+02:48:46    117 --> ...                                                                      [tcl] #   Sim: /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim/simv
+02:48:46    118 --> ...                                                                          [tcl] # Toplevel windows open: 2
+02:48:46    119 --> ...                                                                              [tcl] # 	TopLevel.1
+02:48:46    120 --> ...                                                                                  [tcl] # 	TopLevel.2
+02:48:46    121 --> ...                                                                                      [tcl] #   Source.1: delayBlock_tb
+02:48:46    122 --> ...                                                                                          [tcl] #   Wave.1: 20 signals
+02:48:46    123 --> ...                                                                                              [tcl] #   Group count = 3
+02:48:46    124 --> ...                                                                                                  [tcl] #   Group uut signal count = 8
+02:48:46    125 --> ...  [tcl] #   Group comp1 signal count = 6
+02:48:46    126 --> ...      [tcl] #   Group counter1 signal count = 6
+02:48:46    127 --> ...          [tcl] # End_DVE_Session_Save_Info
+02:48:46    128 --> ...              [tcl] # DVE version: Q-2020.03-SP1-1_Full64
+02:48:46    129 --> ...                  [tcl] # DVE build date: Jul 19 2020 21:06:08
+02:48:46    130 --> ...                      [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+02:48:46    131 --> ...                          [tcl] gui_set_loading_session_type Restart
+02:48:46    132 --> ...                              [tcl] gui_continuetime_set
+02:48:46    133 --> ...                                  [tcl] gui_clear_window -type Wave
+02:48:46    134 --> ...                                      [tcl] gui_clear_window -type List
+02:48:46    135 --> ...                                          [tcl] # Application preferences
+02:48:46    136 --> ...                                              [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+02:48:46    137 --> ...                                                  [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+02:48:46    138 --> ...                                                      [tcl] #<WindowLayout>
+02:48:46    139 --> ...                                                          [tcl] # DVE top-level session
+02:48:46    140 --> ...                                                              [tcl] # Create and position top-level window: TopLevel.1
+02:48:46    141 --> ...                                                                  [tcl] set TopLevel.1 TopLevel.1
+02:48:46    142 --> ...                                                                      [tcl] # Docked window settings
+02:48:46    143 --> ...                                                                          [tcl] set HSPane.1 HSPane.1
+02:48:46    144 --> ...                                                                              [tcl] set Hier.1 Hier.1
+02:48:46    145 --> ...                                                                                  [tcl] set DLPane.1 DLPane.1
+02:48:46    146 --> ...                                                                                      [tcl] set Data.1 Data.1
+02:48:46    147 --> ...                                                                                          [tcl] set Console.1 Console.1
+02:48:46    148 --> ...                                                                                              [tcl] gui_sync_global -id ${TopLevel.1} -option true
+02:48:46    149 --> ...                                                                                                  [tcl] # MDI window settings
+02:48:46    150 --> ...  [tcl] set Source.1 Source.1
+02:48:46    151 --> ...      [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+02:48:46    152 --> ...          [tcl] # End MDI window settings
+02:48:46    153 --> ...              [tcl] # Create and position top-level window: TopLevel.2
+02:48:46    154 --> ...                  [tcl] set TopLevel.2 TopLevel.2
+02:48:46    155 --> ...                      [tcl] # Docked window settings
+02:48:46    156 --> ...                          [tcl] gui_sync_global -id ${TopLevel.2} -option true
+02:48:46    157 --> ...                              [tcl] # MDI window settings
+02:48:46    158 --> ...                                  [tcl] set Wave.1 Wave.1
+02:48:46    159 --> ...                                      [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 477} {child_wave_right 1163} {child_wave_colname 236} {child_wave_colvalue 236} {child_wave_col1 0} {child_wave_col2 1}}
+02:48:47    160 --> ...                                          [tcl] # End MDI window settings
+02:48:47    161 --> ...                                              [tcl] #</WindowLayout>
+02:48:47    162 --> ...                                                  [tcl] #<Database>
+02:48:47    163 --> ...                                                      [tcl] gui_set_precision 1ps
+02:48:47    164 --> ...                                                          [tcl] gui_set_time_units 1ps
+02:48:47    165 --> ...                                                              [tcl] #</Database>
+02:48:47    166 --> ...                                                                  [tcl] # DVE Global setting session:
+02:48:47    167 --> ...                                                                      [tcl] # Global: Breakpoints
+02:48:47    168 --> ...                                                                          [tcl] # Global: Bus
+02:48:47    169 --> ...                                                                              [tcl] # Global: Expressions
+02:48:47    170 --> ...                                                                                  [tcl] # Global: Signal Time Shift
+02:48:47    171 --> ...                                                                                      [tcl] # Global: Signal Compare
+02:48:47    172 --> ...                                                                                          [tcl] # Global: Signal Groups
+02:48:47    173 --> ...                                                                                              [tcl] gui_load_child_values {delayBlock_tb.uut.counter1}
+02:48:47    174 --> ...                                                                                                  [tcl] synopsys::dump -add {delayBlock_tb.uut.counter1} -scope "." -depth 1 -fid VPD1
+02:48:47    175 --> ...  [tcl] gui_load_child_values {delayBlock_tb.uut.comp1}
+02:48:47    176 --> ...      [tcl] synopsys::dump -add {delayBlock_tb.uut.comp1} -scope "." -depth 1 -fid VPD1
+02:48:47    177 --> ...          [tcl] gui_load_child_values {delayBlock_tb.uut}
+02:48:47    178 --> ...              [tcl] synopsys::dump -add {delayBlock_tb.uut} -scope "." -depth 1 -fid VPD1
+02:48:47    179 --> ...                  [tcl] set _session_group_1 uut
+02:48:47    180 --> ...                      [tcl] gui_sg_create "$_session_group_1"
+02:48:47    181 --> ...                          [tcl] set uut "$_session_group_1"
+02:48:47    182 --> ...                              [tcl] gui_sg_addsignal -group "$_session_group_1" { delayBlock_tb.uut.reCLK delayBlock_tb.uut.compOut delayBlock_tb.uut.osc delayBlock_tb.uut.globalReset delayBlock_tb.uut.counterOut delayBlock_tb.uut.REF delayBlock_tb.uut.EN delayBlock_tb.uut.delayPulse }
+02:48:47    183 --> ...                                  [tcl] set _session_group_2 comp1
+02:48:47    184 --> ...                                      [tcl] gui_sg_create "$_session_group_2"
+02:48:47    185 --> ...                                          [tcl] set comp1 "$_session_group_2"
+02:48:47    186 --> ...                                              [tcl] gui_sg_addsignal -group "$_session_group_2" { delayBlock_tb.uut.comp1.Vout delayBlock_tb.uut.comp1.A delayBlock_tb.uut.comp1.REF delayBlock_tb.uut.comp1.AxorREF delayBlock_tb.uut.comp1.AandPE delayBlock_tb.uut.comp1.priorityEncoder }
+02:48:47    187 --> ...                                                  [tcl] set _session_group_3 counter1
+02:48:47    188 --> ...                                                      [tcl] gui_sg_create "$_session_group_3"
+02:48:47    189 --> ...                                                          [tcl] set counter1 "$_session_group_3"
+02:48:47    190 --> ...                                                              [tcl] gui_sg_addsignal -group "$_session_group_3" { delayBlock_tb.uut.counter1.globalReset delayBlock_tb.uut.counter1.clk delayBlock_tb.uut.counter1.Ld delayBlock_tb.uut.counter1.out delayBlock_tb.uut.counter1.EN delayBlock_tb.uut.counter1.count }
+02:48:47    191 --> ...                                                                  [tcl] # Global: Highlighting
+02:48:47    192 --> ...                                                                      [tcl] # Global: Stack
+02:48:47    193 --> ...                                                                          [tcl] gui_change_stack_mode -mode list
+02:48:47    194 --> ...                                                                              [tcl] synopsys::xml {set_only_active_frame <data value="1" />}
+02:48:47    195 --> ...                                                                                  [tcl] # Post database loading setting...
+02:48:47    196 --> ...                                                                                      [tcl] # Save global setting...
+02:48:47    197 --> ...                                                                                          [tcl] # Wave/List view global setting
+02:48:47    198 --> ...                                                                                              [tcl] gui_cov_show_value -switch false
+02:48:47    199 --> ...                                                                                                  [tcl] # Close all empty TopLevel windows
+02:48:47    200 --> ...  [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+02:48:47    201 --> ...      [tcl] gui_set_loading_session_type noSession
+02:48:47    202 --> ...          [tcl] # DVE View/pane content session:
+02:48:47    203 --> ...              [tcl] # Hier 'Hier.1'
+02:48:47    204 --> ...                  [tcl] gui_show_window -window ${Hier.1}
+02:48:47    205 --> ...                      [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+02:48:47    206 --> ...                          [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+02:48:47    207 --> ...                              [tcl] gui_change_design -id ${Hier.1} -design Sim
+02:48:47    208 --> ...                                  [tcl] catch {gui_list_expand -id ${Hier.1} delayBlock_tb}
+02:48:47    209 --> ...                                      [tcl] catch {gui_list_select -id ${Hier.1} {delayBlock_tb.uut}}
+02:48:47    210 --> ...                                          [tcl] dveMisc::vbusExpand delayBlock_tb.uut
+02:48:47    211 --> ...                                              [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+02:48:47    212 --> ...                                                  [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+02:48:47    213 --> ...                                                      [tcl] # Data 'Data.1'
+02:48:47    214 --> ...                                                          [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+02:48:47    215 --> ...                                                              [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+02:48:47    216 --> ...                                                                  [tcl] gui_list_show_data -id ${Data.1} {delayBlock_tb.uut.counter1}
+02:48:47    217 --> ...                                                                      [tcl] dveMisc::vbusExpand delayBlock_tb.uut.counter1
+02:48:47    218 --> ...                                                                          [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+02:48:47    219 --> ...                                                                              [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+02:48:47    220 --> ...                                                                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 0
+02:48:47    221 --> ...                                                                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+02:48:47    222 --> ...                                                                                          [tcl] # Source 'Source.1'
+02:48:47    223 --> ...                                                                                              [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+02:48:47    224 --> ...                                                                                                  [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+02:48:47    225 --> ...  [tcl] gui_open_source -id ${Source.1}  -replace -active delayBlock_tb /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim/../tb/delayBlock_tb.v
+02:48:47    226 --> ...      [tcl] gui_view_scroll -id ${Source.1} -vertical -set 735
+02:48:47    227 --> ...          [tcl] gui_src_set_reusable -id ${Source.1}
+02:48:47    228 --> ...              [tcl] # View 'Wave.1'
+02:48:47    229 --> ...                  [tcl] gui_wv_sync -id ${Wave.1} -switch false
+02:48:47    230 --> ...                      [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+02:48:47    231 --> ...                          [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+02:48:47    232 --> ...                              [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+02:48:47    233 --> ...                                  [tcl] gui_list_set_height -id Wave -height 25
+02:48:47    234 --> ...                                      [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+02:48:47    235 --> ...                                          [tcl] gui_list_create_group_when_add -wave -disable
+02:48:47    236 --> ...                                              [tcl] gui_wv_zoom_timerange -id ${Wave.1} 60197 180697
+02:48:47    237 --> ...                                                  [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {uut}
+02:48:47    238 --> ...                                                      [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {comp1}
+02:48:47    239 --> ...                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {counter1}
+02:48:47    240 --> ...                                                              [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+02:48:47    241 --> ...                                                                  [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+02:48:47    242 --> ...                                                                      [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+02:48:47    243 --> ...                                                                          [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+02:48:47    244 --> ...                                                                              [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+02:48:47    245 --> ...                                                                                  [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+02:48:47    246 --> ...                                                                                      [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+02:48:47    247 --> ...                                                                                          [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+02:48:47    248 --> ...                                                                                              [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group counter1  -position in
+02:48:47    249 --> ...                                                                                                  [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
+02:48:47    250 --> ...  [tcl] gui_show_grid -id ${Wave.1} -enable false
+02:48:47    251 --> ...      [tcl] # Restore toplevel window zorder
+02:48:47    252 --> ...          [tcl] # The toplevel window could be closed if it has no view/pane
+02:48:47    253 --> ...              [tcl] if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+02:48:47    254 --> ...                  [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${HSPane.1} }
+02:48:47    255 --> ...                      [tcl] #</Session>
+02:48:52    256 --> ...                          [tcl] synopsys::run
+02:48:52    257 --> ...                              [tcl] set ucliGUI::state
+02:48:52    258 --> ...                                  [tcl] gui_update_simulator_buttons
+02:48:52    259 --> ...                                      [tcl] set ucliGUI::state
+02:48:52    260 --> ...                                          [tcl] set ucliGUI::state
+02:48:52    261 --> ...                                              [tcl] set ucliGUI::state
+02:48:52    262 --> ...                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+02:48:52    263 --> ...                                                      [tcl] set dveMisc::result
+02:48:52    264 --> ...                                                          [tcl] gui_update_simulator_buttons
+02:48:52    265 --> ...                                                              [tcl] dveMisc::vbusExpand delayBlock_tb
+02:50:41    266 --> ...                                                                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+02:50:41    267 --> ...                                                                      [tcl] synopsys::finish
+02:50:41    268 --> ...                                                                          [tcl] set ucliGUI::state
+02:50:41    269 --> ...                                                                              [tcl] gui_update_simulator_buttons
+02:50:41    270 --> ...                                                                                  [tcl] set ucliGUI::state
+02:50:41    271 --> ...                                                                                      [tcl] catch {senv activeDomain} dveMisc::result 
+02:50:41    272 --> ...                                                                                          [tcl] set dveMisc::result
+02:50:41    273 --> ...                                                                                              [tcl] gui_update_simulator_buttons
+02:50:41    274 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+02:50:41    275 --> ...  [tcl] set dveMisc::result
+02:50:42    276 --> ...      [tcl] ucli_exit

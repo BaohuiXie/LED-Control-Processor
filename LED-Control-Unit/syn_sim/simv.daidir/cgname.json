@@ -1,0 +1,122 @@
+{
+    "Counter12Bit_DW01_inc_0": [
+        "Counter12Bit_DW01_inc_0",
+        "E5BMz",
+        "module",
+        1
+    ],
+    "Counter12Bit": [
+        "Counter12Bit",
+        "LUjUw",
+        "module",
+        2
+    ],
+    "Comparator12Bit": [
+        "Comparator12Bit",
+        "KY1wi",
+        "module",
+        3
+    ],
+    "LEDControl": [
+        "LEDControl",
+        "nCxip",
+        "module",
+        4
+    ],
+    "LEDControl_tb": [
+        "LEDControl_tb",
+        "DWtmk",
+        "module",
+        5
+    ],
+    "ADDHX1": [
+        "ADDHX1",
+        "LWuby",
+        "module",
+        6
+    ],
+    "AOI21X1": [
+        "AOI21X1",
+        "MABjN",
+        "module",
+        7
+    ],
+    "AOI22X1": [
+        "AOI22X1",
+        "hvhdv",
+        "module",
+        8
+    ],
+    "DFFSRX1": [
+        "DFFSRX1",
+        "RzQVQ",
+        "module",
+        9
+    ],
+    "INVX1": [
+        "INVX1",
+        "wDCMR",
+        "module",
+        10
+    ],
+    "INVX8": [
+        "INVX8",
+        "CHUp9",
+        "module",
+        11
+    ],
+    "NAND2X2": [
+        "NAND2X2",
+        "AqYs7",
+        "module",
+        12
+    ],
+    "NAND3X1": [
+        "NAND3X1",
+        "n5kPb",
+        "module",
+        13
+    ],
+    "NOR2X1": [
+        "NOR2X1",
+        "esUc7",
+        "module",
+        14
+    ],
+    "OAI22X1": [
+        "OAI22X1",
+        "B3x5e",
+        "module",
+        15
+    ],
+    "OR2X1": [
+        "OR2X1",
+        "YRkbh",
+        "module",
+        16
+    ],
+    "OR4X1": [
+        "OR4X1",
+        "jjJiI",
+        "module",
+        17
+    ],
+    "XOR2X1": [
+        "XOR2X1",
+        "Whn5t",
+        "module",
+        18
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        19
+    ],
+    "udp_dff": [
+        "udp_dff",
+        "exIG1",
+        "udp",
+        20
+    ]
+}

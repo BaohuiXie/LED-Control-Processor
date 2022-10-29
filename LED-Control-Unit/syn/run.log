@@ -1,0 +1,330 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version P-2019.03-SP5 for linux64 - Oct 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+################################################################################
+# Filename: dc.tcl
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# -------------------------------------------------------------------------------
+# This is the template Design Compiler script for ELEC5160/EESM5020.
+################################################################################
+################################################################################
+# Step 0: create directories for results and reports
+################################################################################
+file mkdir reports; # store area, timing, power reports
+file mkdir results; # store design
+################################################################################
+# Step 1: digital standard cell library set up
+# You should specify the following paths accordingly:
+# - search_path
+# - target_library
+# - link_library
+################################################################################
+set_app_var search_path "/afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/GSCLib_3.0 $search_path"
+/afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/GSCLib_3.0 . /usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn /usr/eelocal/synopsys/syn-vp2019.03-sp5/dw/syn_ver /usr/eelocal/synopsys/syn-vp2019.03-sp5/dw/sim_ver
+set_app_var target_library "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db"
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db
+set_app_var synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+set_app_var link_library "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db"
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db
+set_app_var symbol_library "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/basic.sdb"
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/basic.sdb
+################################################################################
+# Step 2: import design
+# You should specify the HDL files for your design accordingly.
+# Note: the HDL files should be located in the search_path you defined above.
+# Please do NOT import testbench or behavior memory model here.
+################################################################################
+define_design_lib WORK -path ./WORK
+1
+analyze -format verilog {../rtl/LEDControl.v}
+Running PRESTO HDLC
+Compiling source file ../rtl/LEDControl.v
+Presto compilation completed successfully.
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+1
+elaborate LEDControl; # top module name
+Loading db file '/usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn/gtech.db'
+Loading db file '/usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn/standard.sldb'
+  Loading link library 'GSCLib.db'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (LEDControl)
+Loading db file '/usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn/dw_foundation.sldb'
+Elaborated 1 design.
+Current design is now 'LEDControl'.
+Information: Building the design 'Counter12Bit'. (HDL-193)
+
+Inferred memory devices in process
+	in routine Counter12Bit line 85 in file
+		'../rtl/LEDControl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       RST_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     result_reg      | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (Counter12Bit)
+Information: Building the design 'Comparator12Bit'. (HDL-193)
+
+Statistics for case statements in always block at line 47 in file
+	'../rtl/LEDControl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            48            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (Comparator12Bit)
+1
+# store the unmapped results
+write -hierarchy -format ddc -output results/LEDControl.unmapped.ddc
+Writing ddc file 'results/LEDControl.unmapped.ddc'.
+1
+################################################################################
+# Step 3: constrain your design
+# You should specify the critical path, the input & output delay and the
+# environment attribute of your design, so that Design Compiler can correctly
+# synthesize your design with the required specfication.
+################################################################################
+# All the constraints are written in the following tcl script
+source LEDControl.constraints.tcl
+1
+################################################################################
+# Create default path groups
+#
+# Seperate these paths can help improve optimization results.
+################################################################################
+set ports_clock_root   [filter_collection [get_attribute [get_clocks] sources] object_class==port]
+{oscillator}
+group_path -name REGOUT -to [all_outputs]
+1
+group_path -name REGIN -from [remove_from_collection [all_inputs]   ${ports_clock_root}]
+1
+group_path -name FEEDTHROUGH -from   [remove_from_collection [all_inputs] ${ports_clock_root}] -to [all_outputs]
+1
+################################################################################
+# Apply Additional Optimization Constraints
+################################################################################
+# Prevent assignment statements in the Verilog netlist.
+set_fix_multiple_port_nets -all -buffer_constants
+1
+################################################################################
+# Check for Design Errors. It is a good habit to check the design before you run
+# the synthesis.
+################################################################################
+check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5
+Date:        Wed May  4 04:09:21 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+check_design > reports/LEDControl.check_design.rpt; # dump to the file
+################################################################################
+# Step 4: compile the design
+# There exits lots of option for compile command. Please check the manual of
+# compile for further info.
+################################################################################
+compile
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | P-2019.03-DWBB_201903.4 |     *     |
+| Licensed DW Building Blocks        | P-2019.03-DWBB_201903.4 |     *     |
+============================================================================
+
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Comparator12Bit'
+  Processing 'Counter12Bit'
+  Processing 'LEDControl'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'Counter12Bit_DW01_inc_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.4                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Note: compile_ultra does not work for some open source libraries, i.e. Nangate
+# since there are some cells missing for these libraries.
+# Sol: use compile instead. You can use compile_ultra for the commerial library
+# such TSMC45nm, which has a complete set of gates supported.
+#
+# compile_ultra -no_autoungroup; # keep hierarchy for the purpose of debug
+################################################################################
+# High-effort area optimization which improves the area without degrading the
+# timing or leakage of the compiled design
+optimize_netlist -area
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+Loaded alib file './alib-52/GSCLib.db.alib'
+
+  Updating timing information
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02       0.0      0.00       0.0       0.0                             11.9830
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Step 5: write out final design and reports
+# The files include:
+# - .ddc: binary format used for subsequent Design Compiler sessions
+# - .v: Verilog netlist for gate-level simulation and P&R
+# - .sdf: SDF backannotated file containing gate and net latency
+# - .sdc: SDC constraints for ASCII flow
+################################################################################
+change_names -rules verilog -hierarchy
+1
+# Write out design
+write -format verilog -hierarchy -output results/LEDControl.mapped.v
+Writing verilog file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_7Update/syn/results/LEDControl.mapped.v'.
+1
+write -format ddc -hierarchy -output results/LEDControl.mapped.ddc
+Writing ddc file 'results/LEDControl.mapped.ddc'.
+1
+write_sdf results/LEDControl.mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_7Update/syn/results/LEDControl.mapped.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc -nosplit results/LEDControl.mapped.sdc
+1
+# Generate reports
+report_qor > reports/LEDControl.mapped.qor.rpt
+report_timing -transition_time -nets -attribute -nosplit   > reports/LEDControl.mapped.timing.rpt
+report_area -nosplit > reports/LEDControl.mapped.area.rpt
+report_power -nosplit > reports/LEDControl.mapped.power.rpt
+################################################################################
+# Exit Design Compiler
+################################################################################
+exit
+
+Thank you...

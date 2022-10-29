@@ -1,0 +1,84 @@
+[05/04 04:24:31      0s] 
+[05/04 04:24:31      0s] Cadence Innovus(TM) Implementation System.
+[05/04 04:24:31      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/04 04:24:31      0s] 
+[05/04 04:24:31      0s] Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+[05/04 04:24:31      0s] Options:	
+[05/04 04:24:31      0s] Date:		Wed May  4 04:24:31 2022
+[05/04 04:24:31      0s] Host:		EEX055 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (7cores*14cpus*Common KVM processor 16384KB)
+[05/04 04:24:31      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/04 04:24:31      0s] 
+[05/04 04:24:31      0s] License:
+[05/04 04:24:31      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/04 04:24:31      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/04 04:24:52     18s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[05/04 04:24:55     21s] @(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/04 04:24:55     21s] @(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[05/04 04:24:55     21s] @(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/04 04:24:55     21s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[05/04 04:24:55     21s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[05/04 04:24:55     21s] @(#)CDS: CPE v20.10-p006
+[05/04 04:24:55     21s] @(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/04 04:24:55     21s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[05/04 04:24:55     21s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[05/04 04:24:55     21s] @(#)CDS: RCDB 11.15.0
+[05/04 04:24:55     21s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[05/04 04:24:55     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_19478_EEX055_bxieaf_94LmVf.
+
+[05/04 04:24:55     21s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[05/04 04:24:57     23s] 
+[05/04 04:24:57     23s] **INFO:  MMMC transition support version v31-84 
+[05/04 04:24:57     23s] 
+[05/04 04:24:57     23s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/04 04:24:57     23s] <CMD> suppressMessage ENCEXT-2799
+[05/04 04:24:58     23s] <CMD> win
+[05/04 04:25:16     30s] <CMD> encMessage warning 0
+[05/04 04:25:16     30s] Suppress "**WARN ..." messages.
+[05/04 04:25:16     30s] <CMD> encMessage debug 0
+[05/04 04:25:16     30s] <CMD> encMessage info 0
+[05/04 04:25:16     31s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal1 GENERATE.
+[05/04 04:25:16     31s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal2 GENERATE.
+[05/04 04:25:16     31s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal3 GENERATE.
+[05/04 04:25:16     31s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal4 GENERATE.
+[05/04 04:25:16     31s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal5 GENERATE.
+[05/04 04:25:16     31s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal6 GENERATE.
+[05/04 04:25:16     31s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.52min, fe_real=0.75min, fe_mem=782.5M) ***
+[05/04 04:25:16     31s] *** Netlist is unique.
+[05/04 04:25:17     31s] Loading preference file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_7Update/layout/results/LEDControl.enc.dat/gui.pref.tcl ...
+[05/04 04:25:19     32s] Loading place ...
+[05/04 04:25:22     32s] **WARN: (IMPSYT-709):	Innovus use the Multi-Mode/Multi-Corner (MMMC) architecture exclusively for 
+[05/04 04:25:22     32s] configuration and control of some software features. The current configuration is
+[05/04 04:25:22     32s] obsoleted, please migrate your design to an MMMC style configuration. You can refer to
+[05/04 04:25:22     32s] the What's New document for this release for additional information on the
+[05/04 04:25:22     32s] 11.1 migration to MMMC. In addition, you can run restoreDesign with the
+[05/04 04:25:22     32s] -showEolWarnings option to identify specific command and configuration
+[05/04 04:25:22     32s] options that will no longer be supported.
+[05/04 04:25:22     32s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.10-p004_1. They will be removed in the next release. 
+[05/04 04:25:22     32s] timing_enable_default_delay_arc
+[05/04 04:25:22     33s] 
+[05/04 04:25:22     33s] 
+[05/04 04:25:22     33s] ERROR : The MMMC configuration specified is incomplete  - a set_analysis_view command
+[05/04 04:25:22     33s]        was not found in the configuration. The software requires at least 1 setup
+[05/04 04:25:22     33s]        and 1 hold analysis view to be defined.  You should remedy this problem and
+[05/04 04:25:22     33s]        restart the software.
+[05/04 04:25:22     33s] 
+[05/04 04:25:24     33s] <CMD> setDrawView place
+[05/04 04:25:28     35s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed May  4 04:25:28 2022
+  Total CPU time:     0:00:43
+  Total real time:    0:00:59
+  Peak memory (main): 800.14MB
+
+[05/04 04:25:28     35s] 
+[05/04 04:25:28     35s] *** Memory Usage v#1 (Current mem = 1025.703M, initial mem = 268.238M) ***
+[05/04 04:25:28     35s] 
+[05/04 04:25:28     35s] *** Summary of all messages that are not suppressed in this session:
+[05/04 04:25:28     35s] Severity  ID               Count  Summary                                  
+[05/04 04:25:28     35s] WARNING   IMPSYT-709           1  Innovus use the Multi-Mode/Multi-Corner ...
+[05/04 04:25:28     35s] WARNING   IMPPP-557            6  A single-layer VIARULE GENERATE for turn...
+[05/04 04:25:28     35s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[05/04 04:25:28     35s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/04 04:25:28     35s] *** Message Summary: 9 warning(s), 0 error(s)
+[05/04 04:25:28     35s] 
+[05/04 04:25:28     35s] --- Ending "Innovus" (totcpu=0:00:35.4, real=0:00:57.0, mem=1025.7M) ---

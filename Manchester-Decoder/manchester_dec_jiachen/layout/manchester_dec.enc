@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /afs/ee.ust.hk/staff/ee/jrenal/Implementation_8/manchester_dec/layout/manchester_dec.enc                     
+#                                              #
+################################################
+restoreDesign /afs/ee.ust.hk/staff/ee/jrenal/Implementation_8/manchester_dec/layout/manchester_dec.enc.dat manchester_dec

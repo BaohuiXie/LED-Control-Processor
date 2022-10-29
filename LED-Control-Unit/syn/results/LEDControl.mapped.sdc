@@ -1,0 +1,53 @@
+###################################################################
+
+# Created by write_sdc on Sat May 14 15:40:15 2022
+
+###################################################################
+set sdc_version 2.1
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current uA
+set_load -pin_load 1 [get_ports power]
+create_clock [get_ports oscillator]  -period 10  -waveform {0 5}
+group_path -name FEEDTHROUGH  -from [list [get_ports {LEDFrameData[11]}] [get_ports {LEDFrameData[10]}] [get_ports {LEDFrameData[9]}] [get_ports {LEDFrameData[8]}] [get_ports {LEDFrameData[7]}] [get_ports {LEDFrameData[6]}] [get_ports {LEDFrameData[5]}] [get_ports {LEDFrameData[4]}] [get_ports {LEDFrameData[3]}] [get_ports {LEDFrameData[2]}] [get_ports {LEDFrameData[1]}] [get_ports {LEDFrameData[0]}] [get_ports globalReset]]  -to [get_ports power]
+group_path -name REGIN  -from [list [get_ports {LEDFrameData[11]}] [get_ports {LEDFrameData[10]}] [get_ports {LEDFrameData[9]}] [get_ports {LEDFrameData[8]}] [get_ports {LEDFrameData[7]}] [get_ports {LEDFrameData[6]}] [get_ports {LEDFrameData[5]}] [get_ports {LEDFrameData[4]}] [get_ports {LEDFrameData[3]}] [get_ports {LEDFrameData[2]}] [get_ports {LEDFrameData[1]}] [get_ports {LEDFrameData[0]}] [get_ports globalReset]]
+group_path -name REGOUT  -to [get_ports power]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[11]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[10]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[9]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[8]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[7]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[6]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[5]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[4]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[3]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[2]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[1]}]
+set_input_delay -clock oscillator  1  [get_ports {LEDFrameData[0]}]
+set_input_delay -clock oscillator  1  [get_ports globalReset]
+set_output_delay -clock oscillator  1  [get_ports power]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[11]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[11]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[10]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[10]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[9]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[9]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[8]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[8]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[7]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[7]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[6]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[6]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[5]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[5]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[4]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[4]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[3]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[3]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[2]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[2]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[1]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[1]}]
+set_input_transition -max 0.1  [get_ports {LEDFrameData[0]}]
+set_input_transition -min 0.1  [get_ports {LEDFrameData[0]}]
+set_input_transition -max 0.1  [get_ports globalReset]
+set_input_transition -min 0.1  [get_ports globalReset]

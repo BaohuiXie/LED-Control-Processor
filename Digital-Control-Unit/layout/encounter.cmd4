@@ -1,0 +1,198 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu Apr 28 23:22:02 2022                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: First Encounter v08.10-s338_1 (64bit) 10/01/2009 19:08 (Linux 2.6)
+#@(#)CDS: NanoRoute v08.10-s225 NR090922-1020/USR61-UB (database version 2.30, 85.1.1) {superthreading v1.11}
+#@(#)CDS: CeltIC v08.13-s302_1 (64bit) 09/16/2009 00:09:35 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CTE v08.10-s251_1 (64bit) Sep 16 2009 13:51:57 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CPE v08.13-s001
+
+loadConfig /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/DefaultDigitalControlBlock.conf 0
+getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+setDoAssign
+getIoFlowFlag
+setUIVar rda_Input ui_topcell digitalControlBlock
+commitConfig
+fit
+setDrawView fplan
+selectObject Module SRblock
+deselectAll
+selectObject Module SRblock
+windowSelect -66.957 72.960 -44.200 38.572
+selectObject Module SRblock
+windowSelect -56.843 103.303 70.596 133.645
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CORE -r 0.995230615451 0.700686 10 10 10 10
+uiSetTool select
+getIoFlowFlag
+fit
+setDrawView place
+editPin -side Right -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType start -start 0.0 31.145 -pin globalReset
+editPin -side Right -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType start -start 0.0 0.0 -pin reCLK
+editPin -side Right -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType start -start 0.0 15.575 -pin reData
+editPin -side Bottom -pinDepth 0.14 -fixedPin 1 -layer 2 -spreadType start -spacing 0.66 -start 0.0 46.72 -pin {{REF16Bits[0]} {REF16Bits[1]} {REF16Bits[2]} {REF16Bits[3]} {REF16Bits[4]} {REF16Bits[5]} {REF16Bits[6]} {REF16Bits[7]} {REF16Bits[8]} {REF16Bits[9]} {REF16Bits[10]} {REF16Bits[11]} {REF16Bits[12]} {REF16Bits[13]} {REF16Bits[14]} {REF16Bits[15]}}
+editPin -side Bottom -pinDepth 0.14 -fixedPin 1 -layer 2 -spreadType start -spacing 0.66 -start 0.0 46.72 -pin {{REF16Bits[0]} {REF16Bits[1]} {REF16Bits[2]} {REF16Bits[3]} {REF16Bits[4]} {REF16Bits[5]} {REF16Bits[6]} {REF16Bits[7]} {REF16Bits[8]} {REF16Bits[9]} {REF16Bits[10]} {REF16Bits[11]} {REF16Bits[12]} {REF16Bits[13]} {REF16Bits[14]} {REF16Bits[15]}}
+editPin -side Left -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType start -spacing 0.66 -start 111.155 0.0 -pin {{REF6Bit[0]} {REF6Bit[1]} {REF6Bit[2]} {REF6Bit[3]} {REF6Bit[4]} {REF6Bit[5]}}
+editPin -side Left -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType start -spacing 0.66 -start 203.79 72.675 -pin {{Rdata[0]} {Rdata[1]} {Rdata[2]} {Rdata[3]} {Rdata[4]} {Rdata[5]} {Rdata[6]} {Rdata[7]} {Rdata[8]} {Rdata[9]} {Rdata[10]} {Rdata[11]}}
+editPin -side Top -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType range -start 10.0 186.88 -end 190.0 186.0 -pin {{Bdata[0]} {Bdata[1]} {Bdata[2]} {Bdata[3]} {Bdata[4]} {Bdata[5]} {Bdata[6]} {Bdata[7]} {Bdata[8]} {Bdata[9]} {Bdata[10]} {Bdata[11]} dataOut {Gdata[0]} {Gdata[1]} {Gdata[2]} {Gdata[3]} {Gdata[4]} {Gdata[5]} {Gdata[6]} {Gdata[7]} {Gdata[8]} {Gdata[9]} {Gdata[10]} {Gdata[11]}}
+editPin -side Right -fixedPin 1 -layer 5 -spreadType range -start 203.79 20.0 -end 203.0 160.0 -pin {globalReset {Rdata[0]} {Rdata[1]} {Rdata[2]} {Rdata[3]} {Rdata[4]} {Rdata[5]} {Rdata[6]} {Rdata[7]} {Rdata[8]} {Rdata[9]} {Rdata[10]} {Rdata[11]}}
+editPin -side Left -fixedPin 1 -layer 5 -spreadType start -start 203.79 0.33 -pin reCLK
+editPin -side Left -fixedPin 1 -layer 5 -spreadType start -start 203.79 16.17 -pin reData
+editPin -side Left -fixedPin 1 -layer 5 -spreadType range -start 0.0 20.0 -end 0.0 160.0 -pin {reCLK reData}
+editPin -side Left -fixedPin 1 -layer 5 -spreadType range -start 0.0 20.13 -end 0.0 160.0 -pin {reCLK reData {REF6Bit[0]} {REF6Bit[1]} {REF6Bit[2]} {REF6Bit[3]} {REF6Bit[4]} {REF6Bit[5]}}
+editPin -side Bottom -fixedPin 1 -layer 2 -spreadType range -start 20.0 0.0 -end 180.0 0.0 -pin {{REF16Bits[0]} {REF16Bits[1]} {REF16Bits[2]} {REF16Bits[3]} {REF16Bits[4]} {REF16Bits[5]} {REF16Bits[6]} {REF16Bits[7]} {REF16Bits[8]} {REF16Bits[9]} {REF16Bits[10]} {REF16Bits[11]} {REF16Bits[12]} {REF16Bits[13]} {REF16Bits[14]} {REF16Bits[15]}}
+editPin -side Bottom -fixedPin 1 -layer 2 -spreadType range -start 20.0 0.0 -end 180.0 0.0 -pin {{REF16Bits[0]} {REF16Bits[1]} {REF16Bits[2]} {REF16Bits[3]} {REF16Bits[4]} {REF16Bits[5]} {REF16Bits[6]} {REF16Bits[7]} {REF16Bits[8]} {REF16Bits[9]} {REF16Bits[10]} {REF16Bits[11]} {REF16Bits[12]} {REF16Bits[13]} {REF16Bits[14]} {REF16Bits[15]}}
+clearGlobalNets
+globalNetConnect POWR -type pgpin -pin POWR -inst * -module {}
+globalNetConnect POWR -type tiehi -pin POWR -inst * -module {}
+globalNetConnect GRND -type pgpin -pin GRND -inst * -module {}
+globalNetConnect GRND -type tielo -pin GRND -inst * -module {}
+addRing -spacing_bottom 1.2 -width_left 1.2 -width_bottom 1.2 -width_top 1.2 -spacing_top 1.2 -layer_bottom Metal1 -stacked_via_top_layer Metal6 -width_right 1.2 -around core -jog_distance 0.33 -layer_top Metal1 -threshold 0.33 -spacing_right 1.2 -spacing_left 1.2 -layer_right Metal2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1 -layer_left Metal2
+addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -set_to_set_distance 100 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 1 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 0.3 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+selectWire 111.8600 5.9600 112.1600 181.4800 2 POWR
+windowSelect 116.811 81.779 95.928 99.407
+panCenter 111.929 85.847
+zoomIn
+zoomIn
+zoomIn
+selectWire 111.8600 5.9600 112.1600 181.4800 2 POWR
+deleteSelectedFromFPlan
+selectWire 110.5600 8.3600 110.8600 179.0800 2 GRND
+deleteSelectedFromFPlan
+fit
+zoomIn
+panPage -1 0
+zoomOut
+zoomSelected
+fit
+zoomIn
+selectWire 11.8600 5.9600 12.1600 181.4800 2 POWR
+deleteSelectedFromFPlan
+zoomIn
+windowSelect 53.689 111.475 67.724 109.169
+panPage -1 0
+selectWire 10.5600 8.3600 10.8600 179.0800 2 GRND
+deleteSelectedFromFPlan
+fit
+zoomIn
+fit
+addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -set_to_set_distance 100 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 1 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1.2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+selectWire 112.7600 5.9600 113.9600 181.4800 2 POWR
+deleteSelectedFromFPlan
+selectWire 110.5600 8.3600 111.7600 179.0800 2 GRND
+deleteSelectedFromFPlan
+selectWire 12.7600 5.9600 13.9600 181.4800 2 POWR
+deleteSelectedFromFPlan
+selectWire 10.5600 8.3600 11.7600 179.0800 2 GRND
+deleteSelectedFromFPlan
+addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 3 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 1 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1.2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+setPlaceMode -fp false
+placeDesign -noPrePlaceOpt
+setDrawView ameba
+setDrawView place
+getFillerMode -quiet
+findCoreFillerCells
+addFiller -cell FILL1 FILL2 FILL4 FILL8 -prefix FILLER -markFixed
+getNanoRouteMode -quiet
+getNanoRouteMode -user -drouteEndIteration
+getNanoRouteMode -user -drouteStartIteration
+getNanoRouteMode -user -routeBottomRoutingLayer
+getNanoRouteMode -user -routeTopRoutingLayer
+getNanoRouteMode -quiet -envSuperthreading
+getNanoRouteMode -quiet -drouteFixAntenna
+getNanoRouteMode -quiet -routeInsertAntennaDiode
+getNanoRouteMode -quiet -routeAntennaCellName
+getNanoRouteMode -quiet -timingEngine
+getNanoRouteMode -quiet -routeWithTimingDriven
+getNanoRouteMode -quiet -routeWithEco
+getNanoRouteMode -quiet -routeWithLithoDriven
+getNanoRouteMode -quiet -droutePostRouteLithoRepair
+getNanoRouteMode -quiet -routeWithSiDriven
+getNanoRouteMode -quiet -routeTdrEffort
+getNanoRouteMode -quiet -routeWithSiPostRouteFix
+getNanoRouteMode -quiet -drouteAutoStop
+getNanoRouteMode -quiet -routeSelectedNetOnly
+getNanoRouteMode -quiet -drouteStartIteration
+setNanoRouteMode -quiet -drouteStartIteration default
+getNanoRouteMode -quiet -envNumberProcessor
+getNanoRouteMode -quiet -envSuperthreading
+getNanoRouteMode -quiet -routeTopRoutingLayer
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+getNanoRouteMode -quiet -routeBottomRoutingLayer
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+getNanoRouteMode -quiet -drouteEndIteration
+setNanoRouteMode -quiet -drouteEndIteration default
+getNanoRouteMode -quiet -routeEcoOnlyInLayers
+getNanoRouteMode -quiet -routeWithTimingDriven
+setNanoRouteMode -quiet -routeWithTimingDriven false
+getNanoRouteMode -quiet -routeWithSiDriven
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+verifyConnectivity -type all -error 1000 -warning 50
+verifyGeometry
+setDrawView ameba
+setDrawView place
+saveDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/digitalControlBlock.enc
+selectInst SRblock/reg13BitG/current_reg_10_
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix digitalControlBlock_preCTS -outDir timingReports
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix digitalControlBlock_preCTS -outDir timingReports
+delayCal -sdf results/digitalControlBlock -idealclock
+verifyGeometry
+getNanoRouteMode -quiet
+getNanoRouteMode -user -drouteEndIteration
+getNanoRouteMode -user -drouteStartIteration
+getNanoRouteMode -user -routeBottomRoutingLayer
+getNanoRouteMode -user -routeTopRoutingLayer
+getNanoRouteMode -quiet -envSuperthreading
+getNanoRouteMode -quiet -drouteFixAntenna
+getNanoRouteMode -quiet -routeInsertAntennaDiode
+getNanoRouteMode -quiet -routeAntennaCellName
+getNanoRouteMode -quiet -timingEngine
+getNanoRouteMode -quiet -routeWithTimingDriven
+getNanoRouteMode -quiet -routeWithEco
+getNanoRouteMode -quiet -routeWithLithoDriven
+getNanoRouteMode -quiet -droutePostRouteLithoRepair
+getNanoRouteMode -quiet -routeWithSiDriven
+getNanoRouteMode -quiet -routeTdrEffort
+getNanoRouteMode -quiet -routeWithSiPostRouteFix
+getNanoRouteMode -quiet -drouteAutoStop
+getNanoRouteMode -quiet -routeSelectedNetOnly
+getNanoRouteMode -quiet -drouteStartIteration
+setNanoRouteMode -quiet -drouteStartIteration default
+getNanoRouteMode -quiet -envNumberProcessor
+getNanoRouteMode -quiet -envSuperthreading
+getNanoRouteMode -quiet -routeTopRoutingLayer
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+getNanoRouteMode -quiet -routeBottomRoutingLayer
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+getNanoRouteMode -quiet -drouteEndIteration
+setNanoRouteMode -quiet -drouteEndIteration default
+getNanoRouteMode -quiet -routeEcoOnlyInLayers
+getNanoRouteMode -quiet -routeWithTimingDriven
+setNanoRouteMode -quiet -routeWithTimingDriven false
+getNanoRouteMode -quiet -routeWithSiDriven
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+verifyGeometry
+verifyConnectivity -type all -error 1000 -warning 50
+deselectAll
+saveDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/digitalControlBlock.enc
+saveNetlist results/digitalControlBlock.routed.v
+setDrawView ameba
+setDrawView place
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix digitalControlBlock_preCTS -outDir timingReports
+delayCal -sdf results/digitalControlBlock.sdf -idealclock

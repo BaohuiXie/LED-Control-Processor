@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5
+Date:        Thu Apr 28 22:30:56 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Counter6Bit', cell 'C69' does not drive any nets. (LINT-1)
+Warning: In design 'shiftReg16Bit', output port 'out' is connected directly to output port 'data[0]'. (LINT-31)
+1

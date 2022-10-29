@@ -1,0 +1,5 @@
+setAnalysisMode -analysisType single -clkSrcPath true -clockPropagation sdcControl
+setExtractRCMode  -engine default
+setDelayCalMode -engine default
+setPlaceMode -fp false -ignoreScan true -timingDriven false
+setImportMode -config true -keepEmptyModule false -treatUndefinedCellAsBbox false -useLefDef56 true

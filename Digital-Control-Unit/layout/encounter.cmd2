@@ -1,0 +1,142 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu Apr 28 16:17:07 2022                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: First Encounter v08.10-s338_1 (64bit) 10/01/2009 19:08 (Linux 2.6)
+#@(#)CDS: NanoRoute v08.10-s225 NR090922-1020/USR61-UB (database version 2.30, 85.1.1) {superthreading v1.11}
+#@(#)CDS: CeltIC v08.13-s302_1 (64bit) 09/16/2009 00:09:35 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CTE v08.10-s251_1 (64bit) Sep 16 2009 13:51:57 (Linux 2.6.9-67.0.10.ELsmp)
+#@(#)CDS: CPE v08.13-s001
+
+loadConfig /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/Default.conf 0
+commitConfig
+fit
+setDrawView fplan
+editPin -side Left -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType range -start 0.0 10.0 -end 25.0 70.0 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+editPin -side Left -pinWidth 0.3 -fixedPin 1 -layer 5 -spreadType range -start 0.0 10.23 -end 0.0 69.63 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+editPin -side Left -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 3 -spreadType start -start 87.0 40.0 -pin out
+editPin -side Left -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 3 -spreadType start -start 87.0 40.0 -pin out
+editPin -side Right -fixedPin 1 -layer 3 -spreadType start -start 0.0 40.59 -pin out
+editPin -side Left -fixedPin 1 -layer 5 -spreadType start -start 0.0 35.31 -pin reData
+clearGlobalNets
+globalNetConnect POWR -type pgpin -pin POWR -inst * -module {}
+globalNetConnect POWR -type tiehi -pin POWR -inst * -module {}
+globalNetConnect GRND -type pgpin -pin GRND -inst * -module {}
+globalNetConnect GRND -type tielo -pin GRND -inst * -module {}
+addRing -spacing_bottom 1.2 -width_left 1.2 -width_bottom 1.2 -width_top 1.2 -spacing_top 1.2 -layer_bottom Metal1 -stacked_via_top_layer Metal6 -width_right 1.2 -around core -jog_distance 0.33 -layer_top Metal1 -threshold 0.33 -spacing_right 1.2 -spacing_left 1.2 -layer_right Metal2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1 -layer_left Metal2
+addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 3 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 0.3 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 0.3 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+selectWire 7.2000 2.0000 7.5000 90.4000 2 POWR
+deleteSelectedFromFPlan
+selectWire 6.6000 4.4000 6.9000 88.0000 2 GRND
+deleteSelectedFromFPlan
+deleteSelectedFromFPlan
+selectWire 92.7300 4.4000 93.0300 88.0000 2 GRND
+deleteSelectedFromFPlan
+selectWire 93.3300 2.0000 93.6300 90.4000 2 POWR
+deleteSelectedFromFPlan
+selectWire 49.6650 4.4000 49.9650 88.0000 2 GRND
+deleteSelectedFromFPlan
+selectWire 50.2650 2.0000 50.5650 90.4000 2 POWR
+deleteSelectedFromFPlan
+addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 3 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 1 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1.2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+selectWire 92.4300 2.0000 93.6300 90.4000 2 POWR
+deselectAll
+selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+deselectAll
+selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+deselectAll
+windowSelect 90.656 72.169 89.288 72.443
+selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+uiSetTool addVia
+editAddVia 91.614 73.674
+undo
+uiSetTool addPoly
+editAddPoly 90.656 73.811
+editAddPoly 87.646 74.769
+deleteSelectedFromFPlan
+undo
+uiSetTool move
+selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+editMove -1.1175 0.0
+deselectAll
+selectVia 90.2300 4.4000 91.4300 5.6000 2 GRND
+editMove -1.1175 0.0
+deselectAll
+selectVia 90.2300 86.8000 91.4300 88.0000 2 GRND
+editMove -1.2575 0.14
+deselectAll
+selectWire 92.4300 2.0000 93.6300 90.4000 2 POWR
+editMove -0.838 0.0
+deselectAll
+selectVia 92.4300 89.2000 93.6300 90.4000 2 POWR
+editMove -0.838 0.0
+deselectAll
+selectVia 92.4300 2.0000 93.6300 3.2000 2 POWR
+editMove -0.838 0.14
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+setPlaceMode -fp false
+placeDesign -noPrePlaceOpt
+setPlaceMode -fp false
+placeDesign -noPrePlaceOpt
+setDrawView place
+getFillerMode -quiet
+findCoreFillerCells
+addFiller -cell FILL1 FILL2 FILL4 FILL8 -prefix FILLER -markFixed
+getNanoRouteMode -quiet
+getNanoRouteMode -user -drouteEndIteration
+getNanoRouteMode -user -drouteStartIteration
+getNanoRouteMode -user -routeBottomRoutingLayer
+getNanoRouteMode -user -routeTopRoutingLayer
+getNanoRouteMode -quiet -envSuperthreading
+getNanoRouteMode -quiet -drouteFixAntenna
+getNanoRouteMode -quiet -routeInsertAntennaDiode
+getNanoRouteMode -quiet -routeAntennaCellName
+getNanoRouteMode -quiet -timingEngine
+getNanoRouteMode -quiet -routeWithTimingDriven
+getNanoRouteMode -quiet -routeWithEco
+getNanoRouteMode -quiet -routeWithLithoDriven
+getNanoRouteMode -quiet -droutePostRouteLithoRepair
+getNanoRouteMode -quiet -routeWithSiDriven
+getNanoRouteMode -quiet -routeTdrEffort
+getNanoRouteMode -quiet -routeWithSiPostRouteFix
+getNanoRouteMode -quiet -drouteAutoStop
+getNanoRouteMode -quiet -routeSelectedNetOnly
+getNanoRouteMode -quiet -drouteStartIteration
+setNanoRouteMode -quiet -drouteStartIteration default
+getNanoRouteMode -quiet -envNumberProcessor
+getNanoRouteMode -quiet -envSuperthreading
+getNanoRouteMode -quiet -routeTopRoutingLayer
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+getNanoRouteMode -quiet -routeBottomRoutingLayer
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+getNanoRouteMode -quiet -drouteEndIteration
+setNanoRouteMode -quiet -drouteEndIteration default
+getNanoRouteMode -quiet -routeEcoOnlyInLayers
+getNanoRouteMode -quiet -routeWithTimingDriven
+setNanoRouteMode -quiet -routeWithTimingDriven false
+getNanoRouteMode -quiet -routeWithSiDriven
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+verifyConnectivity -type all -error 1000 -warning 50
+verifyGeometry
+saveDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc
+saveNetlist encoder.rounted.v
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix encoder_preCTS -outDir timingReports
+get_time_unit
+report_timing -machine_readable -max_points 10000 -max_slack 0.75 > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+clearClockDomains
+setClockDomains -all
+timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix encoder_preCTS -outDir timingReports
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+saveNetlist encoder.rounted.v
+saveDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc
+rcOut -spef results/divider.spef -rc_coner rc_worst
+write_sdf results/encoder.sdf
+saveNetlist results/encoder.routed.v

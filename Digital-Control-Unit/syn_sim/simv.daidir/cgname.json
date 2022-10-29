@@ -1,0 +1,224 @@
+{
+    "DFF_encoder_0": [
+        "DFF_encoder_0",
+        "TgNu7",
+        "module",
+        33
+    ],
+    "DIV8CLK": [
+        "DIV8CLK",
+        "B7c3R",
+        "module",
+        30
+    ],
+    "DFF_encoder_1": [
+        "DFF_encoder_1",
+        "EtTEv",
+        "module",
+        28
+    ],
+    "DFF_encoder_2": [
+        "DFF_encoder_2",
+        "nxAAB",
+        "module",
+        24
+    ],
+    "metastablility_corrected_reData": [
+        "metastablility_corrected_reData",
+        "JKv3C",
+        "module",
+        22
+    ],
+    "FSM": [
+        "FSM",
+        "eP8Yb",
+        "module",
+        21
+    ],
+    "DFF_encoder_3": [
+        "DFF_encoder_3",
+        "hhkd4",
+        "module",
+        20
+    ],
+    "encoder": [
+        "encoder",
+        "PcQ6K",
+        "module",
+        19
+    ],
+    "decoder": [
+        "decoder",
+        "zf0bY",
+        "module",
+        9
+    ],
+    "Comparator4BitInverted_0000": [
+        "Comparator4BitInverted_0000",
+        "Uhkjc",
+        "module",
+        10
+    ],
+    "Counter": [
+        "Counter",
+        "Nsh6f",
+        "module",
+        11
+    ],
+    "delayBlock": [
+        "delayBlock",
+        "rmsFB",
+        "module",
+        12
+    ],
+    "Counter4b": [
+        "Counter4b",
+        "wZYQk",
+        "module",
+        13
+    ],
+    "modifiedDFF": [
+        "modifiedDFF",
+        "en5ND",
+        "module",
+        14
+    ],
+    "balanceBlock": [
+        "balanceBlock",
+        "SWJwa",
+        "module",
+        15
+    ],
+    "DFF_decoder": [
+        "DFF_decoder",
+        "fytic",
+        "module",
+        16
+    ],
+    "IDLEdetection": [
+        "IDLEdetection",
+        "v8wmn",
+        "module",
+        17
+    ],
+    "Comparator4Bit_0000": [
+        "Comparator4Bit_0000",
+        "c9UzQ",
+        "module",
+        18
+    ],
+    "Counter4Bit": [
+        "Counter4Bit",
+        "KswWF",
+        "module",
+        8
+    ],
+    "edgeDetector": [
+        "edgeDetector",
+        "whnHS",
+        "module",
+        7
+    ],
+    "DFF_IDLE": [
+        "DFF_IDLE",
+        "pthaA",
+        "module",
+        6
+    ],
+    "encoder_tb": [
+        "encoder_tb",
+        "VUnig",
+        "module",
+        5
+    ],
+    "AND2X1": [
+        "AND2X1",
+        "Gq2yN",
+        "module",
+        23
+    ],
+    "AOI21X1": [
+        "AOI21X1",
+        "MABjN",
+        "module",
+        4
+    ],
+    "BUFX3": [
+        "BUFX3",
+        "pKLxj",
+        "module",
+        25
+    ],
+    "DFFSRX1": [
+        "DFFSRX1",
+        "RzQVQ",
+        "module",
+        26
+    ],
+    "INVX1": [
+        "INVX1",
+        "wDCMR",
+        "module",
+        27
+    ],
+    "INVX4": [
+        "INVX4",
+        "ffcHk",
+        "module",
+        3
+    ],
+    "NAND3X1": [
+        "NAND3X1",
+        "n5kPb",
+        "module",
+        29
+    ],
+    "NAND4X1": [
+        "NAND4X1",
+        "Yz42M",
+        "module",
+        2
+    ],
+    "NOR2X1": [
+        "NOR2X1",
+        "esUc7",
+        "module",
+        31
+    ],
+    "NOR3X1": [
+        "NOR3X1",
+        "DY4ye",
+        "module",
+        32
+    ],
+    "OAI21X1": [
+        "OAI21X1",
+        "EivVh",
+        "module",
+        1
+    ],
+    "OR2X1": [
+        "OR2X1",
+        "YRkbh",
+        "module",
+        34
+    ],
+    "OR4X1": [
+        "OR4X1",
+        "jjJiI",
+        "module",
+        35
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        36
+    ],
+    "udp_dff": [
+        "udp_dff",
+        "exIG1",
+        "udp",
+        37
+    ]
+}

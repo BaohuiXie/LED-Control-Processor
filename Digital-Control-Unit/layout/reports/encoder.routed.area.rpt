@@ -1,0 +1,15 @@
+    Hinst Name                          Module Name                     Inst Count           Total Area
+----------------------------------------------------------------------------------------------------
+encoder                                                                         74             4824.706
+ DIV8CLK1                               DIV8CLK                                 18             1071.576
+ FSM1                                   FSM                                     16              940.896
+ IDLEdetection1                         IDLEdetection                           32             2038.608
+  IDLEdetection1/c1                     Counter4Bit                             15             1050.667
+  IDLEdetection1/comp1                  Comparator4Bit                          11              402.494
+  IDLEdetection1/dff2                   DFF_IDLE                                 3              344.995
+  IDLEdetection1/ed1                    edgeDetector                             3              240.451
+ dff10                                  DFF_encoder_3                            2              193.406
+ dff9                                   DFF_encoder_0                            2              193.406
+ metastablility_corrected_reData1       metastablility_corrected_reData          4              386.813
+  metastablility_corrected_reData1/dff7 DFF_encoder_2                            2              193.406
+  metastablility_corrected_reData1/dff8 DFF_encoder_1                            2              193.406

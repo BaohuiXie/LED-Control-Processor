@@ -1,0 +1,39 @@
+################################################################################
+# Filename: LEDControl.ioc
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# Note: if we do not provide the IO location constraint for our module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 6
+)
+(iopin
+    (left
+	(pin name="LEDFrameData[0]"	 layer=5 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="LEDFrameData[1]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[2]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[3]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[4]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[5]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[6]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[7]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[8]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[9]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[10]"	 layer=5 width=0.300 depth=0.1400)
+	(pin name="LEDFrameData[11]"	 layer=5 width=0.300 depth=0.1400)
+    )
+	(top
+	(pin name="oscillator"	 layer=5 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="globalReset"	 layer=5 width=0.300 depth=0.1400 )
+	)
+    (right
+	(pin name="power"	 layer=6 width=0.300 depth=0.1400 offset=1.0)
+    )
+)

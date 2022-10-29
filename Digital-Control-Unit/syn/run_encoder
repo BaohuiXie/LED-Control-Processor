@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dc_shell -f run_encoder.tcl | tee -i run_encoder.log

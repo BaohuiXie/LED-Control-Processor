@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : manchester_dec
+Version: P-2019.03-SP5
+Date   : Wed Apr 13 10:20:42 2022
+****************************************
+
+Operating Conditions: typical   Library: GSCLib.db
+Wire Load Model Mode: top
+
+  Startpoint: balanced_clk_reg/CK
+              (internal path startpoint)
+  Endpoint: balanced_clk
+            (output port clocked by VCLK)
+  Path Group: (none)
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 r
+  balanced_clk_reg/CK (DFFSRX1)            0.24      0.00       0.00 r
+  balanced_clk_reg/QN (DFFSRX1)            0.12      0.25       0.25 r
+  n36 (net)                      1                   0.00       0.25 r
+  U44/Y (INVX8)                            0.25      0.29       0.54 f
+  balanced_clk (net)             1                   0.00       0.54 f
+  balanced_clk (out)                       0.25      0.00       0.54 f
+  data arrival time                                             0.54
+  ------------------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

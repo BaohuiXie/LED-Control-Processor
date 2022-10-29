@@ -1,0 +1,396 @@
+[05/04 03:22:20      0s] 
+[05/04 03:22:20      0s] Cadence Innovus(TM) Implementation System.
+[05/04 03:22:20      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/04 03:22:20      0s] 
+[05/04 03:22:20      0s] Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+[05/04 03:22:20      0s] Options:	-init scripts/top_encoder.tcl -win 
+[05/04 03:22:20      0s] Date:		Wed May  4 03:22:20 2022
+[05/04 03:22:20      0s] Host:		EEX055 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) (7cores*14cpus*Common KVM processor 16384KB)
+[05/04 03:22:20      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/04 03:22:20      0s] 
+[05/04 03:22:20      0s] License:
+[05/04 03:22:21      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/04 03:22:21      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/04 03:22:58     25s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[05/04 03:23:02     28s] @(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/04 03:23:02     28s] @(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[05/04 03:23:02     28s] @(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/04 03:23:02     28s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[05/04 03:23:02     28s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[05/04 03:23:02     28s] @(#)CDS: CPE v20.10-p006
+[05/04 03:23:02     28s] @(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/04 03:23:02     28s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[05/04 03:23:02     28s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[05/04 03:23:02     28s] @(#)CDS: RCDB 11.15.0
+[05/04 03:23:02     28s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[05/04 03:23:02     28s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_9861_EEX055_bxieaf_9ORiwv.
+
+[05/04 03:23:02     28s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[05/04 03:23:06     31s] 
+[05/04 03:23:06     31s] **INFO:  MMMC transition support version v31-84 
+[05/04 03:23:06     31s] 
+[05/04 03:23:06     31s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/04 03:23:06     31s] <CMD> suppressMessage ENCEXT-2799
+[05/04 03:23:06     31s] **ERROR: (IMPSYT-6696):	Initfile (scripts/top_encoder.tcl) does not exist.
+[05/04 03:23:06     31s] <CMD> win
+[05/04 03:25:33    100s] <CMD> save_global Default.globals
+[05/04 03:25:41    104s] <CMD> set init_gnd_net GRND
+[05/04 03:25:41    104s] <CMD> set init_lef_file ../lib/GSCLib_3.0.lef
+[05/04 03:25:41    104s] <CMD> set init_verilog ../syn/results/decoder.mapped.v
+[05/04 03:25:41    104s] <CMD> set init_io_file scripts/decoder.ioc
+[05/04 03:25:41    104s] <CMD> set init_top_cell decoder
+[05/04 03:25:41    104s] <CMD> set init_pwr_net POWER
+[05/04 03:25:41    104s] <CMD> init_design
+[05/04 03:25:41    104s] 
+[05/04 03:25:41    104s] Loading LEF file ../lib/GSCLib_3.0.lef ...
+[05/04 03:25:41    104s] Set DBUPerIGU to M2 pitch 1320.
+[05/04 03:25:41    104s] 
+[05/04 03:25:41    104s] viaInitial starts at Wed May  4 03:25:41 2022
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal1 GENERATE.
+[05/04 03:25:42    104s] Type 'man IMPPP-557' for more detail.
+[05/04 03:25:42    104s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal2 GENERATE.
+[05/04 03:25:42    104s] Type 'man IMPPP-557' for more detail.
+[05/04 03:25:42    104s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal3 GENERATE.
+[05/04 03:25:42    104s] Type 'man IMPPP-557' for more detail.
+[05/04 03:25:42    104s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal4 GENERATE.
+[05/04 03:25:42    104s] Type 'man IMPPP-557' for more detail.
+[05/04 03:25:42    104s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal5 GENERATE.
+[05/04 03:25:42    104s] Type 'man IMPPP-557' for more detail.
+[05/04 03:25:42    104s] **WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNMetal6 GENERATE.
+[05/04 03:25:42    104s] Type 'man IMPPP-557' for more detail.
+[05/04 03:25:42    104s] viaInitial ends at Wed May  4 03:25:42 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/04 03:25:42    104s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=1.76min, fe_real=3.37min, fe_mem=779.9M) ***
+[05/04 03:25:42    104s] #% Begin Load netlist data ... (date=05/04 03:25:42, mem=572.7M)
+[05/04 03:25:42    104s] *** Begin netlist parsing (mem=779.9M) ***
+[05/04 03:25:42    104s] Created 0 new cells from 0 timing libraries.
+[05/04 03:25:42    104s] Reading netlist ...
+[05/04 03:25:42    104s] Backslashed names will retain backslash and a trailing blank character.
+[05/04 03:25:42    104s] Reading verilog netlist '../syn/results/decoder.mapped.v'
+[05/04 03:25:42    104s] 
+[05/04 03:25:42    104s] *** Memory Usage v#1 (Current mem = 782.879M, initial mem = 268.238M) ***
+[05/04 03:25:42    104s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=782.9M) ***
+[05/04 03:25:42    104s] #% End Load netlist data ... (date=05/04 03:25:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=575.8M, current mem=575.8M)
+[05/04 03:25:42    104s] Set top cell to decoder.
+[05/04 03:25:42    105s] Hooked 0 DB cells to tlib cells.
+[05/04 03:25:42    105s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=578.6M, current mem=578.6M)
+[05/04 03:25:42    105s] Starting recursive module instantiation check.
+[05/04 03:25:42    105s] No recursion found.
+[05/04 03:25:42    105s] Building hierarchical netlist for Cell decoder ...
+[05/04 03:25:43    105s] *** Netlist is unique.
+[05/04 03:25:43    105s] Setting Std. cell height to 15840 DBU (smallest netlist inst).
+[05/04 03:25:43    105s] ** info: there are 51 modules.
+[05/04 03:25:43    105s] ** info: there are 69 stdCell insts.
+[05/04 03:25:43    105s] 
+[05/04 03:25:43    105s] *** Memory Usage v#1 (Current mem = 820.305M, initial mem = 268.238M) ***
+[05/04 03:25:43    105s] Reading IO assignment file "scripts/decoder.ioc" ...
+[05/04 03:25:43    105s] Horizontal Layer M1 offset = 660 (guessed)
+[05/04 03:25:43    105s] Vertical Layer M2 offset = 660 (derived)
+[05/04 03:25:43    105s] Suggestion: specify LAYER OFFSET in LEF file
+[05/04 03:25:43    105s] Reason: hard to extract LAYER OFFSET from standard cells
+[05/04 03:25:43    105s] Set Default Net Delay as 1000 ps.
+[05/04 03:25:43    105s] Set Default Net Load as 0.5 pF. 
+[05/04 03:25:43    105s] Set Default Input Pin Transition as 0.1 ps.
+[05/04 03:25:44    105s] **WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+[05/04 03:25:44    105s] Extraction setup Started 
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/04 03:25:44    105s] 
+[05/04 03:25:44    105s] *** Summary of all messages that are not suppressed in this session:
+[05/04 03:25:44    105s] Severity  ID               Count  Summary                                  
+[05/04 03:25:44    105s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[05/04 03:25:44    105s] WARNING   IMPPP-557            6  A single-layer VIARULE GENERATE for turn...
+[05/04 03:25:44    105s] *** Message Summary: 7 warning(s), 0 error(s)
+[05/04 03:25:44    105s] 
+[05/04 03:25:47    107s] <CMD> getIoFlowFlag
+[05/04 03:25:57    111s] <CMD> setIoFlowFlag 0
+[05/04 03:25:57    111s] <CMD> floorPlan -site CORE -r 0.831787152109 0.700002 6 6 6 6
+[05/04 03:25:57    111s] Horizontal Layer M1 offset = 660 (guessed)
+[05/04 03:25:57    111s] Vertical Layer M2 offset = 660 (derived)
+[05/04 03:25:57    111s] Suggestion: specify LAYER OFFSET in LEF file
+[05/04 03:25:57    111s] Reason: hard to extract LAYER OFFSET from standard cells
+[05/04 03:25:57    111s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[05/04 03:25:57    111s] <CMD> uiSetTool select
+[05/04 03:25:57    111s] <CMD> getIoFlowFlag
+[05/04 03:25:57    111s] <CMD> fit
+[05/04 03:26:34    127s] <CMD> clearGlobalNets
+[05/04 03:26:34    127s] <CMD> globalNetConnect POWR -type pgpin -pin POWR -instanceBasename *
+[05/04 03:26:34    127s] **ERROR: (IMPDB-1216):	The global net 'POWR' specified in the global net connection(GNC) rule doesn't exist in the design.
+Type 'man IMPDB-1216' for more detail.
+[05/04 03:26:34    127s] <CMD> globalNetConnect POWR -type tiehi -pin POWR -instanceBasename *
+[05/04 03:26:34    127s] **ERROR: (IMPDB-1216):	The global net 'POWR' specified in the global net connection(GNC) rule doesn't exist in the design.
+Type 'man IMPDB-1216' for more detail.
+[05/04 03:26:34    127s] <CMD> globalNetConnect GRND -type pgpin -pin GRND -instanceBasename *
+[05/04 03:26:34    127s] <CMD> globalNetConnect GRND -type tielo -pin GRND -instanceBasename *
+[05/04 03:26:36    128s] Warning: term SN of inst db1/counter1/count_reg_0_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SN of inst db1/counter1/count_reg_1_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term RN of inst db1/counter1/count_reg_2_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term RN of inst db1/counter1/count_reg_3_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SN of inst db1/counter1/out_reg is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SN of inst dff1/Q_reg is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SI of inst bb1/counter2/count_reg_0_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SE of inst bb1/counter2/count_reg_0_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SI of inst bb1/counter2/count_reg_1_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SE of inst bb1/counter2/count_reg_1_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SI of inst bb1/counter2/count_reg_2_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SE of inst bb1/counter2/count_reg_2_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SI of inst bb1/counter2/count_reg_3_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: term SE of inst bb1/counter2/count_reg_3_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/count_reg_0_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/count_reg_1_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/count_reg_2_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/count_reg_3_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/out_reg is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U7 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U9 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U10 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U11 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U12 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U13 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U14 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U15 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U16 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U17 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U18 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U19 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U20 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U21 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U22 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U23 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U24 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/counter1/U25 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U3 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U4 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U5 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U6 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U7 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U8 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U9 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U10 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U11 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U12 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U13 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/comp1/U14 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst db1/U1 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst dff1/Q_reg is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst dff1/U3 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst dff1/U5 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/count_reg_0_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/count_reg_1_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/count_reg_2_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/count_reg_3_ is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U6 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U8 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U9 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U10 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U11 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U12 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U13 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/counter2/U14 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U3 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U4 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U5 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U6 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U7 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U8 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U9 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U10 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U11 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U12 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/comparator2/U13 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/modifiedDFF1/U3 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/modifiedDFF1/U4 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst bb1/modifiedDFF1/U5 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst U1 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst U2 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst U3 is not connect to global special net.
+[05/04 03:26:36    128s] Warning: pg term POWR of inst U4 is not connect to global special net.
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingOffset 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingThreshold 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingJogDistance 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingLayers {}
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingOffset 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingThreshold 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingJogDistance 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingLayers {}
+[05/04 03:26:50    133s] <CMD> set sprCreateIeStripeWidth 10.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeStripeThreshold 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeStripeWidth 10.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeStripeThreshold 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingOffset 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingThreshold 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingJogDistance 1.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeRingLayers {}
+[05/04 03:26:50    133s] <CMD> set sprCreateIeStripeWidth 10.0
+[05/04 03:26:50    133s] <CMD> set sprCreateIeStripeThreshold 1.0
+[05/04 03:27:11    143s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal6 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[05/04 03:27:11    143s] The ring targets are set to core/block ring wires.
+[05/04 03:27:11    143s] addRing command will consider rows while creating rings.
+[05/04 03:27:11    143s] addRing command will disallow rings to go over rows.
+[05/04 03:27:11    143s] addRing command will ignore shorts while creating rings.
+[05/04 03:27:11    143s] <CMD> addRing -nets {POWR GRND} -type core_rings -follow core -layer {top Metal1 bottom Metal1 left Metal2 right Metal2} -width {top 1.2 bottom 1.2 left 1.2 right 1.2} -spacing {top 1.2 bottom 1.2 left 1.2 right 1.2} -offset {top 1.2 bottom 1.2 left 1.2 right 1.2} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[05/04 03:27:11    143s] 
+[05/04 03:27:11    143s] **ERROR: (IMPPP-190):	The net 'POWR' does not exist in design.
+Type 'man IMPPP-190' for more detail.
+[05/04 03:27:11    143s] **ERROR: Error: Invalid net names specified. 
+[05/04 03:27:35    152s] <CMD> set init_pwr_net POWR
+[05/04 03:27:35    152s] <CMD> init_design
+[05/04 03:27:35    152s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[05/04 03:27:35    152s] 
+[05/04 03:27:35    152s] *** Summary of all messages that are not suppressed in this session:
+[05/04 03:27:35    152s] Severity  ID               Count  Summary                                  
+[05/04 03:27:35    152s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[05/04 03:27:35    152s] *** Message Summary: 1 warning(s), 0 error(s)
+[05/04 03:27:35    152s] 
+[05/04 03:27:35    152s] **ERROR: (IMPQTF-4003):	Form 'Rda_MMMC' does not exist.
+<CMD> clearGlobalNets
+[05/04 03:28:05    165s] <CMD> globalNetConnect GRND -type pgpin -pin GRND -instanceBasename *
+[05/04 03:28:05    165s] <CMD> globalNetConnect GRND -type tielo -pin GRND -instanceBasename *
+[05/04 03:28:05    165s] <CMD> globalNetConnect POWR -type pgpin -pin POWR -instanceBasename *
+[05/04 03:28:05    165s] **ERROR: (IMPDB-1216):	The global net 'POWR' specified in the global net connection(GNC) rule doesn't exist in the design.
+Type 'man IMPDB-1216' for more detail.
+[05/04 03:28:05    165s] <CMD> globalNetConnect POWR -type tiehi -pin POWR -instanceBasename *
+[05/04 03:28:05    165s] **ERROR: (IMPDB-1216):	The global net 'POWR' specified in the global net connection(GNC) rule doesn't exist in the design.
+Type 'man IMPDB-1216' for more detail.
+[05/04 03:28:05    165s] Warning: term SN of inst db1/counter1/count_reg_0_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SN of inst db1/counter1/count_reg_1_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term RN of inst db1/counter1/count_reg_2_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term RN of inst db1/counter1/count_reg_3_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SN of inst db1/counter1/out_reg is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SN of inst dff1/Q_reg is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SI of inst bb1/counter2/count_reg_0_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SE of inst bb1/counter2/count_reg_0_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SI of inst bb1/counter2/count_reg_1_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SE of inst bb1/counter2/count_reg_1_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SI of inst bb1/counter2/count_reg_2_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SE of inst bb1/counter2/count_reg_2_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SI of inst bb1/counter2/count_reg_3_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: term SE of inst bb1/counter2/count_reg_3_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/count_reg_0_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/count_reg_1_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/count_reg_2_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/count_reg_3_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/out_reg is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U7 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U9 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U10 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U11 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U12 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U13 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U14 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U15 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U16 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U17 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U18 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U19 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U20 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U21 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U22 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U23 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U24 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/counter1/U25 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U3 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U4 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U5 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U6 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U7 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U8 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U9 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U10 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U11 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U12 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U13 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/comp1/U14 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst db1/U1 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst dff1/Q_reg is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst dff1/U3 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst dff1/U5 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/count_reg_0_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/count_reg_1_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/count_reg_2_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/count_reg_3_ is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U6 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U8 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U9 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U10 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U11 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U12 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U13 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/counter2/U14 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U3 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U4 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U5 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U6 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U7 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U8 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U9 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U10 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U11 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U12 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/comparator2/U13 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/modifiedDFF1/U3 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/modifiedDFF1/U4 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst bb1/modifiedDFF1/U5 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst U1 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst U2 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst U3 is not connect to global special net.
+[05/04 03:28:05    165s] Warning: pg term POWR of inst U4 is not connect to global special net.
+[05/04 03:28:39    179s] <CMD> getIoFlowFlag
+[05/04 03:28:46    182s] <CMD> setIoFlowFlag 0
+[05/04 03:28:46    182s] <CMD> floorPlan -site CORE -r 0.65306122449 0.695578 8 8 8 8
+[05/04 03:28:46    182s] Horizontal Layer M1 offset = 660 (guessed)
+[05/04 03:28:46    182s] Vertical Layer M2 offset = 660 (derived)
+[05/04 03:28:46    182s] Suggestion: specify LAYER OFFSET in LEF file
+[05/04 03:28:46    182s] Reason: hard to extract LAYER OFFSET from standard cells
+[05/04 03:28:46    182s] <CMD> uiSetTool select
+[05/04 03:28:46    182s] <CMD> getIoFlowFlag
+[05/04 03:28:46    182s] <CMD> fit
+[05/04 03:30:17    220s] <CMD> save_global Default.globals
+[05/04 03:30:20    222s] <CMD> set init_pwr_net POWR
+[05/04 03:30:20    222s] <CMD> init_design
+[05/04 03:30:20    222s] **WARN: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+[05/04 03:30:20    222s] 
+[05/04 03:30:20    222s] *** Summary of all messages that are not suppressed in this session:
+[05/04 03:30:20    222s] Severity  ID               Count  Summary                                  
+[05/04 03:30:20    222s] WARNING   IMPSYT-7329          1  Cannot load design with init_design, aft...
+[05/04 03:30:20    222s] *** Message Summary: 1 warning(s), 0 error(s)
+[05/04 03:30:20    222s] 
+[05/04 03:30:20    222s] **ERROR: (IMPQTF-4003):	Form 'Rda_MMMC' does not exist.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Wed May  4 03:30:48 2022
+  Total CPU time:     0:03:57
+  Total real time:    0:08:43
+  Peak memory (main): 794.23MB
+
+[05/04 03:30:48    233s] 
+[05/04 03:30:48    233s] *** Memory Usage v#1 (Current mem = 1030.938M, initial mem = 268.238M) ***
+[05/04 03:30:48    233s] 
+[05/04 03:30:48    233s] *** Summary of all messages that are not suppressed in this session:
+[05/04 03:30:48    233s] Severity  ID               Count  Summary                                  
+[05/04 03:30:48    233s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[05/04 03:30:48    233s] WARNING   IMPSYT-7329          2  Cannot load design with init_design, aft...
+[05/04 03:30:48    233s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[05/04 03:30:48    233s] ERROR     IMPSYT-6696          1  Initfile (%s) does not exist.            
+[05/04 03:30:48    233s] ERROR     IMPDB-1216           4  The global net '%s' specified in the glo...
+[05/04 03:30:48    233s] WARNING   IMPPP-557            6  A single-layer VIARULE GENERATE for turn...
+[05/04 03:30:48    233s] ERROR     IMPPP-190            1  The net '%s' does not exist in design.   
+[05/04 03:30:48    233s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[05/04 03:30:48    233s] ERROR     IMPQTF-4003          2  Form '%s' does not exist.                
+[05/04 03:30:48    233s] *** Message Summary: 11 warning(s), 8 error(s)
+[05/04 03:30:48    233s] 
+[05/04 03:30:48    233s] --- Ending "Innovus" (totcpu=0:03:55, real=0:08:28, mem=1030.9M) ---

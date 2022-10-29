@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dc_shell -f run_digitalControlBlock.tcl | tee -i run_digitalControlBlock.log

@@ -1,0 +1,84 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 8.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.04-p044.
+sourcing /usr/eelocal/cadence/soc81/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-s338_1 (64bit) 10/01/2009 19:08 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-s225 NR090922-1020/USR61-UB (database version 2.30, 85.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.13-s302_1 (64bit) 09/16/2009 00:09:35 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-s251_1 (64bit) Sep 16 2009 13:51:57 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.13-s001
+--- Starting "First Encounter v08.10-s338_1" on Thu Apr 28 23:02:51 2022 (mem=76.7M) ---
+--- Running on EEX060 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) ---
+This version was compiled on Thu Oct 1 19:08:44 PDT 2009.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Default Total Res Scale Factor to 1.00
+Set Detail Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+<CMD> setDoAssign
+<CMD> getIoFlowFlag
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet GRND
+<CMD_INTERNAL> setUIVar rda_Input ui_leffile ../lib/GSCLib_3.0.lef
+<CMD_INTERNAL> setUIVar rda_Input ui_netlist ../syn/results/digitalControlBlock.mapped.v
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib,max ../../../../dept/public/eesm6980/digital/GSCLib3/timing/GSCLib_3.0.lib
+<CMD_INTERNAL> setUIVar rda_Input ui_io_file scripts/digitalControlBlock.ioc
+<CMD_INTERNAL> setUIVar rda_Input ui_topcell digitalControlBLock
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet POWR
+<CMD> commitConfig
+
+Loading Lef file ../lib/GSCLib_3.0.lef...
+Set DBUPerIGU to M2 pitch 1320.
+Initializing default via types and wire widths ...
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Apr 28 23:21:43 2022
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal6 GENERATE
+viaInitial ends at Thu Apr 28 23:21:43 2022
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../syn/results/digitalControlBlock.mapped.v'
+
+*** Memory Usage v0.144.6.3 (Current mem = 235.562M, initial mem = 76.688M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=235.6M) ***
+**ERROR: (SOCSYC-300):	Cell digitalControlBLock not found.
+**ERROR: (SOCVL-904):	Can't set top cell to "digitalControlBLock" because it doesn't exist.  Exiting Encounter!
+
+*** Memory Usage v0.144.6.3 (Current mem = 235.703M, initial mem = 76.688M) ***
+--- Ending "First Encounter" (totcpu=0:02:58, real=0:19:08, mem=235.7M) ---

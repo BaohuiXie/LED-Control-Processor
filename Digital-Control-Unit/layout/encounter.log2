@@ -1,0 +1,1209 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 8.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.04-p044.
+sourcing /usr/eelocal/cadence/soc81/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-s338_1 (64bit) 10/01/2009 19:08 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-s225 NR090922-1020/USR61-UB (database version 2.30, 85.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.13-s302_1 (64bit) 09/16/2009 00:09:35 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-s251_1 (64bit) Sep 16 2009 13:51:57 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.13-s001
+--- Starting "First Encounter v08.10-s338_1" on Thu Apr 28 16:17:06 2022 (mem=76.7M) ---
+--- Running on EEX055 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) ---
+This version was compiled on Thu Oct 1 19:08:44 PDT 2009.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Default Total Res Scale Factor to 1.00
+Set Detail Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> loadConfig /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/Default.conf 0
+Reading config file - /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/Default.conf
+<CMD> commitConfig
+
+Loading Lef file ../lib/GSCLib_3.0.lef...
+Set DBUPerIGU to M2 pitch 1320.
+Initializing default via types and wire widths ...
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Apr 28 16:17:31 2022
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal6 GENERATE
+viaInitial ends at Thu Apr 28 16:17:31 2022
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../syn/results/encoder.mapped.v'
+
+*** Memory Usage v0.144.6.3 (Current mem = 234.094M, initial mem = 76.688M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=234.1M) ***
+Set top cell to encoder.
+Reading max timing library '../../../../dept/public/eesm6980/digital/GSCLib3/timing/GSCLib_3.0.lib' ...
+ read 38 cells in library 'GSCLib_2.0' 
+**WARN: (SOCTS-302):	Min timing libraries are not specified, while max timing libraries are specified in configuration file. This may cause issues in hold analysis. Use rda_Input(ui_timelib) instead of rda_Input(ui_timelib,max) for timing library specification, or use setTimingLibrary command to set min timing libraries. By default max timing libraries will be used for hold analysis.
+*** End library_loading (cpu=0.00min, mem=0.3M, fe_cpu=0.20min, fe_mem=234.4M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell encoder ...
+*** Netlist is unique.
+** info: there are 55 modules.
+** info: there are 74 stdCell insts.
+
+*** Memory Usage v0.144.6.3 (Current mem = 235.883M, initial mem = 76.688M) ***
+Total number of combinational cells: 28
+Total number of sequential cells: 5
+Total number of tristate cells: 5
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX1 BUFX3 CLKBUFX1 CLKBUFX3 CLKBUFX2
+Total number of usable buffers: 5
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX1 INVX2 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+*info: set bottom ioPad orient R0
+Reading IO assignment file "scripts/encoder.ioc" ...
+Horizontal Layer M1 offset = 660 (guessed)
+Vertical Layer M2 offset = 660 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 0.1 ps.
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> editPin -side Left -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType range -start 0.0 10.0 -end 25.0 70.0 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+**WARN: (SOCPTN-1026):	Pin [balanceCLK] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [balanceCLK] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [clk] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [clk] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [globalReset] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [globalReset] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [reData] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [reData] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[0]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[0]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[1]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[1]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[2]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[2]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[3]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[3]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [8] pins.
+**ERROR: (SOCSYT-16268):	Only support 'start' and 'center' spread for single pin.
+<CMD> editPin -side Left -pinWidth 0.3 -fixedPin 1 -layer 5 -spreadType range -start 0.0 10.23 -end 0.0 69.63 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+Successfully spread [8] pins.
+**ERROR: (SOCSYT-16268):	Only support 'start' and 'center' spread for single pin.
+<CMD> editPin -side Left -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 3 -spreadType start -start 87.0 40.0 -pin out
+**WARN: (SOCPTN-1026):	Pin [out] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [3]. Changing pin depth for pin [out] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [1] pins.
+<CMD> editPin -side Left -pinWidth 0.3 -pinDepth 0.14 -fixedPin 1 -layer 3 -spreadType start -start 87.0 40.0 -pin out
+**WARN: (SOCPTN-1026):	Pin [out] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [3]. Changing pin depth for pin [out] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [1] pins.
+<CMD> editPin -side Right -fixedPin 1 -layer 3 -spreadType start -start 0.0 40.59 -pin out
+Successfully spread [1] pins.
+<CMD> editPin -side Left -fixedPin 1 -layer 5 -spreadType start -start 0.0 35.31 -pin reData
+Successfully spread [1] pins.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect POWR -type pgpin -pin POWR -inst * -module {}
+<CMD> globalNetConnect POWR -type tiehi -pin POWR -inst * -module {}
+<CMD> globalNetConnect GRND -type pgpin -pin GRND -inst * -module {}
+<CMD> globalNetConnect GRND -type tielo -pin GRND -inst * -module {}
+Warning: term SN of inst dff9/Q_reg is not connect to global special net.
+Warning: term SN of inst dff10/Q_reg is not connect to global special net.
+Warning: term RN of inst DIV8CLK1/count_reg_0_ is not connect to global special net.
+Warning: term SN of inst DIV8CLK1/count_reg_2_ is not connect to global special net.
+Warning: term SN of inst DIV8CLK1/count_reg_1_ is not connect to global special net.
+Warning: term SN of inst DIV8CLK1/reverse_reg is not connect to global special net.
+Warning: term SN of inst metastablility_corrected_reData1/dff7/Q_reg is not connect to global special net.
+Warning: term SN of inst metastablility_corrected_reData1/dff8/Q_reg is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/ed1/x1Out_dly_reg is not connect to global special net.
+Warning: term RN of inst IDLEdetection1/ed1/x1Out_dly_reg is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_0_ is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_1_ is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_2_ is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_3_ is not connect to global special net.
+Warning: term SI of inst IDLEdetection1/dff2/Q_reg is not connect to global special net.
+Warning: term SE of inst IDLEdetection1/dff2/Q_reg is not connect to global special net.
+Warning: term D of inst IDLEdetection1/dff2/Q_reg is not connect to global special net.
+Warning: term SN of inst FSM1/state_reg_0_ is not connect to global special net.
+Warning: term SN of inst FSM1/state_reg_1_ is not connect to global special net.
+Warning: term SN of inst FSM1/state_reg_2_ is not connect to global special net.
+<CMD> addRing -spacing_bottom 1.2 -width_left 1.2 -width_bottom 1.2 -width_top 1.2 -spacing_top 1.2 -layer_bottom Metal1 -stacked_via_top_layer Metal6 -width_right 1.2 -around core -jog_distance 0.33 -layer_top Metal1 -threshold 0.33 -spacing_right 1.2 -spacing_left 1.2 -layer_right Metal2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1 -layer_left Metal2
+
+
+The power planner created 8 wires.
+
+<CMD> addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 3 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 0.3 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 0.3 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+**WARN: (SOCPP-1):	IntraSet spacing 0.300 is less than required 0.400 to create M12 via.
+  Therefore, there will be missing vias if switching to layer 2.
+
+**WARN: (SOCPP-1):	IntraSet spacing 0.300 is less than required 0.400 to create M23 via.
+  Therefore, there will be missing vias if switching to layer 3.
+
+Stripe generation is complete.
+
+The power planner created 6 wires.
+
+<CMD> selectWire 7.2000 2.0000 7.5000 90.4000 2 POWR
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 6.6000 4.4000 6.9000 88.0000 2 GRND
+<CMD> deleteSelectedFromFPlan
+<CMD> deleteSelectedFromFPlan
+**ERROR: (SOCSYT-6000):	No Object Selected.
+**ERROR: (SOCSYT-6000):	No Object Selected.
+<CMD> selectWire 92.7300 4.4000 93.0300 88.0000 2 GRND
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 93.3300 2.0000 93.6300 90.4000 2 POWR
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 49.6650 4.4000 49.9650 88.0000 2 GRND
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 50.2650 2.0000 50.5650 90.4000 2 POWR
+<CMD> deleteSelectedFromFPlan
+<CMD> addStripe -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.6 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 3 -stacked_via_top_layer Metal6 -padcore_ring_top_layer_limit Metal3 -spacing 1 -merge_stripes_value 0.33 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1.2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1
+**WARN: (SOCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Stripe generation is complete.
+
+The power planner created 6 wires.
+
+<CMD> selectWire 92.4300 2.0000 93.6300 90.4000 2 POWR
+<CMD> deselectAll
+<CMD> selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+<CMD> deselectAll
+<CMD> selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+<CMD> deselectAll
+<CMD> windowSelect 90.656 72.169 89.288 72.443
+<CMD> selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+<CMD_INTERNAL> uiSetTool addVia
+<CMD> editAddVia 91.614 73.674
+<CMD> undo
+<CMD_INTERNAL> uiSetTool addPoly
+<CMD> editAddPoly 90.656 73.811
+<CMD> editAddPoly 87.646 74.769
+<CMD> deleteSelectedFromFPlan
+<CMD> undo
+<CMD_INTERNAL> uiSetTool move
+<CMD> selectWire 90.2300 4.4000 91.4300 88.0000 2 GRND
+<CMD> editMove -1.1175 0.0
+<CMD> deselectAll
+<CMD> selectVia 90.2300 4.4000 91.4300 5.6000 2 GRND
+<CMD> editMove -1.1175 0.0
+<CMD> deselectAll
+<CMD> selectVia 90.2300 86.8000 91.4300 88.0000 2 GRND
+<CMD> editMove -1.2575 0.14
+<CMD> deselectAll
+<CMD> selectWire 92.4300 2.0000 93.6300 90.4000 2 POWR
+<CMD> editMove -0.838 0.0
+<CMD> deselectAll
+<CMD> selectVia 92.4300 89.2000 93.6300 90.4000 2 POWR
+<CMD> editMove -0.838 0.0
+<CMD> deselectAll
+<CMD> selectVia 92.4300 2.0000 93.6300 3.2000 2 POWR
+<CMD> editMove -0.838 0.14
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+No routing obstructions were found in the design.
+*** Begin SPECIAL ROUTE on Thu Apr 28 16:25:32 2022 ***
+Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
+SPECIAL ROUTE ran on directory: /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout
+SPECIAL ROUTE ran on machine: EEX055 (Linux 3.10.0-1160.53.1.el7.x86_64 x86_64 2.89Ghz)
+
+Begin option processing ...
+(from .sroute_28235.conf) srouteConnectPowerBump set to false
+(from .sroute_28235.conf) routeSelectNet set to "GRND POWR"
+(from .sroute_28235.conf) routeSpecial set to true
+(from .sroute_28235.conf) srouteCrossoverViaTopLayer set to 6
+(from .sroute_28235.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_28235.conf) srouteFollowPadPin set to true
+(from .sroute_28235.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_28235.conf) sroutePadPinAllPorts set to true
+(from .sroute_28235.conf) sroutePreserveExistingRoutes set to true
+(from .sroute_28235.conf) srouteTopLayerLimit set to 6
+(from .sroute_28235.conf) srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 565.00 megs.
+
+Reading LEF technology information...
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 13 layers, 6 routing layers, 1 overlap layer
+Read in 42 macros, 17 used
+Read in 17 components
+  17 core components: 17 unplaced, 0 placed, 0 fixed
+Read in 9 physical pins
+  9 physical pins: 0 unplaced, 0 placed, 9 fixed
+Read in 9 nets
+Read in 3 special nets, 2 routed
+Read in 43 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (SOCSR-1254):	Net POWR does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net POWR does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net POWR does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net POWR does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-1254):	Net GRND does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net GRND does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net GRND does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net GRND does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 22
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 11
+End power routing: cpu: 0:00:00, real: 0:00:01, peak: 572.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 9 io pins ...
+ Updating DB with 15 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Thu Apr 28 16:25:33 2022
+The viaGen is rebuilding shadow vias for net GRND.
+sroute post-processing ends at Thu Apr 28 16:25:33 2022
+
+sroute post-processing starts at Thu Apr 28 16:25:33 2022
+The viaGen is rebuilding shadow vias for net POWR.
+sroute post-processing ends at Thu Apr 28 16:25:33 2022
+
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 1.29 megs
+sroute: Total Peak Memory used = 251.93 megs
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -noPrePlaceOpt
+**WARN: (SOCSP-9513):	Timing constraint file does not exist
+**WARN: (SOCSP-9514):	NonTimingDriven placement will be performed
+*** Starting placeDesign default flow ***
+*** Starting "NanoPlace(TM) placement v0.845.4.17 (mem=251.9M)" ...
+Options: ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (SOCDB-2082):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=74 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=82 #term=243 #term/net=2.96, #fixedIo=9, #floatIo=0, #fixedPin=9, #floatPin=0
+stdCell: 74 single + 0 double + 0 multi
+Total standard cell length = 0.6092 (mm), area = 0.0048 (mm^2)
+Average module density = 0.803.
+Density for the design = 0.803.
+       = stdcell_area 923 (4825 um^2) / alloc_area 1150 (6011 um^2).
+Pin Density = 0.263.
+            = total # of pins 243 / total Instance area 923.
+Iteration  1: Total net bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              Est.  stn bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  2: Total net bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              Est.  stn bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  3: Total net bbox = 7.954e+02 (5.71e+02 2.25e+02)
+              Est.  stn bbox = 7.954e+02 (5.71e+02 2.25e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  4: Total net bbox = 9.992e+02 (5.99e+02 4.00e+02)
+              Est.  stn bbox = 9.992e+02 (5.99e+02 4.00e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  5: Total net bbox = 1.511e+03 (8.87e+02 6.24e+02)
+              Est.  stn bbox = 1.511e+03 (8.87e+02 6.24e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  6: Total net bbox = 1.620e+03 (9.65e+02 6.56e+02)
+              Est.  stn bbox = 1.791e+03 (1.07e+03 7.21e+02)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 251.9M
+Iteration  7: Total net bbox = 1.877e+03 (8.87e+02 9.90e+02)
+              Est.  stn bbox = 2.048e+03 (9.83e+02 1.06e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 251.9M
+Iteration  8: Total net bbox = 1.821e+03 (8.87e+02 9.34e+02)
+              Est.  stn bbox = 1.984e+03 (9.83e+02 1.00e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  9: Total net bbox = 2.147e+03 (1.21e+03 9.41e+02)
+              Est.  stn bbox = 2.318e+03 (1.31e+03 1.01e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+*** cost = 2.147e+03 (1.21e+03 9.41e+02) (cpu for global=0:00:00.1) real=0:00:00.0***
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:00.0
+Starting refinePlace ...
+Placement tweakage begins.
+wire length = 2.571e+03 = 1.414e+03 H + 1.157e+03 V
+wire length = 2.091e+03 = 1.070e+03 H + 1.021e+03 V
+Placement tweakage ends.
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        52.14 um
+  inst (dff9/U3) with max move: (7.92, 22.44) -> (44.22, 6.6)
+  mean    (X+Y) =        13.45 um
+Total instances moved : 61
+*** cpu=0:00:00.0   mem=251.9M  mem(used)=0.0M***
+Total net length = 2.104e+03 (1.070e+03 1.034e+03) (ext = 4.148e+02)
+*** End of Placement (cpu=0:00:00.2, real=0:00:00.0, mem=251.9M) ***
+default core: bins with density >  0.75 =   50 % ( 1 / 2 )
+Starting IO pin assignment...
+**WARN: (SOCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 251.9M **
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -noPrePlaceOpt
+*** Starting placeDesign default flow ***
+*** Starting "NanoPlace(TM) placement v0.845.4.17 (mem=251.9M)" ...
+Options: ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (SOCDB-2082):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=74 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=82 #term=243 #term/net=2.96, #fixedIo=9, #floatIo=0, #fixedPin=9, #floatPin=0
+stdCell: 74 single + 0 double + 0 multi
+Total standard cell length = 0.6092 (mm), area = 0.0048 (mm^2)
+Average module density = 0.803.
+Density for the design = 0.803.
+       = stdcell_area 923 (4825 um^2) / alloc_area 1150 (6011 um^2).
+Pin Density = 0.263.
+            = total # of pins 243 / total Instance area 923.
+Iteration  1: Total net bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              Est.  stn bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  2: Total net bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              Est.  stn bbox = 8.742e+02 (6.41e+02 2.33e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  3: Total net bbox = 7.954e+02 (5.71e+02 2.25e+02)
+              Est.  stn bbox = 7.954e+02 (5.71e+02 2.25e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  4: Total net bbox = 9.992e+02 (5.99e+02 4.00e+02)
+              Est.  stn bbox = 9.992e+02 (5.99e+02 4.00e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  5: Total net bbox = 1.511e+03 (8.87e+02 6.24e+02)
+              Est.  stn bbox = 1.511e+03 (8.87e+02 6.24e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  6: Total net bbox = 1.620e+03 (9.65e+02 6.56e+02)
+              Est.  stn bbox = 1.791e+03 (1.07e+03 7.21e+02)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 251.9M
+Iteration  7: Total net bbox = 1.877e+03 (8.87e+02 9.90e+02)
+              Est.  stn bbox = 2.048e+03 (9.83e+02 1.06e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  8: Total net bbox = 1.821e+03 (8.87e+02 9.34e+02)
+              Est.  stn bbox = 1.984e+03 (9.83e+02 1.00e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+Iteration  9: Total net bbox = 2.147e+03 (1.21e+03 9.41e+02)
+              Est.  stn bbox = 2.318e+03 (1.31e+03 1.01e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 251.9M
+*** cost = 2.147e+03 (1.21e+03 9.41e+02) (cpu for global=0:00:00.1) real=0:00:00.0***
+Core Placement runtime cpu: 0:00:00.1 real: 0:00:00.0
+Starting refinePlace ...
+Placement tweakage begins.
+wire length = 2.571e+03 = 1.414e+03 H + 1.157e+03 V
+wire length = 2.091e+03 = 1.070e+03 H + 1.021e+03 V
+Placement tweakage ends.
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        52.14 um
+  inst (dff9/U3) with max move: (7.92, 22.44) -> (44.22, 6.6)
+  mean    (X+Y) =        13.45 um
+Total instances moved : 61
+*** cpu=0:00:00.0   mem=251.9M  mem(used)=0.0M***
+Total net length = 2.104e+03 (1.070e+03 1.034e+03) (ext = 4.148e+02)
+*** End of Placement (cpu=0:00:00.1, real=0:00:00.0, mem=251.9M) ***
+default core: bins with density >  0.75 =   50 % ( 1 / 2 )
+Starting IO pin assignment...
+**WARN: (SOCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 251.9M **
+<CMD> setDrawView place
+<CMD> getFillerMode -quiet
+<CMD_INTERNAL> findCoreFillerCells
+<CMD> addFiller -cell FILL1 FILL2 FILL4 FILL8 -prefix FILLER -markFixed
+**WARN: (SOCSP-9057):	Fillers being added in a FIXED mode to the whole design. Some subsequent
+operations, such as antenna fixing, may fail due to fillers being marked
+as 'FIXED'. If this was not intended, use deleteFiller command to undo.
+*INFO:   Added 26 filler insts (cell FILL8 / prefix FILLER).
+*INFO:   Added 27 filler insts (cell FILL4 / prefix FILLER).
+*INFO:   Added 29 filler insts (cell FILL2 / prefix FILLER).
+*INFO:   Added 13 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 95 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+<CMD> getNanoRouteMode -quiet
+<CMD> getNanoRouteMode -user -drouteEndIteration
+<CMD> getNanoRouteMode -user -drouteStartIteration
+<CMD> getNanoRouteMode -user -routeBottomRoutingLayer
+<CMD> getNanoRouteMode -user -routeTopRoutingLayer
+<CMD> getNanoRouteMode -quiet -envSuperthreading
+<CMD> getNanoRouteMode -quiet -drouteFixAntenna
+<CMD> getNanoRouteMode -quiet -routeInsertAntennaDiode
+<CMD> getNanoRouteMode -quiet -routeAntennaCellName
+<CMD> getNanoRouteMode -quiet -timingEngine
+<CMD> getNanoRouteMode -quiet -routeWithTimingDriven
+<CMD> getNanoRouteMode -quiet -routeWithEco
+<CMD> getNanoRouteMode -quiet -routeWithLithoDriven
+<CMD> getNanoRouteMode -quiet -droutePostRouteLithoRepair
+<CMD> getNanoRouteMode -quiet -routeWithSiDriven
+<CMD> getNanoRouteMode -quiet -routeTdrEffort
+<CMD> getNanoRouteMode -quiet -routeWithSiPostRouteFix
+<CMD> getNanoRouteMode -quiet -drouteAutoStop
+<CMD> getNanoRouteMode -quiet -routeSelectedNetOnly
+<CMD> getNanoRouteMode -quiet -drouteStartIteration
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+<CMD> getNanoRouteMode -quiet -envNumberProcessor
+<CMD> getNanoRouteMode -quiet -envSuperthreading
+<CMD> getNanoRouteMode -quiet -routeTopRoutingLayer
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> getNanoRouteMode -quiet -routeBottomRoutingLayer
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> getNanoRouteMode -quiet -drouteEndIteration
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> getNanoRouteMode -quiet -routeEcoOnlyInLayers
+<CMD> getNanoRouteMode -quiet -routeWithTimingDriven
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> getNanoRouteMode -quiet -routeWithSiDriven
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Begin checking placement ...
+*info: Placed = 74
+*info: Unplaced = 0
+Placement Density:100.00%(4825/4825)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=252.7M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Apr 28 16:26:49 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 252.00 (Mb)
+#setting min_area (0.200000) for layer Metal2 using TOPOFSTACK via Via23_stack_north
+#setting min_area (0.200000) for layer Metal3 using TOPOFSTACK via Via34_stack_east
+#setting min_area (0.200000) for layer Metal4 using TOPOFSTACK via Via45_stack_north
+#setting min_area (0.200000) for layer Metal5 using TOPOFSTACK via Via56_stack_east
+Using detail cap. scale factor for clock nets.
+#NanoRoute Version v08.10-s225 NR090922-1020/USR61-UB
+#WARNING (NREX-28) The height of the first routing layer Metal1 is 0.000000. It should be larger than 0.000000
+#WARNING (NREX-29) The metal thickness of routing layer Metal1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers heigher than routing layer Metal1
+#WARNING (NREX-4) No Extended Cap Table was imported. Not enough process information was provided either and default Extended Cap Table database will be used.
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#Auto generating G-grids with size=15 tracks, using layer Metal2's pitch = 0.650.
+#Using automatically generated G-grids.
+#
+#Data preparation is done.
+#
+#Analyzing routing resource...
+#Routing resource analysis is done.
+#  Resource Analysis:
+#
+#               Routing  #Total     %Gcell
+#  Layer      Direction   Gcell     Blocked
+#  ------------------------------------------
+#  Metal 1        H          90      55.56%
+#  Metal 2        V          90       0.00%
+#  Metal 3        H          90       0.00%
+#  Metal 4        V          90       0.00%
+#  Metal 5        H          90       0.00%
+#  Metal 6        V          90       0.00%
+#  ------------------------------------------
+#  Total                    540       9.26%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 257.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 257.00 (Mb)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 257.00 (Mb)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 257.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total wire length = 2155 um.
+#Total half perimeter of net bounding box = 2508 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 1128 um.
+#Total wire length on LAYER Metal3 = 988 um.
+#Total wire length on LAYER Metal4 = 20 um.
+#Total wire length on LAYER Metal5 = 20 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total number of vias = 327
+#Up-Via Summary (total 327):
+#           
+#-----------------------
+#  Metal 1          185
+#  Metal 2          126
+#  Metal 3            8
+#  Metal 4            8
+#-----------------------
+#                   327 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 1.00 (Mb)
+#Total memory = 257.00 (Mb)
+#Peak memory = 291.00 (Mb)
+#
+#Start Detail Routing.
+#start initial detail routing ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 263.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 263.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 2293 um.
+#Total half perimeter of net bounding box = 2508 um.
+#Total wire length on LAYER Metal1 = 119 um.
+#Total wire length on LAYER Metal2 = 1058 um.
+#Total wire length on LAYER Metal3 = 927 um.
+#Total wire length on LAYER Metal4 = 47 um.
+#Total wire length on LAYER Metal5 = 141 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total number of vias = 483
+#Up-Via Summary (total 483):
+#           
+#-----------------------
+#  Metal 1          237
+#  Metal 2          224
+#  Metal 3           14
+#  Metal 4            8
+#-----------------------
+#                   483 
+#
+#Total number of DRC violations = 0
+#Total number of violations on LAYER Metal1 = 0
+#Total number of violations on LAYER Metal2 = 0
+#Total number of violations on LAYER Metal3 = 0
+#Total number of violations on LAYER Metal4 = 0
+#Total number of violations on LAYER Metal5 = 0
+#Total number of violations on LAYER Metal6 = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 2.00 (Mb)
+#Total memory = 259.00 (Mb)
+#Peak memory = 293.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 5.00 (Mb)
+#Total memory = 257.00 (Mb)
+#Peak memory = 293.00 (Mb)
+#Number of warnings = 4
+#Total number of warnings = 4
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Apr 28 16:26:50 2022
+#
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+No routing obstructions were found in the design.
+*** Begin SPECIAL ROUTE on Thu Apr 28 16:26:57 2022 ***
+Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
+SPECIAL ROUTE ran on directory: /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout
+SPECIAL ROUTE ran on machine: EEX055 (Linux 3.10.0-1160.53.1.el7.x86_64 x86_64 2.89Ghz)
+
+Begin option processing ...
+(from .sroute_28235.conf) srouteConnectPowerBump set to false
+(from .sroute_28235.conf) routeSelectNet set to "GRND POWR"
+(from .sroute_28235.conf) routeSpecial set to true
+(from .sroute_28235.conf) srouteCrossoverViaTopLayer set to 6
+(from .sroute_28235.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_28235.conf) srouteFollowPadPin set to true
+(from .sroute_28235.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_28235.conf) sroutePadPinAllPorts set to true
+(from .sroute_28235.conf) sroutePreserveExistingRoutes set to true
+(from .sroute_28235.conf) srouteTopLayerLimit set to 6
+(from .sroute_28235.conf) srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 575.00 megs.
+
+Reading LEF technology information...
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 13 layers, 6 routing layers, 1 overlap layer
+Read in 42 macros, 21 used
+Read in 169 components
+  169 core components: 0 unplaced, 74 placed, 95 fixed
+Read in 9 physical pins
+  9 physical pins: 0 unplaced, 0 placed, 9 fixed
+Read in 9 nets
+Read in 3 special nets, 2 routed
+Read in 347 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (SOCSR-1254):	Net POWR does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net POWR does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net POWR does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net POWR does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-1254):	Net GRND does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net GRND does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net GRND does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net GRND does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 580.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 9 io pins ...
+ Updating DB with 15 via definition ...
+
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.12 megs
+sroute: Total Peak Memory used = 258.13 megs
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Thu Apr 28 16:27:13 2022
+
+Design Name: encoder
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (99.6300, 91.8000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Thu Apr 28 16:27:13 2022
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 258.6) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 7200
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.3  MEM: 1.2M)
+
+<CMD> saveDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc
+Writing Netlist "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat/encoder.v" ...
+Saving configuration ...
+Saving preference file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat/enc.pref.tcl ...
+Saving SI fix option to '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat/siFix.option'...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=259.2M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=259.2M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+<CMD> saveNetlist encoder.rounted.v
+Writing Netlist "encoder.rounted.v" ...
+<CMD> clearClockDomains
+<CMD> setClockDomains -all
+setClockDomains -all 
+**WARN: (SOCSYC-1873):	The setClockDomains -all option is unsupported in CTE mode 
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix encoder_preCTS -outDir timingReports
+-engine default                        # enums={feDC signalStorm default}, default=default, user setting
+-signOff false                         # bool, default=false
+*** Starting trialRoute (mem=260.1M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (199260 183600)
+coreBox:    (13200 13200) (187260 171600)
+Number of multi-gpin terms=37, multi-gpins=94, moved blk term=0/0
+
+Phase 1a route (0:00:00.0 261.3M):
+Est net length = 2.226e+03um = 1.117e+03H + 1.109e+03V
+Usage: (5.2%H 6.7%V) = (1.355e+03um 2.685e+03um) = (403 339)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 263.9M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.685e+03um) = (402 339)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 263.9M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 263.9M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 264.5M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+ 10:	0	 0.00%	13	 3.87%
+ 11:	0	 0.00%	38	11.31%
+ 12:	0	 0.00%	59	17.56%
+ 13:	0	 0.00%	42	12.50%
+ 14:	0	 0.00%	49	14.58%
+ 15:	0	 0.00%	94	27.98%
+ 16:	0	 0.00%	4	 1.19%
+ 17:	0	 0.00%	9	 2.68%
+ 18:	28	 8.33%	4	 1.19%
+ 19:	5	 1.49%	0	 0.00%
+ 20:	303	90.18%	24	 7.14%
+
+Global route (cpu=0.0s real=0.0s 262.0M)
+
+*** Memory Usage v0.144.6.3 (Current mem = 270.008M, initial mem = 76.688M) ***
+Phase 1l route (0:00:00.0 262.0M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (5.3%H 6.7%V) = (1.398e+03um 2.685e+03um) = (410 339)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+ 10:	0	 0.00%	12	 3.57%
+ 11:	0	 0.00%	39	11.61%
+ 12:	0	 0.00%	58	17.26%
+ 13:	0	 0.00%	43	12.80%
+ 14:	0	 0.00%	48	14.29%
+ 15:	0	 0.00%	95	28.27%
+ 16:	0	 0.00%	3	 0.89%
+ 17:	0	 0.00%	10	 2.98%
+ 18:	28	 8.33%	4	 1.19%
+ 19:	5	 1.49%	0	 0.00%
+ 20:	303	90.18%	24	 7.14%
+
+
+
+*** Completed Phase 1 route (0:00:00.0 260.1M) ***
+
+
+Total length: 2.364e+03um, number of vias: 442
+M1(H) length: 0.000e+00um, number of vias: 234
+M2(V) length: 1.204e+03um, number of vias: 192
+M3(H) length: 1.106e+03um, number of vias: 8
+M4(V) length: 1.848e+01um, number of vias: 8
+M5(H) length: 3.564e+01um, number of vias: 0
+M6(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 260.1M) ***
+
+*** Finished all Phases (cpu=0:00:00.1 mem=260.1M) ***
+Peak Memory Usage was 270.0M 
+*** Finished trialRoute (cpu=0:00:00.1 mem=260.1M) ***
+
+Default RC Extraction called for design encoder.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Resistance Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 260.074M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.000  |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
+|          All Paths:|    0    |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 100.000%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.66 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 283.261719 Mbytes
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 > top.mtarpt
+No constrained timing paths with given description found.
+report_timing -machine_readable -max_points 10000 -max_slack 0.75 > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+**WARN: (SOCGTD-801):	File (top.mtarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+**ERROR: (SOCGTD-223):	load_timing_debug_report top.mtarpt failed.
+<CMD> clearClockDomains
+<CMD> setClockDomains -all
+setClockDomains -all 
+**WARN: (SOCSYC-1873):	The setClockDomains -all option is unsupported in CTE mode 
+<CMD> timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix encoder_preCTS -outDir timingReports
+-engine default                        # enums={feDC signalStorm default}, default=default, user setting
+-signOff false                         # bool, default=false
+*** Starting trialRoute (mem=276.9M) ***
+
+There are 0 pin guide points passed to trialRoute.
+Options:  -noPinGuide
+
+routingBox: (0 0) (199260 183600)
+coreBox:    (13200 13200) (187260 171600)
+Number of multi-gpin terms=37, multi-gpins=94, moved blk term=0/0
+
+Phase 1a route (0:00:00.0 278.2M):
+Est net length = 2.226e+03um = 1.117e+03H + 1.109e+03V
+Usage: (5.2%H 6.7%V) = (1.355e+03um 2.685e+03um) = (403 339)
+Obstruct: 0 = 0 (0.0%H) + 0 (0.0%V)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1b route (0:00:00.0 280.7M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.685e+03um) = (402 339)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1c route (0:00:00.0 280.7M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1d route (0:00:00.0 280.7M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Phase 1e route (0:00:00.0 281.4M):
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Usage: (5.2%H 6.7%V) = (1.352e+03um 2.669e+03um) = (402 337)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+ 10:	0	 0.00%	13	 3.87%
+ 11:	0	 0.00%	38	11.31%
+ 12:	0	 0.00%	59	17.56%
+ 13:	0	 0.00%	42	12.50%
+ 14:	0	 0.00%	49	14.58%
+ 15:	0	 0.00%	94	27.98%
+ 16:	0	 0.00%	4	 1.19%
+ 17:	0	 0.00%	9	 2.68%
+ 18:	28	 8.33%	4	 1.19%
+ 19:	5	 1.49%	0	 0.00%
+ 20:	303	90.18%	24	 7.14%
+
+Global route (cpu=0.0s real=0.0s 278.9M)
+
+*** Memory Usage v0.144.6.3 (Current mem = 286.863M, initial mem = 76.688M) ***
+Phase 1l route (0:00:00.0 278.9M):
+
+
+*** After '-updateRemainTrks' operation: 
+
+Usage: (5.3%H 6.7%V) = (1.398e+03um 2.685e+03um) = (410 339)
+Overflow: 0 = 0 (0.00% H) + 0 (0.00% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+ 10:	0	 0.00%	12	 3.57%
+ 11:	0	 0.00%	39	11.61%
+ 12:	0	 0.00%	58	17.26%
+ 13:	0	 0.00%	43	12.80%
+ 14:	0	 0.00%	48	14.29%
+ 15:	0	 0.00%	95	28.27%
+ 16:	0	 0.00%	3	 0.89%
+ 17:	0	 0.00%	10	 2.98%
+ 18:	28	 8.33%	4	 1.19%
+ 19:	5	 1.49%	0	 0.00%
+ 20:	303	90.18%	24	 7.14%
+
+
+
+*** Completed Phase 1 route (0:00:00.1 276.9M) ***
+
+
+Total length: 2.364e+03um, number of vias: 442
+M1(H) length: 0.000e+00um, number of vias: 234
+M2(V) length: 1.204e+03um, number of vias: 192
+M3(H) length: 1.106e+03um, number of vias: 8
+M4(V) length: 1.848e+01um, number of vias: 8
+M5(H) length: 3.564e+01um, number of vias: 0
+M6(V) length: 0.000e+00um
+*** Completed Phase 2 route (0:00:00.0 276.9M) ***
+
+*** Finished all Phases (cpu=0:00:00.1 mem=276.9M) ***
+Peak Memory Usage was 286.9M 
+*** Finished trialRoute (cpu=0:00:00.1 mem=276.9M) ***
+
+Default RC Extraction called for design encoder.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Resistance Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using detail cap. scale factor for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 276.930M)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.000  |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
+|          All Paths:|    0    |   N/A   |   N/A   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
+Density: 100.000%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.47 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 276.929688 Mbytes
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 6 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 6 -crossoverViaTopLayer 6 -targetViaBottomLayer 1 -nets { GRND POWR }
+No routing obstructions were found in the design.
+*** Begin SPECIAL ROUTE on Thu Apr 28 16:36:46 2022 ***
+Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
+SPECIAL ROUTE ran on directory: /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout
+SPECIAL ROUTE ran on machine: EEX055 (Linux 3.10.0-1160.53.1.el7.x86_64 x86_64 2.89Ghz)
+
+Begin option processing ...
+(from .sroute_28235.conf) srouteConnectPowerBump set to false
+(from .sroute_28235.conf) routeSelectNet set to "GRND POWR"
+(from .sroute_28235.conf) routeSpecial set to true
+(from .sroute_28235.conf) srouteCrossoverViaTopLayer set to 6
+(from .sroute_28235.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_28235.conf) srouteFollowPadPin set to true
+(from .sroute_28235.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_28235.conf) sroutePadPinAllPorts set to true
+(from .sroute_28235.conf) sroutePreserveExistingRoutes set to true
+(from .sroute_28235.conf) srouteTopLayerLimit set to 6
+(from .sroute_28235.conf) srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 594.00 megs.
+
+Reading LEF technology information...
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 13 layers, 6 routing layers, 1 overlap layer
+Read in 42 macros, 21 used
+Read in 169 components
+  169 core components: 0 unplaced, 74 placed, 95 fixed
+Read in 9 physical pins
+  9 physical pins: 0 unplaced, 0 placed, 9 fixed
+Read in 9 nets
+Read in 3 special nets, 2 routed
+Read in 347 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (SOCSR-1254):	Net POWR does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net POWR does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net POWR does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net POWR does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+**WARN: (SOCSR-1254):	Net GRND does not have block pins to be routed. Please check net list.
+**WARN: (SOCSR-1255):	Net GRND does not have pad pins to create pad ring. Please check net list or port class. (must NOT be CORE class and must not be AREAIO subclass). 
+**WARN: (SOCSR-1256):	Net GRND does not have CORE class pad pins to be routed.
+	Please check net list or port class.
+Net GRND does not have AREAIO class pad pins to be routed.
+	Please check net list or port class.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 599.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 9 io pins ...
+ Updating DB with 15 via definition ...
+
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.10 megs
+sroute: Total Peak Memory used = 277.06 megs
+<CMD> saveNetlist encoder.rounted.v
+Writing Netlist "encoder.rounted.v" ...
+<CMD> saveDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc
+**WARN: (SOCSYT-3036):	Design directory /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat exists, rename it to /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat/encoder.v" ...
+Saving configuration ...
+Saving preference file /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat/enc.pref.tcl ...
+Saving SI fix option to '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/encoder.enc.dat/siFix.option'...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=277.2M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=277.2M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+<CMD> rcOut -spef results/divider.spef -rc_coner rc_worst
+rcOut Option :  -spef results/divider.spef -rc_coner rc_worst 
+**ERROR: (SOCDC-516):	invalid option -rc_coner
+Usage: rcOut {-instance <hierInstanceName> -setportload
+             <fileName> | -setload <fileName>   [-excNetFile
+             <fileName> | -net <fileName>]   [-best
+             | -typical | -worst] | -setres <fileName>
+               [-excNetFile <fileName> | -net <fileName>]
+               [-best | -worst | -typical] | -spef <fileName>
+             [-unmapped]     [-excNetFile <fileName>
+             | -net <fileName> [-addHeaderTail]]   
+              [-best | -worst | -typical] | -spf <fileName>
+             [-excNetFile <fileName> | -net <fileName>
+             [-addHeaderTail]]     [-filesize <sizeInMbytes>]
+             | -verilog <fileName>} [-cUnit <unit>]
+             [-opTemp <temp>] [-view <viewName> | -rc_corner
+             <rcCornerName>] [-noRes]
+
+**ERROR: (SOCSYC-194):	Incorrect usage for command 'rcOut'.
+<CMD> write_sdf results/encoder.sdf
+Topological Sorting (CPU = 0:00:00.0, MEM = 285.8M)
+Number of Loop : 0
+Start delay calculation (mem=285.785M)...
+Delay calculation completed.
+(cpu=0:00:00.0 real=0:00:00.0 mem=286.363M 0)
+Topological Sorting (CPU = 0:00:00.0, MEM = 286.3M)
+Number of Loop : 0
+Start delay calculation (mem=286.348M)...
+Delay calculation completed.
+(cpu=0:00:00.0 real=0:00:00.0 mem=286.348M 0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 286.3M) ***
+<CMD> saveNetlist results/encoder.routed.v
+Writing Netlist "results/encoder.routed.v" ...
+
+*** Memory Usage v0.144.6.3 (Current mem = 277.250M, initial mem = 76.688M) ***
+--- Ending "First Encounter" (totcpu=0:08:47, real=0:26:43, mem=277.2M) ---

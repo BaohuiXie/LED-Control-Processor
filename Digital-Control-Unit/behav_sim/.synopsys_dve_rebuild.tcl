@@ -1,0 +1,9 @@
+# DVE Simulation Rebuild/Restart Options
+# Saved on Thu Apr 28 02:10:34 2022
+set SIMSETUP::REBUILDOPTION 1
+set SIMSETUP::REBUILDCMD {source ./run_digitalControlBlock}
+set SIMSETUP::REBUILDDIR {./}
+set SIMSETUP::RESTOREBP 1
+set SIMSETUP::RESTOREDUMP 1
+set SIMSETUP::RESTOREFORCE 1
+set SIMSETUP::RESTORESPECMAN 0

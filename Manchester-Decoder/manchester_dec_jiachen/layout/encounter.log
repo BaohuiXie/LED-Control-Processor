@@ -1,0 +1,318 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 8.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.04-p044.
+sourcing /usr/eelocal/cadence/soc81/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-s338_1 (64bit) 10/01/2009 19:08 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-s225 NR090922-1020/USR61-UB (database version 2.30, 85.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.13-s302_1 (64bit) 09/16/2009 00:09:35 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-s251_1 (64bit) Sep 16 2009 13:51:57 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.13-s001
+--- Starting "First Encounter v08.10-s338_1" on Mon Apr 18 12:39:58 2022 (mem=76.6M) ---
+--- Running on EEX056 (x86_64 w/Linux 3.10.0-1160.59.1.el7.x86_64) ---
+This version was compiled on Thu Oct 1 19:08:44 PDT 2009.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Default Total Res Scale Factor to 1.00
+Set Detail Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - /afs/ee.ust.hk/staff/ee/jrenal/Implementation_8/manchester_dec/layout/manchester_dec.enc.dat/manchester_dec.conf
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal6 GENERATE
+**WARN: (SOCTS-302):	Min timing libraries are not specified, while max timing libraries are specified in configuration file. This may cause issues in hold analysis. Use rda_Input(ui_timelib) instead of rda_Input(ui_timelib,max) for timing library specification, or use setTimingLibrary command to set min timing libraries. By default max timing libraries will be used for hold analysis.
+*** End library_loading (cpu=0.00min, mem=0.2M, fe_cpu=0.09min, fe_mem=232.2M) ***
+Loading preference file /afs/ee.ust.hk/staff/ee/jrenal/Implementation_8/manchester_dec/layout/manchester_dec.enc.dat/enc.pref.tcl ...
+loading place ...
+loading route ...
+<CMD> setDrawView place
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 237.1) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 7200
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.3  MEM: 2.0M)
+
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Apr 18 12:40:34 2022
+
+Design Name: manchester_dec
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (125.9000, 60.1600)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Mon Apr 18 12:40:34 2022
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> selectWire 5.8800 5.8800 7.0800 54.8400 2 POWR
+<CMD> streamOut results/manchester_dec.gds -mapFile streamOut.map -libName DesignLib -stripes 1 -units 2000 -mode ALL
+Parse map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for tile
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    121                             COMP
+    122                          DIEAREA
+    1                             Metal1
+    2                             Metal1
+    3                             Metal1
+    4                             Metal1
+    7                             Metal1
+    5                             Metal1
+    6                             Metal1
+    8                             Metal1
+    9                             Metal1
+    10                            Metal1
+    15                              Via1
+    16                              Via1
+    19                              Via1
+    17                              Via1
+    18                              Via1
+    20                              Via1
+    21                              Via1
+    22                            Metal2
+    23                            Metal2
+    24                            Metal2
+    25                            Metal2
+    28                            Metal2
+    26                            Metal2
+    27                            Metal2
+    29                            Metal2
+    30                            Metal2
+    31                            Metal2
+    36                              Via2
+    37                              Via2
+    40                              Via2
+    38                              Via2
+    39                              Via2
+    41                              Via2
+    42                              Via2
+    43                            Metal3
+    44                            Metal3
+    45                            Metal3
+    46                            Metal3
+    49                            Metal3
+    47                            Metal3
+    48                            Metal3
+    50                            Metal3
+    51                            Metal3
+    52                            Metal3
+    57                              Via3
+    58                              Via3
+    61                              Via3
+    59                              Via3
+    60                              Via3
+    62                              Via3
+    63                              Via3
+    64                            Metal4
+    65                            Metal4
+    66                            Metal4
+    67                            Metal4
+    70                            Metal4
+    68                            Metal4
+    69                            Metal4
+    71                            Metal4
+    72                            Metal4
+    73                            Metal4
+    78                              Via4
+    79                              Via4
+    82                              Via4
+    80                              Via4
+    81                              Via4
+    83                              Via4
+    84                              Via4
+    85                            Metal5
+    86                            Metal5
+    87                            Metal5
+    88                            Metal5
+    91                            Metal5
+    89                            Metal5
+    90                            Metal5
+    92                            Metal5
+    93                            Metal5
+    94                            Metal5
+    99                              Via5
+    100                             Via5
+    103                             Via5
+    101                             Via5
+    102                             Via5
+    104                             Via5
+    105                             Via5
+    106                           Metal6
+    107                           Metal6
+    108                           Metal6
+    109                           Metal6
+    112                           Metal6
+    110                           Metal6
+    111                           Metal6
+    113                           Metal6
+    114                           Metal6
+    115                           Metal6
+    11                            Metal1
+    12                            Metal1
+    13                            Metal1
+    14                            Metal1
+    32                            Metal2
+    33                            Metal2
+    34                            Metal2
+    35                            Metal2
+    53                            Metal3
+    54                            Metal3
+    55                            Metal3
+    56                            Metal3
+    74                            Metal4
+    75                            Metal4
+    76                            Metal4
+    77                            Metal4
+    95                            Metal5
+    96                            Metal5
+    97                            Metal5
+    98                            Metal5
+    116                           Metal6
+    117                           Metal6
+    118                           Metal6
+    119                           Metal6
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            108
+
+Ports/Pins                             5
+    metal layer Metal2                 4
+    metal layer Metal3                 1
+
+Nets                                 264
+    metal layer Metal1                47
+    metal layer Metal2               153
+    metal layer Metal3                60
+    metal layer Metal4                 4
+
+    Via Instances                    266
+
+Special Nets                          29
+    metal layer Metal1                19
+    metal layer Metal2                10
+
+    Via Instances                     47
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                  55
+    metal layer Metal1                12
+    metal layer Metal2                31
+    metal layer Metal3                11
+    metal layer Metal4                 1
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+######Streamout is finished!
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.5
+<CMD> defOut -floorplan -netlist -routing results/manchester_dec.def
+Writing DEF file 'results/manchester_dec.def', current time is Mon Apr 18 12:43:28 2022 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'results/manchester_dec.def' is written, current time is Mon Apr 18 12:43:28 2022 ...
+<CMD> set dbgLefDefOutVersion 5.5
+<CMD> saveNetlist results/manchester_dec.v
+Writing Netlist "results/manchester_dec.v" ...
+
+*** Memory Usage v0.144.6.3 (Current mem = 239.922M, initial mem = 76.559M) ***
+--- Ending "First Encounter" (totcpu=0:03:48, real=0:23:47, mem=239.9M) ---

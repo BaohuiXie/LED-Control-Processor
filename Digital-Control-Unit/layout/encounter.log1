@@ -1,0 +1,278 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 8.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.04-p044.
+sourcing /usr/eelocal/cadence/soc81/etc/fe/rdaDSL.tcl
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: First Encounter v08.10-s338_1 (64bit) 10/01/2009 19:08 (Linux 2.6)
+@(#)CDS: NanoRoute v08.10-s225 NR090922-1020/USR61-UB (database version 2.30, 85.1.1) {superthreading v1.11}
+@(#)CDS: CeltIC v08.13-s302_1 (64bit) 09/16/2009 00:09:35 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CTE v08.10-s251_1 (64bit) Sep 16 2009 13:51:57 (Linux 2.6.9-67.0.10.ELsmp)
+@(#)CDS: CPE v08.13-s001
+--- Starting "First Encounter v08.10-s338_1" on Thu Apr 28 15:59:03 2022 (mem=76.7M) ---
+--- Running on EEX055 (x86_64 w/Linux 3.10.0-1160.53.1.el7.x86_64) ---
+This version was compiled on Thu Oct 1 19:08:44 PDT 2009.
+Set DBUPerIGU to 1000.
+Set Default Mode Total Cap Scale Factor to 1.00
+Set Detail Mode Total Cap Scale Factor to 1.00
+Set Coupling Total Cap Scale Factor to 1.00
+Set Default Total Res Scale Factor to 1.00
+Set Detail Total Res Scale Factor to 1.00
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+<CMD> getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+<CMD> setDoAssign
+<CMD> getIoFlowFlag
+<CMD_INTERNAL> setUIVar rda_Input ui_leffile ../lib/GSCLib_3.0.lef
+<CMD_INTERNAL> setUIVar rda_Input ui_netlist ../syn/results/encoder.mapped.v
+<CMD_INTERNAL> setUIVar rda_Input ui_timelib,max ../../../../dept/public/eesm6980/digital/GSCLib3/timing/GSCLib_3.0.lib
+<CMD_INTERNAL> setUIVar rda_Input ui_io_file scripts/encoder.ioc
+<CMD_INTERNAL> setUIVar rda_Input ui_topcell encoder
+<CMD> commitConfig
+
+Loading Lef file ../lib/GSCLib_3.0.lef...
+Set DBUPerIGU to M2 pitch 1320.
+Initializing default via types and wire widths ...
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Thu Apr 28 16:04:43 2022
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal1 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal2 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal3 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal4 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal5 GENERATE
+**WARN: (SOCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file.
+	VIARULE TURNMetal6 GENERATE
+viaInitial ends at Thu Apr 28 16:04:43 2022
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../syn/results/encoder.mapped.v'
+
+*** Memory Usage v0.144.6.3 (Current mem = 235.504M, initial mem = 76.688M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=235.5M) ***
+Set top cell to encoder.
+Reading max timing library '../../../../dept/public/eesm6980/digital/GSCLib3/timing/GSCLib_3.0.lib' ...
+ read 38 cells in library 'GSCLib_2.0' 
+**WARN: (SOCTS-302):	Min timing libraries are not specified, while max timing libraries are specified in configuration file. This may cause issues in hold analysis. Use rda_Input(ui_timelib) instead of rda_Input(ui_timelib,max) for timing library specification, or use setTimingLibrary command to set min timing libraries. By default max timing libraries will be used for hold analysis.
+*** End library_loading (cpu=0.00min, mem=0.2M, fe_cpu=1.94min, fe_mem=235.7M) ***
+Starting recursive module instantiation check.
+No recursion found.
+*****NEW dbFlattenCell is used.
+Flattening Cell encoder ...
+*** Netlist is unique.
+** info: there are 55 modules.
+** info: there are 74 stdCell insts.
+
+*** Memory Usage v0.144.6.3 (Current mem = 237.262M, initial mem = 76.688M) ***
+Total number of combinational cells: 28
+Total number of sequential cells: 5
+Total number of tristate cells: 5
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX1 BUFX3 CLKBUFX1 CLKBUFX3 CLKBUFX2
+Total number of usable buffers: 5
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX1 INVX2 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+*info: set bottom ioPad orient R0
+Reading IO assignment file "scripts/encoder.ioc" ...
+Horizontal Layer M1 offset = 660 (guessed)
+Vertical Layer M2 offset = 660 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+**WARN: (SOCDC-1159):	Invalid input transition time. The default 0.1ps input transition time will be used.
+Set Input Pin Transition Delay as 0.1 ps.
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> editPin -side Bottom -pinWidth 0.14 -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType range -start 10.0 0.0 -end 30.0 0.0 -pin {{REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[0]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[0]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[0]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[0]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[1]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[1]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[1]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[1]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[2]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[2]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[2]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[2]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[3]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[3]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[3]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[3]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [4] pins.
+<CMD> editPin -side Left -pinWidth 0.14 -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType range -start 0.0 10.0 -end 0.0 50.0 -pin {balanceCLK clk globalReset reData}
+**WARN: (SOCPTN-1025):	Pin [balanceCLK] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [balanceCLK] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [balanceCLK] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [balanceCLK] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [clk] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [clk] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [clk] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [clk] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [globalReset] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [globalReset] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [globalReset] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [globalReset] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [reData] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [reData] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [reData] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [reData] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [4] pins.
+**ERROR: (SOCSYT-16250):	Choose the pin list first.
+<CMD> editPin -side Right -pinWidth 0.14 -pinDepth 0.14 -fixedPin 1 -layer 3 -spreadType start -start 87.0 50.0 -pin out
+**WARN: (SOCPTN-1025):	Pin [out] has width [0.14] which is less than the minimum width [0.30] required on layer [3]. Changing pin width for pin [out] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [out] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [3]. Changing pin depth for pin [out] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [1] pins.
+<CMD> editPin -side Right -fixedPin 1 -layer 3 -spreadType start -start 87.03 50.49 -pin out
+Successfully spread [1] pins.
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CORE -r 0.910031023785 0.70458 6 6 6 6
+Reading IO assignment file "scripts/encoder.ioc" ...
+Adjusting Core to Left to: 6.6000. Core to Bottom to: 6.6000.
+Horizontal Layer M1 offset = 660 (guessed)
+Vertical Layer M2 offset = 660 (derived)
+Suggestion: specify LAYER OFFSET in LEF file
+Reason: hard to extract LAYER OFFSET from standard cells
+<CMD_INTERNAL> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> editPin -side Left -pinWidth 0.14 -pinDepth 0.14 -fixedPin 1 -layer 5 -spreadType range -start 0.0 10.0 -end 0.0 70.0 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+**WARN: (SOCPTN-1025):	Pin [balanceCLK] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [balanceCLK] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [balanceCLK] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [balanceCLK] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [clk] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [clk] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [clk] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [clk] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [globalReset] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [globalReset] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [globalReset] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [globalReset] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [reData] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [reData] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [reData] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [reData] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[0]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[0]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[0]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[0]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[1]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[1]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[1]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[1]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[2]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[2]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[2]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[2]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+**WARN: (SOCPTN-1025):	Pin [REF4Bits[3]] has width [0.14] which is less than the minimum width [0.30] required on layer [5]. Changing pin width for pin [REF4Bits[3]] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [REF4Bits[3]] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [5]. Changing pin depth for pin [REF4Bits[3]] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [8] pins.
+<CMD> editPin -side Right -pinWidth 0.14 -pinDepth 0.14 -fixedPin 1 -layer 6 -spreadType start -start 108.67 40.0 -pin out
+**WARN: (SOCPTN-1025):	Pin [out] has width [0.14] which is less than the minimum width [0.30] required on layer [6]. Changing pin width for pin [out] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [out] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [6]. Changing pin depth for pin [out] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [1] pins.
+<CMD> editPin -side Right -pinWidth 0.14 -pinDepth 0.14 -fixedPin 1 -layer 6 -spreadType start -start 108.67 40.0 -pin out
+**WARN: (SOCPTN-1025):	Pin [out] has width [0.14] which is less than the minimum width [0.30] required on layer [6]. Changing pin width for pin [out] to [0.30] to meet the minimum width constraint.
+**WARN: (SOCPTN-1026):	Pin [out] has depth [0.14] which is less than the minimum depth [0.30] required to meet the min-area rule for layer [6]. Changing pin depth for pin [out] to [0.30]. See the partitioning section of the 8.1 What's New document for more information and how to get the old behavior.
+Successfully spread [1] pins.
+<CMD> getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+<CMD> setDoAssign
+<CMD> getIoFlowFlag
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet GRND
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet POWR
+<CMD> commitConfig
+**WARN: (SOCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect POWR -type pgpin -pin POWR -inst *
+**ERROR: (SOCDB-1216):	Global net POWR not found.
+<CMD> globalNetConnect POWR -type tiehi -pin POWR -inst *
+**ERROR: (SOCDB-1216):	Global net POWR not found.
+<CMD> globalNetConnect GRND -type pgpin -pin GRND -inst *
+**ERROR: (SOCDB-1216):	Global net GRND not found.
+<CMD> globalNetConnect GRND -type tielo -pin GRND -inst *
+**ERROR: (SOCDB-1216):	Global net GRND not found.
+Warning: term SN of inst dff9/Q_reg is not connect to global special net.
+Warning: term SN of inst dff10/Q_reg is not connect to global special net.
+Warning: term RN of inst DIV8CLK1/count_reg_0_ is not connect to global special net.
+Warning: term SN of inst DIV8CLK1/count_reg_2_ is not connect to global special net.
+Warning: term SN of inst DIV8CLK1/count_reg_1_ is not connect to global special net.
+Warning: term SN of inst DIV8CLK1/reverse_reg is not connect to global special net.
+Warning: term SN of inst metastablility_corrected_reData1/dff7/Q_reg is not connect to global special net.
+Warning: term SN of inst metastablility_corrected_reData1/dff8/Q_reg is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/ed1/x1Out_dly_reg is not connect to global special net.
+Warning: term RN of inst IDLEdetection1/ed1/x1Out_dly_reg is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_0_ is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_1_ is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_2_ is not connect to global special net.
+Warning: term SN of inst IDLEdetection1/c1/count_reg_3_ is not connect to global special net.
+Warning: term SI of inst IDLEdetection1/dff2/Q_reg is not connect to global special net.
+Warning: term SE of inst IDLEdetection1/dff2/Q_reg is not connect to global special net.
+Warning: term D of inst IDLEdetection1/dff2/Q_reg is not connect to global special net.
+Warning: term SN of inst FSM1/state_reg_0_ is not connect to global special net.
+Warning: term SN of inst FSM1/state_reg_1_ is not connect to global special net.
+Warning: term SN of inst FSM1/state_reg_2_ is not connect to global special net.
+<CMD> editPin -side Left -pinWidth 0.3 -fixedPin 1 -layer 5 -spreadType start -spacing 7.92 -start 0.0 10.23 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+Successfully spread [8] pins.
+<CMD> editPin -side Left -pinWidth 0.3 -fixedPin 1 -layer 5 -spreadType start -spacing 7.92 -start 0.0 10.23 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+Successfully spread [8] pins.
+<CMD> editPin -side Left -pinWidth 0.3 -fixedPin 1 -layer 5 -spreadType start -spacing 7.92 -start 0.0 10.23 -pin {balanceCLK clk globalReset reData {REF4Bits[0]} {REF4Bits[1]} {REF4Bits[2]} {REF4Bits[3]}}
+Successfully spread [8] pins.
+<CMD> editPin -side Right -pinWidth 0.3 -fixedPin 1 -layer 6 -spreadType start -start 108.67 40.59 -pin out
+Successfully spread [1] pins.
+<CMD> editPin -side Right -pinWidth 0.3 -fixedPin 1 -layer 6 -spreadType start -start 108.67 40.59 -pin out
+Successfully spread [1] pins.
+<CMD> getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+<CMD> setDoAssign
+<CMD> getIoFlowFlag
+<CMD> getenv ENCOUNTER_CONFIG_RELATIVE_CWD
+<CMD> setDoAssign
+<CMD> getIoFlowFlag
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet GRND
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet POWR
+<CMD> commitConfig
+**WARN: (SOCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect POWR -type pgpin -pin POWR -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net POWR not found.
+<CMD> globalNetConnect POWR -type tiehi -pin POWR -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net POWR not found.
+<CMD> globalNetConnect GRND -type pgpin -pin GRND -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net GRND not found.
+<CMD> globalNetConnect GRND -type tiehi -pin GRND -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net GRND not found.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect POWR -type pgpin -pin POWR -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net POWR not found.
+<CMD> globalNetConnect POWR -type tiehi -pin POWR -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net POWR not found.
+<CMD> globalNetConnect GRND -type pgpin -pin GRND -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net GRND not found.
+<CMD> globalNetConnect GRND -type tiehi -pin GRND -inst * -module {}
+**ERROR: (SOCDB-1216):	Global net GRND not found.
+<CMD> loadConfig /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/Default.conf 0
+**WARN: (SOCSYT-3033):	Cannot loadConfig after commitConfig.  This command is skipped.
+<CMD_INTERNAL> setUIVar rda_Input ui_gndnet GRND
+<CMD_INTERNAL> setUIVar rda_Input ui_pwrnet POWR
+<CMD> commitConfig
+**WARN: (SOCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+
+*** Memory Usage v0.144.6.3 (Current mem = 244.234M, initial mem = 76.688M) ***
+--- Ending "First Encounter" (totcpu=0:05:59, real=0:17:59, mem=244.2M) ---

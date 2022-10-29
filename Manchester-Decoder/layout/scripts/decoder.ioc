@@ -1,0 +1,32 @@
+################################################################################
+# Filename: decoder.ioc
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# Note: if we do not provide the IO location constraint for our module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 6
+)
+(iopin
+    (left
+	(pin name="ManchesterCode"	 layer=5 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="REF[0]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF[1]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF[2]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="REF[3]"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="osc"	 layer=5 width=0.300 depth=0.1400 )
+	(pin name="globalReset"	 layer=5 width=0.300 depth=0.1400 )
+    )
+    (right
+	(pin name="recoveredData"	 layer=6 width=0.300 depth=0.1400 offset=1.0)
+	(pin name="recoveredCLK"	 layer=6 width=0.300 depth=0.1400)
+	(pin name="balancedCLK"	 layer=6 width=0.300 depth=0.1400)
+    )
+)

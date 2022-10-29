@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : manchester_dec
+Version: P-2019.03-SP5
+Date   : Wed Apr 13 10:20:42 2022
+****************************************
+
+Library(s) Used:
+
+    GSCLib.db (File: /afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/src/GSCLib.db)
+
+Number of ports:                            5
+Number of nets:                            59
+Number of cells:                           55
+Number of combinational cells:             32
+Number of sequential cells:                11
+Number of macros/black boxes:               0
+Number of buf/inv:                         10
+Number of references:                      14
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+1

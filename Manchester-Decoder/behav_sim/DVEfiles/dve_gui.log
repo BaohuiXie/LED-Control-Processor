@@ -1,0 +1,77 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 12 days, on: 15-may-2022.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP1-1_Full64; Runtime version Q-2020.03-SP1-1_Full64;  May  4 02:46 2022
+VCD+ Writer Q-2020.03-SP1-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+The file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim/inter.vpd' was opened successfully.
+$finish called from file "../tb/delayBlock_tb.v", line 78.
+$finish at simulation time               120500
+Simulation complete, time is 120500 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 120500 ps
+CPU Time:      0.940 seconds;       Data structure size:   0.0Mb
+Wed May  4 02:48:37 2022
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP1-1_Full64 -- Wed May  4 02:48:40 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Warning : License for product VCSCompiler_Net(723) will expire within 12 days, on: 15-may-2022.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Parsing design file '../rtl/decoder.v'
+Parsing design file '../tb/delayBlock_tb.v'
+Top Level Modules:
+       delayBlock_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module delayBlock_tb
+Warning : License for product VCSCompiler_Net(723) will expire within 12 days, on: 15-may-2022.
+
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/linux64/lib -L/usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/linux64/lib  -Wl,-rpath-link=./     _4552_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive          /usr/eelocal/synopsys/vcs-vq2020.03-sp1-1/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .980 seconds to compile + 1.055 seconds to elab + .816 seconds to link
+Finished rebuilding the design.
+Warning : License for product VCSRuntime_Net(725) will expire within 12 days, on: 15-may-2022.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP1-1_Full64; Runtime version Q-2020.03-SP1-1_Full64;  May  4 02:48 2022
+VCD+ Writer Q-2020.03-SP1-1_Full64 Copyright (c) 1991-2020 by Synopsys Inc.
+The file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_8Update/behav_sim/inter.vpd' was opened successfully.
+$finish called from file "../tb/delayBlock_tb.v", line 78.
+$finish at simulation time               120500
+Simulation complete, time is 120500 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 120500 ps
+CPU Time:      0.510 seconds;       Data structure size:   0.0Mb
+Wed May  4 02:50:41 2022

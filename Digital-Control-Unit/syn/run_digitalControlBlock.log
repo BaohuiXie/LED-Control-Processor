@@ -1,0 +1,427 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version P-2019.03-SP5 for linux64 - Oct 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+################################################################################
+# Filename: run_digitalControlBlock.tcl
+# Author: XIE BAOHUI
+# Email: bxieaf@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# -------------------------------------------------------------------------------
+# This is the template Design Compiler script for ELEC5160/EESM5020.
+################################################################################
+################################################################################
+# Step 0: create directories for results and reports
+################################################################################
+file mkdir reports; # store area, timing, power reports
+file mkdir results; # store design
+################################################################################
+# Step 1: digital standard cell library set up
+# You should specify the following paths accordingly:
+# - search_path
+# - target_library
+# - link_library
+################################################################################
+set_app_var search_path "/afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/GSCLib_3.0 $search_path"
+/afs/ee.ust.hk/staff/ee/dept/public/eesm6980/digital/GSCLib3/GSCLib_3.0 . /usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn /usr/eelocal/synopsys/syn-vp2019.03-sp5/dw/syn_ver /usr/eelocal/synopsys/syn-vp2019.03-sp5/dw/sim_ver
+set_app_var target_library "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db"
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db
+set_app_var synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+set_app_var link_library "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db"
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db
+set_app_var symbol_library "/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/basic.sdb"
+/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/basic.sdb
+################################################################################
+# Step 2: import design
+# You should specify the HDL files for your design accordingly.
+# Note: the HDL files should be located in the search_path you defined above.
+# Please do NOT import testbench or behavior memory model here.
+################################################################################
+define_design_lib WORK -path ./WORK
+1
+analyze -format verilog {../rtl/digitalControlBlock.v}
+Running PRESTO HDLC
+Compiling source file ../rtl/digitalControlBlock.v
+Presto compilation completed successfully.
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+1
+elaborate digitalControlBlock; # top module name
+Loading db file '/usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn/gtech.db'
+Loading db file '/usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn/standard.sldb'
+  Loading link library 'GSCLib.db'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (digitalControlBlock)
+Loading db file '/usr/eelocal/synopsys/syn-vp2019.03-sp5/libraries/syn/dw_foundation.sldb'
+Elaborated 1 design.
+Current design is now 'digitalControlBlock'.
+Information: Building the design 'shiftAndRegBlock'. (HDL-193)
+Presto compilation completed successfully. (shiftAndRegBlock)
+Information: Building the design 'GatedCLKBlock'. (HDL-193)
+Presto compilation completed successfully. (GatedCLKBlock)
+Information: Building the design 'shiftReg13Bit'. (HDL-193)
+
+Inferred memory devices in process
+	in routine shiftReg13Bit line 218 in file
+		'../rtl/digitalControlBlock.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     current_reg     | Flip-flop |  13   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (shiftReg13Bit)
+Information: Building the design 'shiftReg16Bit'. (HDL-193)
+
+Inferred memory devices in process
+	in routine shiftReg16Bit line 250 in file
+		'../rtl/digitalControlBlock.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     current_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (shiftReg16Bit)
+Information: Building the design 'Comparator16Bit'. (HDL-193)
+
+Statistics for case statements in always block at line 169 in file
+	'../rtl/digitalControlBlock.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           170            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (Comparator16Bit)
+Information: Building the design 'parallelShiftReg12Bit'. (HDL-193)
+
+Inferred memory devices in process
+	in routine parallelShiftReg12Bit line 275 in file
+		'../rtl/digitalControlBlock.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (parallelShiftReg12Bit)
+Information: Building the design 'Counter6Bit'. (HDL-193)
+
+Inferred memory devices in process
+	in routine Counter6Bit line 87 in file
+		'../rtl/digitalControlBlock.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (Counter6Bit)
+Information: Building the design 'Comparator6Bit'. (HDL-193)
+
+Statistics for case statements in always block at line 53 in file
+	'../rtl/digitalControlBlock.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            54            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (Comparator6Bit)
+Information: Building the design 'DFF_digitalControlBlock'. (HDL-193)
+
+Inferred memory devices in process
+	in routine DFF_digitalControlBlock line 111 in file
+		'../rtl/digitalControlBlock.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      notQ_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (DFF_digitalControlBlock)
+1
+# store the unmapped results
+write -hierarchy -format ddc -output results/digitalControlBlock.unmapped.ddc
+Writing ddc file 'results/digitalControlBlock.unmapped.ddc'.
+1
+################################################################################
+# Step 3: constrain your design
+# You should specify the critical path, the input & output delay and the
+# environment attribute of your design, so that Design Compiler can correctly
+# synthesize your design with the required specfication.
+################################################################################
+# All the constraints are written in the following tcl script
+source digitalControlBlock.constraints.tcl
+1
+################################################################################
+# Create default path groups
+#
+# Seperate these paths can help improve optimization results.
+################################################################################
+set ports_clock_root   [filter_collection [get_attribute [get_clocks] sources] object_class==port]
+{reCLK}
+group_path -name REGOUT -to [all_outputs]
+1
+group_path -name REGIN -from [remove_from_collection [all_inputs]   ${ports_clock_root}]
+1
+group_path -name FEEDTHROUGH -from   [remove_from_collection [all_inputs] ${ports_clock_root}] -to [all_outputs]
+1
+################################################################################
+# Apply Additional Optimization Constraints
+################################################################################
+# Prevent assignment statements in the Verilog netlist.
+set_fix_multiple_port_nets -all -buffer_constants
+1
+################################################################################
+# Check for Design Errors. It is a good habit to check the design before you run
+# the synthesis.
+################################################################################
+check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5
+Date:        Thu Apr 28 22:30:56 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+check_design > reports/digitalControlBlock.check_design.rpt; # dump to the file
+################################################################################
+# Step 4: compile the design
+# There exits lots of option for compile command. Please check the manual of
+# compile for further info.
+################################################################################
+compile
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | P-2019.03-DWBB_201903.4 |     *     |
+| Licensed DW Building Blocks        | P-2019.03-DWBB_201903.4 |     *     |
+============================================================================
+
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'DFF_digitalControlBlock'
+  Processing 'Comparator6Bit'
+  Processing 'Counter6Bit'
+  Processing 'GatedCLKBlock'
+  Processing 'parallelShiftReg12Bit_0'
+  Processing 'Comparator16Bit'
+  Processing 'shiftReg16Bit'
+  Processing 'shiftReg13Bit_0'
+  Processing 'shiftAndRegBlock'
+  Processing 'digitalControlBlock'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	SRblock/reg16Bit1/current_reg[12]/CK SRblock/reg16Bit1/current_reg[12]/Q SRblock/comparator16Bit1/U23/B SRblock/comparator16Bit1/U23/Y SRblock/comparator16Bit1/U19/A SRblock/comparator16Bit1/U19/Y SRblock/comparator16Bit1/U3/A SRblock/comparator16Bit1/U3/Y GCLKblock/dff1/notQ_reg/CK GCLKblock/dff1/notQ_reg/Q GCLKblock/U1/B GCLKblock/U1/Y 
+Information: Timing loop detected. (OPT-150)
+	SRblock/reg16Bit1/current_reg[10]/CK SRblock/reg16Bit1/current_reg[10]/Q SRblock/comparator16Bit1/U22/B SRblock/comparator16Bit1/U22/Y SRblock/comparator16Bit1/U19/B SRblock/comparator16Bit1/U19/Y SRblock/comparator16Bit1/U3/A SRblock/comparator16Bit1/U3/Y GCLKblock/dff1/notQ_reg/CK GCLKblock/dff1/notQ_reg/Q GCLKblock/U1/B GCLKblock/U1/Y 
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GCLKblock/U1'
+         to break a timing loop. (OPT-314)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'Counter6Bit_DW01_inc_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0      16.5                          
+    0:00:01       0.0      0.00       0.0       0.5                          
+    0:00:01       0.0      0.00       0.0       0.5                          
+    0:00:01       0.0      0.00       0.0       0.5                          
+    0:00:01       0.0      0.00       0.0       0.5                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0       0.5                          
+    0:00:01       0.0      0.00       0.0       0.5                          
+    0:00:01       0.0      0.00       0.0       0.5                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0       0.5                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+    0:00:01       0.0      0.00       0.0       0.0                          
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Note: compile_ultra does not work for some open source libraries, i.e. Nangate
+# since there are some cells missing for these libraries.
+# Sol: use compile instead. You can use compile_ultra for the commerial library
+# such TSMC45nm, which has a complete set of gates supported.
+#
+# compile_ultra -no_autoungroup; # keep hierarchy for the purpose of debug
+################################################################################
+# High-effort area optimization which improves the area without degrading the
+# timing or leakage of the compiled design
+optimize_netlist -area
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+Loaded alib file './alib-52/GSCLib.db.alib'
+Information: Timing loop detected. (OPT-150)
+	SRblock/reg16Bit1/current_reg[12]/CK SRblock/reg16Bit1/current_reg[12]/Q SRblock/comparator16Bit1/U23/B SRblock/comparator16Bit1/U23/Y SRblock/comparator16Bit1/U19/A SRblock/comparator16Bit1/U19/Y SRblock/comparator16Bit1/U3/A SRblock/comparator16Bit1/U3/Y SRblock/U2/A SRblock/U2/Y SRblock/U1/A SRblock/U1/Y GCLKblock/dff1/notQ_reg/CK GCLKblock/dff1/notQ_reg/Q GCLKblock/U1/B GCLKblock/U1/Y 
+Information: Timing loop detected. (OPT-150)
+	SRblock/reg16Bit1/current_reg[10]/CK SRblock/reg16Bit1/current_reg[10]/Q SRblock/comparator16Bit1/U22/B SRblock/comparator16Bit1/U22/Y SRblock/comparator16Bit1/U19/B SRblock/comparator16Bit1/U19/Y SRblock/comparator16Bit1/U3/A SRblock/comparator16Bit1/U3/Y SRblock/U2/A SRblock/U2/Y SRblock/U1/A SRblock/U1/Y GCLKblock/dff1/notQ_reg/CK GCLKblock/dff1/notQ_reg/Q GCLKblock/U1/B GCLKblock/U1/Y 
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GCLKblock/U1'
+         to break a timing loop. (OPT-314)
+
+  Updating timing information
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02       0.0      0.00       0.0       0.0                             54.9725
+Loading db file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/lib/GSCLib.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Step 5: write out final design and reports
+# The files include:
+# - .ddc: binary format used for subsequent Design Compiler sessions
+# - .v: Verilog netlist for gate-level simulation and P&R
+# - .sdf: SDF backannotated file containing gate and net latency
+# - .sdc: SDC constraints for ASCII flow
+################################################################################
+change_names -rules verilog -hierarchy
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+1
+# Write out design
+write -format verilog -hierarchy -output results/digitalControlBlock.mapped.v
+Writing verilog file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/syn/results/digitalControlBlock.mapped.v'.
+1
+write -format ddc -hierarchy -output results/digitalControlBlock.mapped.ddc
+Writing ddc file 'results/digitalControlBlock.mapped.ddc'.
+1
+write_sdf results/digitalControlBlock.mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/syn/results/digitalControlBlock.mapped.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	SRblock/reg16Bit1/current_reg_12_/CK SRblock/reg16Bit1/current_reg_12_/Q SRblock/comparator16Bit1/U23/B SRblock/comparator16Bit1/U23/Y SRblock/comparator16Bit1/U19/A SRblock/comparator16Bit1/U19/Y SRblock/comparator16Bit1/U3/A SRblock/comparator16Bit1/U3/Y SRblock/U2/A SRblock/U2/Y SRblock/U1/A SRblock/U1/Y GCLKblock/dff1/notQ_reg/CK GCLKblock/dff1/notQ_reg/Q GCLKblock/U1/B GCLKblock/U1/Y 
+Information: Timing loop detected. (OPT-150)
+	SRblock/reg16Bit1/current_reg_10_/CK SRblock/reg16Bit1/current_reg_10_/Q SRblock/comparator16Bit1/U22/B SRblock/comparator16Bit1/U22/Y SRblock/comparator16Bit1/U19/B SRblock/comparator16Bit1/U19/Y SRblock/comparator16Bit1/U3/A SRblock/comparator16Bit1/U3/Y SRblock/U2/A SRblock/U2/Y SRblock/U1/A SRblock/U1/Y GCLKblock/dff1/notQ_reg/CK GCLKblock/dff1/notQ_reg/Q GCLKblock/U1/B GCLKblock/U1/Y 
+Warning: Disabling timing arc between pins 'B' and 'Y' on cell 'GCLKblock/U1'
+         to break a timing loop. (OPT-314)
+1
+write_sdc -nosplit results/digitalControlBlock.mapped.sdc
+1
+# Generate reports
+report_qor > reports/digitalControlBlock.mapped.qor.rpt
+report_timing -transition_time -nets -attribute -nosplit   > reports/digitalControlBlock.mapped.timing.rpt
+report_area -nosplit > reports/digitalControlBlock.mapped.area.rpt
+report_power -nosplit > reports/digitalControlBlock.mapped.power.rpt
+################################################################################
+# Exit Design Compiler
+################################################################################
+exit
+
+Thank you...

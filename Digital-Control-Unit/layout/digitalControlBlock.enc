@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/digitalControlBlock.enc                     
+#                                              #
+################################################
+restoreDesign /afs/ee.ust.hk/staff/ee/bxieaf/eesm6980/implementation_9/layout/digitalControlBlock.enc.dat digitalControlBlock
